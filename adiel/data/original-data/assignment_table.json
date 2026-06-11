@@ -1,0 +1,1108 @@
+[
+    {
+        "Task Name": "Receive notice to proceed and sign contract",
+        "Resource Name": "G.C. General Management",
+        "% Work Complete": 0,
+        "Work": "24h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Submit bond and insurance documents",
+        "Resource Name": "G.C. Project Management",
+        "% Work Complete": 0,
+        "Work": "16h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Submit bond and insurance documents",
+        "Resource Name": "G.C. General Management",
+        "% Work Complete": 0,
+        "Work": "4h",
+        "Units": "25%"
+    },
+    {
+        "Task Name": "Prepare and submit project schedule",
+        "Resource Name": "G.C. Project Management",
+        "% Work Complete": 0,
+        "Work": "4h",
+        "Units": "25%"
+    },
+    {
+        "Task Name": "Prepare and submit project schedule",
+        "Resource Name": "G.C. Scheduler",
+        "% Work Complete": 0,
+        "Work": "16h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Prepare and submit schedule of values",
+        "Resource Name": "G.C. General Management",
+        "% Work Complete": 0,
+        "Work": "1.6h",
+        "Units": "10%"
+    },
+    {
+        "Task Name": "Prepare and submit schedule of values",
+        "Resource Name": "G.C. Project Management",
+        "% Work Complete": 0,
+        "Work": "16h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Obtain building permits",
+        "Resource Name": "G.C. Project Management",
+        "% Work Complete": 0,
+        "Work": "16h",
+        "Units": "50%"
+    },
+    {
+        "Task Name": "Obtain building permits",
+        "Resource Name": "G.C. Procurement",
+        "% Work Complete": 0,
+        "Work": "16h",
+        "Units": "50%"
+    },
+    {
+        "Task Name": "Submit preliminary shop drawings",
+        "Resource Name": "G.C. Project Management",
+        "% Work Complete": 0,
+        "Work": "40h",
+        "Units": "50%"
+    },
+    {
+        "Task Name": "Submit preliminary shop drawings",
+        "Resource Name": "G.C. Procurement",
+        "% Work Complete": 0,
+        "Work": "40h",
+        "Units": "50%"
+    },
+    {
+        "Task Name": "Submit shop drawings and order long lead items - steel",
+        "Resource Name": "Steel Erection Contractor Management",
+        "% Work Complete": 0,
+        "Work": "80h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Submit shop drawings and order long lead items - roofing",
+        "Resource Name": "Roofing Contractor Management",
+        "% Work Complete": 0,
+        "Work": "80h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Submit shop drawings and order long lead items - elevator",
+        "Resource Name": "Elevator Contractor Management",
+        "% Work Complete": 0,
+        "Work": "80h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Submit shop drawings and order long lead items - plumbing",
+        "Resource Name": "Plumbing Contractor Management",
+        "% Work Complete": 0,
+        "Work": "80h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Submit shop drawings and order long lead items - electric",
+        "Resource Name": "Electric Contractor Management",
+        "% Work Complete": 0,
+        "Work": "80h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Submit shop drawings and order long lead items - HVAC",
+        "Resource Name": "HVAC Contractor Management",
+        "% Work Complete": 0,
+        "Work": "80h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Detail, fabricate and deliver steel",
+        "Resource Name": "Steel Erection Contractor Management",
+        "% Work Complete": 0,
+        "Work": "240h",
+        "Units": "50%"
+    },
+    {
+        "Task Name": "Detail, fabricate and deliver steel",
+        "Resource Name": "Steel Erection Contractor",
+        "% Work Complete": 0,
+        "Work": "240h",
+        "Units": "50%"
+    },
+    {
+        "Task Name": "Install temporary power",
+        "Resource Name": "Electric Contractor",
+        "% Work Complete": 0,
+        "Work": "16h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Install temporary water service",
+        "Resource Name": "Plumbing Contractor",
+        "% Work Complete": 0,
+        "Work": "16h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Set up site office",
+        "Resource Name": "G.C. Superintendent",
+        "% Work Complete": 0,
+        "Work": "24h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Set up site office",
+        "Resource Name": "G.C. Labor Crew",
+        "% Work Complete": 0,
+        "Work": "2.4h",
+        "Units": "10%"
+    },
+    {
+        "Task Name": "Set line and grade benchmarks",
+        "Resource Name": "G.C. Survey Crew",
+        "% Work Complete": 0,
+        "Work": "24h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Prepare site - lay down yard and temporary fencing",
+        "Resource Name": "Site Grading Contractor",
+        "% Work Complete": 0,
+        "Work": "16h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Prepare site - lay down yard and temporary fencing",
+        "Resource Name": "G.C. Labor Crew",
+        "% Work Complete": 0,
+        "Work": "1.6h",
+        "Units": "10%"
+    },
+    {
+        "Task Name": "Clear and grub site",
+        "Resource Name": "Site Grading Contractor",
+        "% Work Complete": 0,
+        "Work": "24h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Stone site access and temporary parking area",
+        "Resource Name": "Site Grading Contractor",
+        "% Work Complete": 0,
+        "Work": "16h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Rough grade site (cut and fill)",
+        "Resource Name": "Site Grading Contractor",
+        "% Work Complete": 0,
+        "Work": "40h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Install storm drainage",
+        "Resource Name": "Site Grading Contractor",
+        "% Work Complete": 0,
+        "Work": "80h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Install exterior fire line and building fire riser",
+        "Resource Name": "Plumbing Contractor",
+        "% Work Complete": 0,
+        "Work": "80h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Perform final site grading",
+        "Resource Name": "Site Grading Contractor",
+        "% Work Complete": 0,
+        "Work": "80h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Erect building batter boards and layout building",
+        "Resource Name": "G.C. Survey Crew",
+        "% Work Complete": 0,
+        "Work": "40h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Excavate foundations",
+        "Resource Name": "Site Grading Contractor",
+        "% Work Complete": 0,
+        "Work": "40h",
+        "Units": "50%"
+    },
+    {
+        "Task Name": "Excavate elevator pit",
+        "Resource Name": "Site Grading Contractor",
+        "% Work Complete": 0,
+        "Work": "16h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Form column piers and spread foundations",
+        "Resource Name": "G.C. Rough Carpenter Crew",
+        "% Work Complete": 0,
+        "Work": "32h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Rough-in electric and plumbing in elevator",
+        "Resource Name": "Plumbing Contractor",
+        "% Work Complete": 0,
+        "Work": "32h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Rough-in electric and plumbing in elevator",
+        "Resource Name": "Electric Contractor",
+        "% Work Complete": 0,
+        "Work": "32h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Form elevator pit walls",
+        "Resource Name": "G.C. Rough Carpenter Crew",
+        "% Work Complete": 0,
+        "Work": "32h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Set reinforcing and anchor bolts",
+        "Resource Name": "G.C. Rough Carpenter Crew",
+        "% Work Complete": 0,
+        "Work": "32h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Pour column piers and foundations",
+        "Resource Name": "G.C. Concrete Crew",
+        "% Work Complete": 0,
+        "Work": "40h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Pour concrete elevator walls",
+        "Resource Name": "G.C. Concrete Crew",
+        "% Work Complete": 0,
+        "Work": "8h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Cure elevator wall concrete",
+        "Resource Name": "G.C. Labor Crew",
+        "% Work Complete": 0,
+        "Work": "5.6h",
+        "Units": "10%"
+    },
+    {
+        "Task Name": "Cure piers and foundations",
+        "Resource Name": "G.C. Labor Crew",
+        "% Work Complete": 0,
+        "Work": "5.6h",
+        "Units": "10%"
+    },
+    {
+        "Task Name": "Strip wall forms",
+        "Resource Name": "G.C. Labor Crew",
+        "% Work Complete": 0,
+        "Work": "0.8h",
+        "Units": "10%"
+    },
+    {
+        "Task Name": "Strip column piers and foundation forms",
+        "Resource Name": "G.C. Labor Crew",
+        "% Work Complete": 0,
+        "Work": "24h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Install pneumatic tube in elevator pit",
+        "Resource Name": "Elevator Contractor",
+        "% Work Complete": 0,
+        "Work": "24h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Prepare and pour concrete floor in elevator pit",
+        "Resource Name": "G.C. Concrete Crew",
+        "% Work Complete": 0,
+        "Work": "8h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Erect steel columns, beams and joist - 1st and 2nd floors",
+        "Resource Name": "Steel Erection Contractor",
+        "% Work Complete": 0,
+        "Work": "80h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Erect steel columns, beams and joist - 3rd floor and roof",
+        "Resource Name": "Steel Erection Contractor",
+        "% Work Complete": 0,
+        "Work": "80h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Install miscellaneous iron and bracing - 1st and 2nd floors",
+        "Resource Name": "Steel Erection Contractor",
+        "% Work Complete": 0,
+        "Work": "60h",
+        "Units": "75%"
+    },
+    {
+        "Task Name": "Install miscellaneous iron and bracing - 3rd floor and roof",
+        "Resource Name": "Steel Erection Contractor",
+        "% Work Complete": 0,
+        "Work": "60h",
+        "Units": "75%"
+    },
+    {
+        "Task Name": "Install stairs and miscellaneous iron railing",
+        "Resource Name": "Steel Erection Contractor",
+        "% Work Complete": 0,
+        "Work": "40h",
+        "Units": "50%"
+    },
+    {
+        "Task Name": "Touch-up paint on steel",
+        "Resource Name": "Steel Erection Contractor",
+        "% Work Complete": 0,
+        "Work": "8h",
+        "Units": "20%"
+    },
+    {
+        "Task Name": "Form 2nd floor including all floor openings",
+        "Resource Name": "G.C. Rough Carpenter Crew",
+        "% Work Complete": 0,
+        "Work": "40h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Form 2nd floor including all floor openings",
+        "Resource Name": "G.C. Labor Crew",
+        "% Work Complete": 0,
+        "Work": "8h",
+        "Units": "20%"
+    },
+    {
+        "Task Name": "Install rebar and in-floor utilities (including mechanical, electrical, plumbing)",
+        "Resource Name": "G.C. Labor Crew",
+        "% Work Complete": 0,
+        "Work": "13.2h",
+        "Units": "33%"
+    },
+    {
+        "Task Name": "Install rebar and in-floor utilities (including mechanical, electrical, plumbing)",
+        "Resource Name": "Plumbing Contractor",
+        "% Work Complete": 0,
+        "Work": "13.2h",
+        "Units": "33%"
+    },
+    {
+        "Task Name": "Install rebar and in-floor utilities (including mechanical, electrical, plumbing)",
+        "Resource Name": "Electric Contractor",
+        "% Work Complete": 0,
+        "Work": "13.2h",
+        "Units": "33%"
+    },
+    {
+        "Task Name": "Pour 2nd floor slab",
+        "Resource Name": "G.C. Concrete Crew",
+        "% Work Complete": 0,
+        "Work": "32h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Cure 2nd floor slab",
+        "Resource Name": "G.C. Labor Crew",
+        "% Work Complete": 0,
+        "Work": "5.6h",
+        "Units": "10%"
+    },
+    {
+        "Task Name": "Strip forms from 2nd floor slab",
+        "Resource Name": "G.C. Labor Crew",
+        "% Work Complete": 0,
+        "Work": "16h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Form 3rd floor including all floor openings",
+        "Resource Name": "G.C. Rough Carpenter Crew",
+        "% Work Complete": 0,
+        "Work": "20h",
+        "Units": "50%"
+    },
+    {
+        "Task Name": "Form 3rd floor including all floor openings",
+        "Resource Name": "G.C. Labor Crew",
+        "% Work Complete": 0,
+        "Work": "8h",
+        "Units": "20%"
+    },
+    {
+        "Task Name": "Install rebar and in-floor utilities (including mechanical, electrical, plumbing)",
+        "Resource Name": "G.C. Labor Crew",
+        "% Work Complete": 0,
+        "Work": "13.2h",
+        "Units": "33%"
+    },
+    {
+        "Task Name": "Install rebar and in-floor utilities (including mechanical, electrical, plumbing)",
+        "Resource Name": "Plumbing Contractor",
+        "% Work Complete": 0,
+        "Work": "13.2h",
+        "Units": "33%"
+    },
+    {
+        "Task Name": "Install rebar and in-floor utilities (including mechanical, electrical, plumbing)",
+        "Resource Name": "Electric Contractor",
+        "% Work Complete": 0,
+        "Work": "13.2h",
+        "Units": "33%"
+    },
+    {
+        "Task Name": "Pour 3rd floor slab",
+        "Resource Name": "G.C. Concrete Crew",
+        "% Work Complete": 0,
+        "Work": "32h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Cure 3rd floor slab",
+        "Resource Name": "G.C. Labor Crew",
+        "% Work Complete": 0,
+        "Work": "5.6h",
+        "Units": "10%"
+    },
+    {
+        "Task Name": "Strip forms from 3rd floor slab",
+        "Resource Name": "G.C. Labor Crew",
+        "% Work Complete": 0,
+        "Work": "16h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Form roof slab including all floor openings",
+        "Resource Name": "G.C. Rough Carpenter Crew",
+        "% Work Complete": 0,
+        "Work": "40h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Form roof slab including all floor openings",
+        "Resource Name": "G.C. Labor Crew",
+        "% Work Complete": 0,
+        "Work": "8h",
+        "Units": "20%"
+    },
+    {
+        "Task Name": "Install rebar and in-floor utilities (including mechanical, electrical, plumbing)",
+        "Resource Name": "G.C. Labor Crew",
+        "% Work Complete": 0,
+        "Work": "13.2h",
+        "Units": "33%"
+    },
+    {
+        "Task Name": "Install rebar and in-floor utilities (including mechanical, electrical, plumbing)",
+        "Resource Name": "Plumbing Contractor",
+        "% Work Complete": 0,
+        "Work": "13.2h",
+        "Units": "33%"
+    },
+    {
+        "Task Name": "Install rebar and in-floor utilities (including mechanical, electrical, plumbing)",
+        "Resource Name": "Electric Contractor",
+        "% Work Complete": 0,
+        "Work": "13.2h",
+        "Units": "33%"
+    },
+    {
+        "Task Name": "Pour roof slab",
+        "Resource Name": "G.C. Concrete Crew",
+        "% Work Complete": 0,
+        "Work": "32h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Cure roof slab",
+        "Resource Name": "G.C. Labor Crew",
+        "% Work Complete": 0,
+        "Work": "5.6h",
+        "Units": "10%"
+    },
+    {
+        "Task Name": "Strip forms from roof slab",
+        "Resource Name": "G.C. Labor Crew",
+        "% Work Complete": 0,
+        "Work": "16h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Form 1st floor",
+        "Resource Name": "G.C. Rough Carpenter Crew",
+        "% Work Complete": 0,
+        "Work": "32h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Install electrical underground",
+        "Resource Name": "Electric Contractor",
+        "% Work Complete": 0,
+        "Work": "40h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Install plumbing underground",
+        "Resource Name": "Plumbing Contractor",
+        "% Work Complete": 0,
+        "Work": "40h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Install rebar and in-floor utilities",
+        "Resource Name": "G.C. Labor Crew",
+        "% Work Complete": 0,
+        "Work": "10.56h",
+        "Units": "33%"
+    },
+    {
+        "Task Name": "Install rebar and in-floor utilities",
+        "Resource Name": "Plumbing Contractor",
+        "% Work Complete": 0,
+        "Work": "10.56h",
+        "Units": "33%"
+    },
+    {
+        "Task Name": "Install rebar and in-floor utilities",
+        "Resource Name": "Electric Contractor",
+        "% Work Complete": 0,
+        "Work": "10.56h",
+        "Units": "33%"
+    },
+    {
+        "Task Name": "Pour 1st floor slab",
+        "Resource Name": "G.C. Concrete Crew",
+        "% Work Complete": 0,
+        "Work": "32h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Cure 1st floor slab",
+        "Resource Name": "G.C. Labor Crew",
+        "% Work Complete": 0,
+        "Work": "5.6h",
+        "Units": "10%"
+    },
+    {
+        "Task Name": "Strip forms from 1st floor slab",
+        "Resource Name": "G.C. Labor Crew",
+        "% Work Complete": 0,
+        "Work": "16h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Install exterior sheathing and metal studs",
+        "Resource Name": "Drywall Contractor",
+        "% Work Complete": 0,
+        "Work": "120h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Rough-in plumbing at toilets and masonry walls",
+        "Resource Name": "Plumbing Contractor",
+        "% Work Complete": 0,
+        "Work": "160h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Lay masonry at core, mechanical, and toilets",
+        "Resource Name": "Masonry Contractor",
+        "% Work Complete": 0,
+        "Work": "160h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Install exterior masonry work",
+        "Resource Name": "Masonry Contractor",
+        "% Work Complete": 0,
+        "Work": "200h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Install roof drains",
+        "Resource Name": "Roofing Contractor",
+        "% Work Complete": 0,
+        "Work": "16h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Install tile in toilet rooms",
+        "Resource Name": "Tile Contractor",
+        "% Work Complete": 0,
+        "Work": "80h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Clean masonry",
+        "Resource Name": "Masonry Contractor",
+        "% Work Complete": 0,
+        "Work": "20h",
+        "Units": "50%"
+    },
+    {
+        "Task Name": "Clean toilet room tile",
+        "Resource Name": "Tile Contractor",
+        "% Work Complete": 0,
+        "Work": "20h",
+        "Units": "50%"
+    },
+    {
+        "Task Name": "Install flashing at parapet walls",
+        "Resource Name": "Roofing Contractor",
+        "% Work Complete": 0,
+        "Work": "32h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Pour lightweight concrete roof fill",
+        "Resource Name": "Roofing Contractor",
+        "% Work Complete": 0,
+        "Work": "16h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Install seamless roofing material",
+        "Resource Name": "Roofing Contractor",
+        "% Work Complete": 0,
+        "Work": "40h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Spread stone ballast on seamless roof",
+        "Resource Name": "Roofing Contractor",
+        "% Work Complete": 0,
+        "Work": "40h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Set rooftop equipment",
+        "Resource Name": "HVAC Contractor",
+        "% Work Complete": 0,
+        "Work": "80h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Install window wall aluminum and glass",
+        "Resource Name": "Window Contractor",
+        "% Work Complete": 0,
+        "Work": "200h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Install interior stud walls and drywall",
+        "Resource Name": "Drywall Contractor",
+        "% Work Complete": 0,
+        "Work": "200h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Install interior doors and hardware",
+        "Resource Name": "G.C. Finish Carpenter Crew",
+        "% Work Complete": 0,
+        "Work": "80h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Install store front doors and hardware",
+        "Resource Name": "Window Contractor",
+        "% Work Complete": 0,
+        "Work": "120h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Install millwork and wood trim",
+        "Resource Name": "G.C. Finish Carpenter Crew",
+        "% Work Complete": 0,
+        "Work": "120h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Paint walls and woodwork",
+        "Resource Name": "Painting Contractor",
+        "% Work Complete": 0,
+        "Work": "160h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Install conduit at ceiling plenum space",
+        "Resource Name": "Electric Contractor",
+        "% Work Complete": 0,
+        "Work": "120h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Install duct in ceiling plenum space",
+        "Resource Name": "HVAC Contractor",
+        "% Work Complete": 0,
+        "Work": "120h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Install ceiling grid",
+        "Resource Name": "Drywall Contractor",
+        "% Work Complete": 0,
+        "Work": "80h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Install ceiling tile",
+        "Resource Name": "Drywall Contractor",
+        "% Work Complete": 0,
+        "Work": "80h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Hang wallpaper",
+        "Resource Name": "Painting Contractor",
+        "% Work Complete": 0,
+        "Work": "80h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Install building carpet",
+        "Resource Name": "Carpet Contractor",
+        "% Work Complete": 0,
+        "Work": "160h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Install hardware and accessories",
+        "Resource Name": "G.C. Finish Carpenter Crew",
+        "% Work Complete": 0,
+        "Work": "120h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Complete interior and exterior sod and plantings",
+        "Resource Name": "Landscape Contractor",
+        "% Work Complete": 0,
+        "Work": "80h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Pave, curb, and stripe parking lot",
+        "Resource Name": "Paving Contractor",
+        "% Work Complete": 0,
+        "Work": "80h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Set elevator equipment in shafts",
+        "Resource Name": "Elevator Contractor",
+        "% Work Complete": 0,
+        "Work": "160h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Set equipment in mechanical room",
+        "Resource Name": "Elevator Contractor",
+        "% Work Complete": 0,
+        "Work": "80h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Test and align doors and equipment",
+        "Resource Name": "Elevator Contractor",
+        "% Work Complete": 0,
+        "Work": "80h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Rough-in plumbing in drywall walls",
+        "Resource Name": "Plumbing Contractor",
+        "% Work Complete": 0,
+        "Work": "160h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Tie-in fire line riser and set valves",
+        "Resource Name": "Plumbing Contractor",
+        "% Work Complete": 0,
+        "Work": "80h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Set plumbing fixtures and trim",
+        "Resource Name": "Plumbing Contractor",
+        "% Work Complete": 0,
+        "Work": "120h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Flush, test, and clean piping and fixtures",
+        "Resource Name": "Plumbing Contractor",
+        "% Work Complete": 0,
+        "Work": "80h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Rough-in electrical in masonry walls",
+        "Resource Name": "Electric Contractor",
+        "% Work Complete": 0,
+        "Work": "160h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Rough-in electrical in drywall walls",
+        "Resource Name": "Electric Contractor",
+        "% Work Complete": 0,
+        "Work": "160h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Pull wire in conduit and set area transformers",
+        "Resource Name": "Electric Contractor",
+        "% Work Complete": 0,
+        "Work": "120h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Install and terminate electrical devices",
+        "Resource Name": "Electric Contractor",
+        "% Work Complete": 0,
+        "Work": "120h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Make electrical terminations for HVAC equipment",
+        "Resource Name": "Electric Contractor",
+        "% Work Complete": 0,
+        "Work": "16h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Install light fixtures - test and clean",
+        "Resource Name": "Electric Contractor",
+        "% Work Complete": 0,
+        "Work": "80h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Set equipment in mechanical room",
+        "Resource Name": "HVAC Contractor",
+        "% Work Complete": 0,
+        "Work": "80h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Rough-in mechanical in masonry walls",
+        "Resource Name": "HVAC Contractor",
+        "% Work Complete": 0,
+        "Work": "160h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Rough-in mechanical in drywall walls",
+        "Resource Name": "HVAC Contractor",
+        "% Work Complete": 0,
+        "Work": "80h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Install duct in building chase",
+        "Resource Name": "HVAC Contractor",
+        "% Work Complete": 0,
+        "Work": "120h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Set HVAC trim and test and balance system",
+        "Resource Name": "HVAC Contractor",
+        "% Work Complete": 0,
+        "Work": "160h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Install hard tile flooring in common areas",
+        "Resource Name": "Tile Contractor",
+        "% Work Complete": 0,
+        "Work": "40h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Clean hard tile floors",
+        "Resource Name": "Tile Contractor",
+        "% Work Complete": 0,
+        "Work": "16h",
+        "Units": "50%"
+    },
+    {
+        "Task Name": "Remove debris from building and do final clean-up",
+        "Resource Name": "G.C. Labor Crew",
+        "% Work Complete": 0,
+        "Work": "32h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Substantial completion date",
+        "Resource Name": "G.C. Superintendent",
+        "% Work Complete": 0,
+        "Work": "8h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Complete elevator inspection and certification",
+        "Resource Name": "Elevator Contractor",
+        "% Work Complete": 0,
+        "Work": "24h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Perform architect's inspection",
+        "Resource Name": "G.C. Superintendent",
+        "% Work Complete": 0,
+        "Work": "4h",
+        "Units": "50%"
+    },
+    {
+        "Task Name": "Perform architect's inspection",
+        "Resource Name": "G.C. Project Management",
+        "% Work Complete": 0,
+        "Work": "4h",
+        "Units": "50%"
+    },
+    {
+        "Task Name": "Perform local building agency inspection",
+        "Resource Name": "G.C. Project Management",
+        "% Work Complete": 0,
+        "Work": "4h",
+        "Units": "50%"
+    },
+    {
+        "Task Name": "Perform local building agency inspection",
+        "Resource Name": "G.C. Superintendent",
+        "% Work Complete": 0,
+        "Work": "4h",
+        "Units": "50%"
+    },
+    {
+        "Task Name": "Perform Fire Marshal's inspection",
+        "Resource Name": "G.C. Superintendent",
+        "% Work Complete": 0,
+        "Work": "4h",
+        "Units": "50%"
+    },
+    {
+        "Task Name": "Perform Fire Marshal's inspection",
+        "Resource Name": "G.C. Project Management",
+        "% Work Complete": 0,
+        "Work": "4h",
+        "Units": "50%"
+    },
+    {
+        "Task Name": "Complete punch list items from all inspections",
+        "Resource Name": "G.C. Superintendent",
+        "% Work Complete": 0,
+        "Work": "8.8h",
+        "Units": "11%"
+    },
+    {
+        "Task Name": "Complete punch list items from all inspections",
+        "Resource Name": "G.C. Labor Crew",
+        "% Work Complete": 0,
+        "Work": "8.8h",
+        "Units": "11%"
+    },
+    {
+        "Task Name": "Complete punch list items from all inspections",
+        "Resource Name": "Plumbing Contractor",
+        "% Work Complete": 0,
+        "Work": "8.8h",
+        "Units": "11%"
+    },
+    {
+        "Task Name": "Complete punch list items from all inspections",
+        "Resource Name": "Electric Contractor",
+        "% Work Complete": 0,
+        "Work": "8.8h",
+        "Units": "11%"
+    },
+    {
+        "Task Name": "Complete punch list items from all inspections",
+        "Resource Name": "HVAC Contractor",
+        "% Work Complete": 0,
+        "Work": "8.8h",
+        "Units": "11%"
+    },
+    {
+        "Task Name": "Complete punch list items from all inspections",
+        "Resource Name": "Drywall Contractor",
+        "% Work Complete": 0,
+        "Work": "8.8h",
+        "Units": "11%"
+    },
+    {
+        "Task Name": "Complete punch list items from all inspections",
+        "Resource Name": "Carpet Contractor",
+        "% Work Complete": 0,
+        "Work": "8.8h",
+        "Units": "11%"
+    },
+    {
+        "Task Name": "Complete punch list items from all inspections",
+        "Resource Name": "Paving Contractor",
+        "% Work Complete": 0,
+        "Work": "8.8h",
+        "Units": "11%"
+    },
+    {
+        "Task Name": "Complete punch list items from all inspections",
+        "Resource Name": "Painting Contractor",
+        "% Work Complete": 0,
+        "Work": "8.8h",
+        "Units": "11%"
+    },
+    {
+        "Task Name": "Obtain certificate of occupancy",
+        "Resource Name": "G.C. Project Management",
+        "% Work Complete": 0,
+        "Work": "16h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Issue final completion documents including warranties",
+        "Resource Name": "G.C. Project Management",
+        "% Work Complete": 0,
+        "Work": "8h",
+        "Units": "100%"
+    },
+    {
+        "Task Name": "Issue final request for payment",
+        "Resource Name": "G.C. Project Management",
+        "% Work Complete": 0,
+        "Work": "2.64h",
+        "Units": "33%"
+    },
+    {
+        "Task Name": "Issue final request for payment",
+        "Resource Name": "G.C. Accounting",
+        "% Work Complete": 0,
+        "Work": "2.64h",
+        "Units": "33%"
+    },
+    {
+        "Task Name": "Issue final request for payment",
+        "Resource Name": "G.C. General Management",
+        "% Work Complete": 0,
+        "Work": "2.64h",
+        "Units": "33%"
+    }
+]
