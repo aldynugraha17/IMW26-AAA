@@ -417,4 +417,4 @@ def solve_diophantine_soac(problem_func, sort_solutions=False):
     return valid_roots
 
 if __name__ == "__main__":
-    solve_diophantine_soac(problem_1, sort_solutions=True)
+    solve_diophantine_soac(problem_1, sort_solutions=False)

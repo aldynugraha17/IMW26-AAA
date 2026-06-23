@@ -1,0 +1,1873 @@
+[
+  {
+    "Site Work": 2,
+    "Insulation": 1,
+    "Final Punch-out": 3
+  },
+  {
+    "Final Punch-out": 2,
+    "Cleaning": 3
+  },
+  {
+    "Insulation": 1,
+    "Final Punch-out": 1,
+    "Cleaning": 3
+  },
+  {
+    "Site Work": 1,
+    "Final Punch-out": 1,
+    "Cleaning": 3
+  },
+  {
+    "Site Work": 1,
+    "Insulation": 1,
+    "Cleaning": 3
+  },
+  {
+    "Site Work": 2,
+    "Cleaning": 3
+  },
+  {
+    "Hardware": 1,
+    "Final Punch-out": 2,
+    "Cleaning": 2
+  },
+  {
+    "Insulation": 1,
+    "Hardware": 1,
+    "Final Punch-out": 1,
+    "Cleaning": 2
+  },
+  {
+    "Site Work": 1,
+    "Hardware": 1,
+    "Final Punch-out": 1,
+    "Cleaning": 2
+  },
+  {
+    "Site Work": 1,
+    "Insulation": 1,
+    "Hardware": 1,
+    "Cleaning": 2
+  },
+  {
+    "Site Work": 2,
+    "Hardware": 1,
+    "Cleaning": 2
+  },
+  {
+    "Hardware": 2,
+    "Final Punch-out": 2,
+    "Cleaning": 1
+  },
+  {
+    "Insulation": 1,
+    "Hardware": 2,
+    "Final Punch-out": 1,
+    "Cleaning": 1
+  },
+  {
+    "Site Work": 1,
+    "Hardware": 2,
+    "Final Punch-out": 1,
+    "Cleaning": 1
+  },
+  {
+    "Site Work": 1,
+    "Insulation": 1,
+    "Hardware": 2,
+    "Cleaning": 1
+  },
+  {
+    "Site Work": 2,
+    "Hardware": 2,
+    "Cleaning": 1
+  },
+  {
+    "Hardware": 3,
+    "Final Punch-out": 2
+  },
+  {
+    "Insulation": 1,
+    "Hardware": 3,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 1,
+    "Hardware": 3,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 1,
+    "Insulation": 1,
+    "Hardware": 3
+  },
+  {
+    "Site Work": 2,
+    "Hardware": 3
+  },
+  {
+    "Plumbing Trim": 1,
+    "Final Punch-out": 2,
+    "Cleaning": 2
+  },
+  {
+    "Insulation": 1,
+    "Plumbing Trim": 1,
+    "Final Punch-out": 1,
+    "Cleaning": 2
+  },
+  {
+    "Site Work": 1,
+    "Plumbing Trim": 1,
+    "Final Punch-out": 1,
+    "Cleaning": 2
+  },
+  {
+    "Site Work": 1,
+    "Insulation": 1,
+    "Plumbing Trim": 1,
+    "Cleaning": 2
+  },
+  {
+    "Site Work": 2,
+    "Plumbing Trim": 1,
+    "Cleaning": 2
+  },
+  {
+    "Plumbing Trim": 1,
+    "Hardware": 1,
+    "Final Punch-out": 2,
+    "Cleaning": 1
+  },
+  {
+    "Insulation": 1,
+    "Plumbing Trim": 1,
+    "Hardware": 1,
+    "Final Punch-out": 1,
+    "Cleaning": 1
+  },
+  {
+    "Site Work": 1,
+    "Plumbing Trim": 1,
+    "Hardware": 1,
+    "Final Punch-out": 1,
+    "Cleaning": 1
+  },
+  {
+    "Site Work": 1,
+    "Insulation": 1,
+    "Plumbing Trim": 1,
+    "Hardware": 1,
+    "Cleaning": 1
+  },
+  {
+    "Site Work": 2,
+    "Plumbing Trim": 1,
+    "Hardware": 1,
+    "Cleaning": 1
+  },
+  {
+    "Plumbing Trim": 1,
+    "Hardware": 2,
+    "Final Punch-out": 2
+  },
+  {
+    "Insulation": 1,
+    "Plumbing Trim": 1,
+    "Hardware": 2,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 1,
+    "Plumbing Trim": 1,
+    "Hardware": 2,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 1,
+    "Insulation": 1,
+    "Plumbing Trim": 1,
+    "Hardware": 2
+  },
+  {
+    "Site Work": 2,
+    "Plumbing Trim": 1,
+    "Hardware": 2
+  },
+  {
+    "Plumbing Trim": 2,
+    "Final Punch-out": 2,
+    "Cleaning": 1
+  },
+  {
+    "Insulation": 1,
+    "Plumbing Trim": 2,
+    "Final Punch-out": 1,
+    "Cleaning": 1
+  },
+  {
+    "Site Work": 1,
+    "Plumbing Trim": 2,
+    "Final Punch-out": 1,
+    "Cleaning": 1
+  },
+  {
+    "Site Work": 1,
+    "Insulation": 1,
+    "Plumbing Trim": 2,
+    "Cleaning": 1
+  },
+  {
+    "Site Work": 2,
+    "Plumbing Trim": 2,
+    "Cleaning": 1
+  },
+  {
+    "Plumbing Trim": 2,
+    "Hardware": 1,
+    "Final Punch-out": 2
+  },
+  {
+    "Insulation": 1,
+    "Plumbing Trim": 2,
+    "Hardware": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 1,
+    "Plumbing Trim": 2,
+    "Hardware": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 1,
+    "Insulation": 1,
+    "Plumbing Trim": 2,
+    "Hardware": 1
+  },
+  {
+    "Site Work": 2,
+    "Plumbing Trim": 2,
+    "Hardware": 1
+  },
+  {
+    "Concrete Slabs": 1,
+    "Final Punch-out": 2,
+    "Cleaning": 2
+  },
+  {
+    "Concrete Slabs": 1,
+    "Insulation": 1,
+    "Final Punch-out": 1,
+    "Cleaning": 2
+  },
+  {
+    "Site Work": 1,
+    "Concrete Slabs": 1,
+    "Final Punch-out": 1,
+    "Cleaning": 2
+  },
+  {
+    "Site Work": 1,
+    "Concrete Slabs": 1,
+    "Insulation": 1,
+    "Cleaning": 2
+  },
+  {
+    "Site Work": 2,
+    "Concrete Slabs": 1,
+    "Cleaning": 2
+  },
+  {
+    "Concrete Slabs": 1,
+    "Hardware": 1,
+    "Final Punch-out": 2,
+    "Cleaning": 1
+  },
+  {
+    "Concrete Slabs": 1,
+    "Insulation": 1,
+    "Hardware": 1,
+    "Final Punch-out": 1,
+    "Cleaning": 1
+  },
+  {
+    "Site Work": 1,
+    "Concrete Slabs": 1,
+    "Hardware": 1,
+    "Final Punch-out": 1,
+    "Cleaning": 1
+  },
+  {
+    "Site Work": 1,
+    "Concrete Slabs": 1,
+    "Insulation": 1,
+    "Hardware": 1,
+    "Cleaning": 1
+  },
+  {
+    "Site Work": 2,
+    "Concrete Slabs": 1,
+    "Hardware": 1,
+    "Cleaning": 1
+  },
+  {
+    "Concrete Slabs": 1,
+    "Hardware": 2,
+    "Final Punch-out": 2
+  },
+  {
+    "Concrete Slabs": 1,
+    "Insulation": 1,
+    "Hardware": 2,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 1,
+    "Concrete Slabs": 1,
+    "Hardware": 2,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 1,
+    "Concrete Slabs": 1,
+    "Insulation": 1,
+    "Hardware": 2
+  },
+  {
+    "Site Work": 2,
+    "Concrete Slabs": 1,
+    "Hardware": 2
+  },
+  {
+    "Concrete Slabs": 1,
+    "Plumbing Trim": 1,
+    "Final Punch-out": 2,
+    "Cleaning": 1
+  },
+  {
+    "Concrete Slabs": 1,
+    "Insulation": 1,
+    "Plumbing Trim": 1,
+    "Final Punch-out": 1,
+    "Cleaning": 1
+  },
+  {
+    "Site Work": 1,
+    "Concrete Slabs": 1,
+    "Plumbing Trim": 1,
+    "Final Punch-out": 1,
+    "Cleaning": 1
+  },
+  {
+    "Site Work": 1,
+    "Concrete Slabs": 1,
+    "Insulation": 1,
+    "Plumbing Trim": 1,
+    "Cleaning": 1
+  },
+  {
+    "Site Work": 2,
+    "Concrete Slabs": 1,
+    "Plumbing Trim": 1,
+    "Cleaning": 1
+  },
+  {
+    "Concrete Slabs": 1,
+    "Plumbing Trim": 1,
+    "Hardware": 1,
+    "Final Punch-out": 2
+  },
+  {
+    "Concrete Slabs": 1,
+    "Insulation": 1,
+    "Plumbing Trim": 1,
+    "Hardware": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 1,
+    "Concrete Slabs": 1,
+    "Plumbing Trim": 1,
+    "Hardware": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 1,
+    "Concrete Slabs": 1,
+    "Insulation": 1,
+    "Plumbing Trim": 1,
+    "Hardware": 1
+  },
+  {
+    "Site Work": 2,
+    "Concrete Slabs": 1,
+    "Plumbing Trim": 1,
+    "Hardware": 1
+  },
+  {
+    "Concrete Slabs": 1,
+    "Plumbing Trim": 2,
+    "Final Punch-out": 2
+  },
+  {
+    "Concrete Slabs": 1,
+    "Insulation": 1,
+    "Plumbing Trim": 2,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 1,
+    "Concrete Slabs": 1,
+    "Plumbing Trim": 2,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 1,
+    "Concrete Slabs": 1,
+    "Insulation": 1,
+    "Plumbing Trim": 2
+  },
+  {
+    "Site Work": 2,
+    "Concrete Slabs": 1,
+    "Plumbing Trim": 2
+  },
+  {
+    "Concrete Slabs": 2,
+    "Final Punch-out": 2,
+    "Cleaning": 1
+  },
+  {
+    "Concrete Slabs": 2,
+    "Insulation": 1,
+    "Final Punch-out": 1,
+    "Cleaning": 1
+  },
+  {
+    "Site Work": 1,
+    "Concrete Slabs": 2,
+    "Final Punch-out": 1,
+    "Cleaning": 1
+  },
+  {
+    "Site Work": 1,
+    "Concrete Slabs": 2,
+    "Insulation": 1,
+    "Cleaning": 1
+  },
+  {
+    "Site Work": 2,
+    "Concrete Slabs": 2,
+    "Cleaning": 1
+  },
+  {
+    "Concrete Slabs": 2,
+    "Hardware": 1,
+    "Final Punch-out": 2
+  },
+  {
+    "Concrete Slabs": 2,
+    "Insulation": 1,
+    "Hardware": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 1,
+    "Concrete Slabs": 2,
+    "Hardware": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 1,
+    "Concrete Slabs": 2,
+    "Insulation": 1,
+    "Hardware": 1
+  },
+  {
+    "Site Work": 2,
+    "Concrete Slabs": 2,
+    "Hardware": 1
+  },
+  {
+    "Concrete Slabs": 2,
+    "Plumbing Trim": 1,
+    "Final Punch-out": 2
+  },
+  {
+    "Concrete Slabs": 2,
+    "Insulation": 1,
+    "Plumbing Trim": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 1,
+    "Concrete Slabs": 2,
+    "Plumbing Trim": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 1,
+    "Concrete Slabs": 2,
+    "Insulation": 1,
+    "Plumbing Trim": 1
+  },
+  {
+    "Site Work": 2,
+    "Concrete Slabs": 2,
+    "Plumbing Trim": 1
+  },
+  {
+    "Interior Trim": 1,
+    "Final Punch-out": 3,
+    "Cleaning": 1
+  },
+  {
+    "Insulation": 1,
+    "Interior Trim": 1,
+    "Final Punch-out": 2,
+    "Cleaning": 1
+  },
+  {
+    "Site Work": 1,
+    "Interior Trim": 1,
+    "Final Punch-out": 2,
+    "Cleaning": 1
+  },
+  {
+    "Site Work": 1,
+    "Insulation": 1,
+    "Interior Trim": 1,
+    "Final Punch-out": 1,
+    "Cleaning": 1
+  },
+  {
+    "Site Work": 2,
+    "Interior Trim": 1,
+    "Final Punch-out": 1,
+    "Cleaning": 1
+  },
+  {
+    "Site Work": 2,
+    "Insulation": 1,
+    "Interior Trim": 1,
+    "Cleaning": 1
+  },
+  {
+    "Interior Trim": 1,
+    "Hardware": 1,
+    "Final Punch-out": 3
+  },
+  {
+    "Insulation": 1,
+    "Interior Trim": 1,
+    "Hardware": 1,
+    "Final Punch-out": 2
+  },
+  {
+    "Site Work": 1,
+    "Interior Trim": 1,
+    "Hardware": 1,
+    "Final Punch-out": 2
+  },
+  {
+    "Site Work": 1,
+    "Insulation": 1,
+    "Interior Trim": 1,
+    "Hardware": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 2,
+    "Interior Trim": 1,
+    "Hardware": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 2,
+    "Insulation": 1,
+    "Interior Trim": 1,
+    "Hardware": 1
+  },
+  {
+    "Interior Trim": 1,
+    "Plumbing Trim": 1,
+    "Final Punch-out": 3
+  },
+  {
+    "Insulation": 1,
+    "Interior Trim": 1,
+    "Plumbing Trim": 1,
+    "Final Punch-out": 2
+  },
+  {
+    "Site Work": 1,
+    "Interior Trim": 1,
+    "Plumbing Trim": 1,
+    "Final Punch-out": 2
+  },
+  {
+    "Site Work": 1,
+    "Insulation": 1,
+    "Interior Trim": 1,
+    "Plumbing Trim": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 2,
+    "Interior Trim": 1,
+    "Plumbing Trim": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 2,
+    "Insulation": 1,
+    "Interior Trim": 1,
+    "Plumbing Trim": 1
+  },
+  {
+    "Concrete Slabs": 1,
+    "Interior Trim": 1,
+    "Final Punch-out": 3
+  },
+  {
+    "Concrete Slabs": 1,
+    "Insulation": 1,
+    "Interior Trim": 1,
+    "Final Punch-out": 2
+  },
+  {
+    "Site Work": 1,
+    "Concrete Slabs": 1,
+    "Interior Trim": 1,
+    "Final Punch-out": 2
+  },
+  {
+    "Site Work": 1,
+    "Concrete Slabs": 1,
+    "Insulation": 1,
+    "Interior Trim": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 2,
+    "Concrete Slabs": 1,
+    "Interior Trim": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 2,
+    "Concrete Slabs": 1,
+    "Insulation": 1,
+    "Interior Trim": 1
+  },
+  {
+    "Interior Trim": 2,
+    "Cleaning": 2
+  },
+  {
+    "Interior Trim": 2,
+    "Hardware": 1,
+    "Cleaning": 1
+  },
+  {
+    "Interior Trim": 2,
+    "Hardware": 2
+  },
+  {
+    "Interior Trim": 2,
+    "Plumbing Trim": 1,
+    "Cleaning": 1
+  },
+  {
+    "Interior Trim": 2,
+    "Plumbing Trim": 1,
+    "Hardware": 1
+  },
+  {
+    "Interior Trim": 2,
+    "Plumbing Trim": 2
+  },
+  {
+    "Concrete Slabs": 1,
+    "Interior Trim": 2,
+    "Cleaning": 1
+  },
+  {
+    "Concrete Slabs": 1,
+    "Interior Trim": 2,
+    "Hardware": 1
+  },
+  {
+    "Concrete Slabs": 1,
+    "Interior Trim": 2,
+    "Plumbing Trim": 1
+  },
+  {
+    "Concrete Slabs": 2,
+    "Interior Trim": 2
+  },
+  {
+    "Interior Trim": 3,
+    "Final Punch-out": 1
+  },
+  {
+    "Insulation": 1,
+    "Interior Trim": 3
+  },
+  {
+    "Site Work": 1,
+    "Interior Trim": 3
+  },
+  {
+    "Electric Rough-in": 2,
+    "Final Punch-out": 1,
+    "Cleaning": 1
+  },
+  {
+    "Electric Rough-in": 2,
+    "Insulation": 1,
+    "Cleaning": 1
+  },
+  {
+    "Site Work": 1,
+    "Electric Rough-in": 2,
+    "Cleaning": 1
+  },
+  {
+    "Electric Rough-in": 2,
+    "Hardware": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Electric Rough-in": 2,
+    "Insulation": 1,
+    "Hardware": 1
+  },
+  {
+    "Site Work": 1,
+    "Electric Rough-in": 2,
+    "Hardware": 1
+  },
+  {
+    "Electric Rough-in": 2,
+    "Plumbing Trim": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Electric Rough-in": 2,
+    "Insulation": 1,
+    "Plumbing Trim": 1
+  },
+  {
+    "Site Work": 1,
+    "Electric Rough-in": 2,
+    "Plumbing Trim": 1
+  },
+  {
+    "Concrete Slabs": 1,
+    "Electric Rough-in": 2,
+    "Final Punch-out": 1
+  },
+  {
+    "Concrete Slabs": 1,
+    "Electric Rough-in": 2,
+    "Insulation": 1
+  },
+  {
+    "Site Work": 1,
+    "Concrete Slabs": 1,
+    "Electric Rough-in": 2
+  },
+  {
+    "H.V.A.C.": 1,
+    "Electric Rough-in": 1,
+    "Final Punch-out": 1,
+    "Cleaning": 1
+  },
+  {
+    "H.V.A.C.": 1,
+    "Electric Rough-in": 1,
+    "Insulation": 1,
+    "Cleaning": 1
+  },
+  {
+    "Site Work": 1,
+    "H.V.A.C.": 1,
+    "Electric Rough-in": 1,
+    "Cleaning": 1
+  },
+  {
+    "H.V.A.C.": 1,
+    "Electric Rough-in": 1,
+    "Hardware": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "H.V.A.C.": 1,
+    "Electric Rough-in": 1,
+    "Insulation": 1,
+    "Hardware": 1
+  },
+  {
+    "Site Work": 1,
+    "H.V.A.C.": 1,
+    "Electric Rough-in": 1,
+    "Hardware": 1
+  },
+  {
+    "H.V.A.C.": 1,
+    "Electric Rough-in": 1,
+    "Plumbing Trim": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "H.V.A.C.": 1,
+    "Electric Rough-in": 1,
+    "Insulation": 1,
+    "Plumbing Trim": 1
+  },
+  {
+    "Site Work": 1,
+    "H.V.A.C.": 1,
+    "Electric Rough-in": 1,
+    "Plumbing Trim": 1
+  },
+  {
+    "Concrete Slabs": 1,
+    "H.V.A.C.": 1,
+    "Electric Rough-in": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Concrete Slabs": 1,
+    "H.V.A.C.": 1,
+    "Electric Rough-in": 1,
+    "Insulation": 1
+  },
+  {
+    "Site Work": 1,
+    "Concrete Slabs": 1,
+    "H.V.A.C.": 1,
+    "Electric Rough-in": 1
+  },
+  {
+    "H.V.A.C.": 2,
+    "Final Punch-out": 1,
+    "Cleaning": 1
+  },
+  {
+    "H.V.A.C.": 2,
+    "Insulation": 1,
+    "Cleaning": 1
+  },
+  {
+    "Site Work": 1,
+    "H.V.A.C.": 2,
+    "Cleaning": 1
+  },
+  {
+    "H.V.A.C.": 2,
+    "Hardware": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "H.V.A.C.": 2,
+    "Insulation": 1,
+    "Hardware": 1
+  },
+  {
+    "Site Work": 1,
+    "H.V.A.C.": 2,
+    "Hardware": 1
+  },
+  {
+    "H.V.A.C.": 2,
+    "Plumbing Trim": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "H.V.A.C.": 2,
+    "Insulation": 1,
+    "Plumbing Trim": 1
+  },
+  {
+    "Site Work": 1,
+    "H.V.A.C.": 2,
+    "Plumbing Trim": 1
+  },
+  {
+    "Concrete Slabs": 1,
+    "H.V.A.C.": 2,
+    "Final Punch-out": 1
+  },
+  {
+    "Concrete Slabs": 1,
+    "H.V.A.C.": 2,
+    "Insulation": 1
+  },
+  {
+    "Site Work": 1,
+    "Concrete Slabs": 1,
+    "H.V.A.C.": 2
+  },
+  {
+    "Bids & Contracts": 1,
+    "Insulation": 1,
+    "Final Punch-out": 3
+  },
+  {
+    "Bids & Contracts": 1,
+    "Site Work": 1,
+    "Final Punch-out": 3
+  },
+  {
+    "Bids & Contracts": 1,
+    "Site Work": 1,
+    "Insulation": 1,
+    "Final Punch-out": 2
+  },
+  {
+    "Bids & Contracts": 1,
+    "Site Work": 2,
+    "Final Punch-out": 2
+  },
+  {
+    "Bids & Contracts": 1,
+    "Site Work": 2,
+    "Insulation": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Bids & Contracts": 1,
+    "Cleaning": 3
+  },
+  {
+    "Bids & Contracts": 1,
+    "Hardware": 1,
+    "Cleaning": 2
+  },
+  {
+    "Bids & Contracts": 1,
+    "Hardware": 2,
+    "Cleaning": 1
+  },
+  {
+    "Bids & Contracts": 1,
+    "Hardware": 3
+  },
+  {
+    "Bids & Contracts": 1,
+    "Plumbing Trim": 1,
+    "Cleaning": 2
+  },
+  {
+    "Bids & Contracts": 1,
+    "Plumbing Trim": 1,
+    "Hardware": 1,
+    "Cleaning": 1
+  },
+  {
+    "Bids & Contracts": 1,
+    "Plumbing Trim": 1,
+    "Hardware": 2
+  },
+  {
+    "Bids & Contracts": 1,
+    "Plumbing Trim": 2,
+    "Cleaning": 1
+  },
+  {
+    "Bids & Contracts": 1,
+    "Plumbing Trim": 2,
+    "Hardware": 1
+  },
+  {
+    "Bids & Contracts": 1,
+    "Concrete Slabs": 1,
+    "Cleaning": 2
+  },
+  {
+    "Bids & Contracts": 1,
+    "Concrete Slabs": 1,
+    "Hardware": 1,
+    "Cleaning": 1
+  },
+  {
+    "Bids & Contracts": 1,
+    "Concrete Slabs": 1,
+    "Hardware": 2
+  },
+  {
+    "Bids & Contracts": 1,
+    "Concrete Slabs": 1,
+    "Plumbing Trim": 1,
+    "Cleaning": 1
+  },
+  {
+    "Bids & Contracts": 1,
+    "Concrete Slabs": 1,
+    "Plumbing Trim": 1,
+    "Hardware": 1
+  },
+  {
+    "Bids & Contracts": 1,
+    "Concrete Slabs": 1,
+    "Plumbing Trim": 2
+  },
+  {
+    "Bids & Contracts": 1,
+    "Concrete Slabs": 2,
+    "Cleaning": 1
+  },
+  {
+    "Bids & Contracts": 1,
+    "Concrete Slabs": 2,
+    "Hardware": 1
+  },
+  {
+    "Bids & Contracts": 1,
+    "Concrete Slabs": 2,
+    "Plumbing Trim": 1
+  },
+  {
+    "Bids & Contracts": 1,
+    "Interior Trim": 1,
+    "Final Punch-out": 1,
+    "Cleaning": 1
+  },
+  {
+    "Bids & Contracts": 1,
+    "Insulation": 1,
+    "Interior Trim": 1,
+    "Cleaning": 1
+  },
+  {
+    "Bids & Contracts": 1,
+    "Site Work": 1,
+    "Interior Trim": 1,
+    "Cleaning": 1
+  },
+  {
+    "Bids & Contracts": 1,
+    "Interior Trim": 1,
+    "Hardware": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Bids & Contracts": 1,
+    "Insulation": 1,
+    "Interior Trim": 1,
+    "Hardware": 1
+  },
+  {
+    "Bids & Contracts": 1,
+    "Site Work": 1,
+    "Interior Trim": 1,
+    "Hardware": 1
+  },
+  {
+    "Bids & Contracts": 1,
+    "Interior Trim": 1,
+    "Plumbing Trim": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Bids & Contracts": 1,
+    "Insulation": 1,
+    "Interior Trim": 1,
+    "Plumbing Trim": 1
+  },
+  {
+    "Bids & Contracts": 1,
+    "Site Work": 1,
+    "Interior Trim": 1,
+    "Plumbing Trim": 1
+  },
+  {
+    "Bids & Contracts": 1,
+    "Concrete Slabs": 1,
+    "Interior Trim": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Bids & Contracts": 1,
+    "Concrete Slabs": 1,
+    "Insulation": 1,
+    "Interior Trim": 1
+  },
+  {
+    "Bids & Contracts": 1,
+    "Site Work": 1,
+    "Concrete Slabs": 1,
+    "Interior Trim": 1
+  },
+  {
+    "Bids & Contracts": 2,
+    "Final Punch-out": 2
+  },
+  {
+    "Bids & Contracts": 2,
+    "Insulation": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Bids & Contracts": 2,
+    "Site Work": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Bids & Contracts": 2,
+    "Site Work": 1,
+    "Insulation": 1
+  },
+  {
+    "Bids & Contracts": 2,
+    "Site Work": 2
+  },
+  {
+    "Bids & Contracts": 3
+  },
+  {
+    "Plumbing Rough-in": 1,
+    "Electric Rough-in": 1,
+    "Final Punch-out": 2
+  },
+  {
+    "Plumbing Rough-in": 1,
+    "Electric Rough-in": 1,
+    "Insulation": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 1,
+    "Plumbing Rough-in": 1,
+    "Electric Rough-in": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 1,
+    "Plumbing Rough-in": 1,
+    "Electric Rough-in": 1,
+    "Insulation": 1
+  },
+  {
+    "Site Work": 2,
+    "Plumbing Rough-in": 1,
+    "Electric Rough-in": 1
+  },
+  {
+    "H.V.A.C.": 1,
+    "Plumbing Rough-in": 1,
+    "Final Punch-out": 2
+  },
+  {
+    "H.V.A.C.": 1,
+    "Plumbing Rough-in": 1,
+    "Insulation": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 1,
+    "H.V.A.C.": 1,
+    "Plumbing Rough-in": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 1,
+    "H.V.A.C.": 1,
+    "Plumbing Rough-in": 1,
+    "Insulation": 1
+  },
+  {
+    "Site Work": 2,
+    "H.V.A.C.": 1,
+    "Plumbing Rough-in": 1
+  },
+  {
+    "Bids & Contracts": 1,
+    "Plumbing Rough-in": 1,
+    "Electric Rough-in": 1
+  },
+  {
+    "Bids & Contracts": 1,
+    "H.V.A.C.": 1,
+    "Plumbing Rough-in": 1
+  },
+  {
+    "Plumbing Rough-in": 2,
+    "Interior Trim": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Final Punch-out": 1,
+    "Cleaning": 2
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Insulation": 1,
+    "Cleaning": 2
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Site Work": 1,
+    "Cleaning": 2
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Hardware": 1,
+    "Final Punch-out": 1,
+    "Cleaning": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Insulation": 1,
+    "Hardware": 1,
+    "Cleaning": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Site Work": 1,
+    "Hardware": 1,
+    "Cleaning": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Hardware": 2,
+    "Final Punch-out": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Insulation": 1,
+    "Hardware": 2
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Site Work": 1,
+    "Hardware": 2
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Plumbing Trim": 1,
+    "Final Punch-out": 1,
+    "Cleaning": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Insulation": 1,
+    "Plumbing Trim": 1,
+    "Cleaning": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Site Work": 1,
+    "Plumbing Trim": 1,
+    "Cleaning": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Plumbing Trim": 1,
+    "Hardware": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Insulation": 1,
+    "Plumbing Trim": 1,
+    "Hardware": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Site Work": 1,
+    "Plumbing Trim": 1,
+    "Hardware": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Plumbing Trim": 2,
+    "Final Punch-out": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Insulation": 1,
+    "Plumbing Trim": 2
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Site Work": 1,
+    "Plumbing Trim": 2
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Concrete Slabs": 1,
+    "Final Punch-out": 1,
+    "Cleaning": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Concrete Slabs": 1,
+    "Insulation": 1,
+    "Cleaning": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Site Work": 1,
+    "Concrete Slabs": 1,
+    "Cleaning": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Concrete Slabs": 1,
+    "Hardware": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Concrete Slabs": 1,
+    "Insulation": 1,
+    "Hardware": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Site Work": 1,
+    "Concrete Slabs": 1,
+    "Hardware": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Concrete Slabs": 1,
+    "Plumbing Trim": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Concrete Slabs": 1,
+    "Insulation": 1,
+    "Plumbing Trim": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Site Work": 1,
+    "Concrete Slabs": 1,
+    "Plumbing Trim": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Concrete Slabs": 2,
+    "Final Punch-out": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Concrete Slabs": 2,
+    "Insulation": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Site Work": 1,
+    "Concrete Slabs": 2
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Interior Trim": 1,
+    "Final Punch-out": 2
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Insulation": 1,
+    "Interior Trim": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Site Work": 1,
+    "Interior Trim": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Site Work": 1,
+    "Insulation": 1,
+    "Interior Trim": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Site Work": 2,
+    "Interior Trim": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Electric Rough-in": 2
+  },
+  {
+    "Grading & Building Permits": 1,
+    "H.V.A.C.": 1,
+    "Electric Rough-in": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "H.V.A.C.": 2
+  },
+  {
+    "Bids & Contracts": 1,
+    "Grading & Building Permits": 1,
+    "Interior Trim": 1
+  },
+  {
+    "Grading & Building Permits": 2,
+    "Cleaning": 1
+  },
+  {
+    "Grading & Building Permits": 2,
+    "Hardware": 1
+  },
+  {
+    "Grading & Building Permits": 2,
+    "Plumbing Trim": 1
+  },
+  {
+    "Grading & Building Permits": 2,
+    "Concrete Slabs": 1
+  },
+  {
+    "Drywall": 1,
+    "Final Punch-out": 2,
+    "Cleaning": 1
+  },
+  {
+    "Insulation": 1,
+    "Drywall": 1,
+    "Final Punch-out": 1,
+    "Cleaning": 1
+  },
+  {
+    "Site Work": 1,
+    "Drywall": 1,
+    "Final Punch-out": 1,
+    "Cleaning": 1
+  },
+  {
+    "Site Work": 1,
+    "Insulation": 1,
+    "Drywall": 1,
+    "Cleaning": 1
+  },
+  {
+    "Site Work": 2,
+    "Drywall": 1,
+    "Cleaning": 1
+  },
+  {
+    "Drywall": 1,
+    "Hardware": 1,
+    "Final Punch-out": 2
+  },
+  {
+    "Insulation": 1,
+    "Drywall": 1,
+    "Hardware": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 1,
+    "Drywall": 1,
+    "Hardware": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 1,
+    "Insulation": 1,
+    "Drywall": 1,
+    "Hardware": 1
+  },
+  {
+    "Site Work": 2,
+    "Drywall": 1,
+    "Hardware": 1
+  },
+  {
+    "Drywall": 1,
+    "Plumbing Trim": 1,
+    "Final Punch-out": 2
+  },
+  {
+    "Insulation": 1,
+    "Drywall": 1,
+    "Plumbing Trim": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 1,
+    "Drywall": 1,
+    "Plumbing Trim": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 1,
+    "Insulation": 1,
+    "Drywall": 1,
+    "Plumbing Trim": 1
+  },
+  {
+    "Site Work": 2,
+    "Drywall": 1,
+    "Plumbing Trim": 1
+  },
+  {
+    "Concrete Slabs": 1,
+    "Drywall": 1,
+    "Final Punch-out": 2
+  },
+  {
+    "Concrete Slabs": 1,
+    "Insulation": 1,
+    "Drywall": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 1,
+    "Concrete Slabs": 1,
+    "Drywall": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 1,
+    "Concrete Slabs": 1,
+    "Insulation": 1,
+    "Drywall": 1
+  },
+  {
+    "Site Work": 2,
+    "Concrete Slabs": 1,
+    "Drywall": 1
+  },
+  {
+    "Drywall": 1,
+    "Interior Trim": 2
+  },
+  {
+    "Bids & Contracts": 1,
+    "Drywall": 1,
+    "Cleaning": 1
+  },
+  {
+    "Bids & Contracts": 1,
+    "Drywall": 1,
+    "Hardware": 1
+  },
+  {
+    "Bids & Contracts": 1,
+    "Drywall": 1,
+    "Plumbing Trim": 1
+  },
+  {
+    "Bids & Contracts": 1,
+    "Concrete Slabs": 1,
+    "Drywall": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Drywall": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Insulation": 1,
+    "Drywall": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Site Work": 1,
+    "Drywall": 1
+  },
+  {
+    "Foundation": 1,
+    "Final Punch-out": 2,
+    "Cleaning": 1
+  },
+  {
+    "Foundation": 1,
+    "Insulation": 1,
+    "Final Punch-out": 1,
+    "Cleaning": 1
+  },
+  {
+    "Site Work": 1,
+    "Foundation": 1,
+    "Final Punch-out": 1,
+    "Cleaning": 1
+  },
+  {
+    "Site Work": 1,
+    "Foundation": 1,
+    "Insulation": 1,
+    "Cleaning": 1
+  },
+  {
+    "Site Work": 2,
+    "Foundation": 1,
+    "Cleaning": 1
+  },
+  {
+    "Foundation": 1,
+    "Hardware": 1,
+    "Final Punch-out": 2
+  },
+  {
+    "Foundation": 1,
+    "Insulation": 1,
+    "Hardware": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 1,
+    "Foundation": 1,
+    "Hardware": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 1,
+    "Foundation": 1,
+    "Insulation": 1,
+    "Hardware": 1
+  },
+  {
+    "Site Work": 2,
+    "Foundation": 1,
+    "Hardware": 1
+  },
+  {
+    "Foundation": 1,
+    "Plumbing Trim": 1,
+    "Final Punch-out": 2
+  },
+  {
+    "Foundation": 1,
+    "Insulation": 1,
+    "Plumbing Trim": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 1,
+    "Foundation": 1,
+    "Plumbing Trim": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 1,
+    "Foundation": 1,
+    "Insulation": 1,
+    "Plumbing Trim": 1
+  },
+  {
+    "Site Work": 2,
+    "Foundation": 1,
+    "Plumbing Trim": 1
+  },
+  {
+    "Foundation": 1,
+    "Concrete Slabs": 1,
+    "Final Punch-out": 2
+  },
+  {
+    "Foundation": 1,
+    "Concrete Slabs": 1,
+    "Insulation": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 1,
+    "Foundation": 1,
+    "Concrete Slabs": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 1,
+    "Foundation": 1,
+    "Concrete Slabs": 1,
+    "Insulation": 1
+  },
+  {
+    "Site Work": 2,
+    "Foundation": 1,
+    "Concrete Slabs": 1
+  },
+  {
+    "Foundation": 1,
+    "Interior Trim": 2
+  },
+  {
+    "Bids & Contracts": 1,
+    "Foundation": 1,
+    "Cleaning": 1
+  },
+  {
+    "Bids & Contracts": 1,
+    "Foundation": 1,
+    "Hardware": 1
+  },
+  {
+    "Bids & Contracts": 1,
+    "Foundation": 1,
+    "Plumbing Trim": 1
+  },
+  {
+    "Bids & Contracts": 1,
+    "Foundation": 1,
+    "Concrete Slabs": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Foundation": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Foundation": 1,
+    "Insulation": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Site Work": 1,
+    "Foundation": 1
+  },
+  {
+    "Rough Carpentry": 1,
+    "Final Punch-out": 3
+  },
+  {
+    "Rough Carpentry": 1,
+    "Insulation": 1,
+    "Final Punch-out": 2
+  },
+  {
+    "Site Work": 1,
+    "Rough Carpentry": 1,
+    "Final Punch-out": 2
+  },
+  {
+    "Site Work": 1,
+    "Rough Carpentry": 1,
+    "Insulation": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 2,
+    "Rough Carpentry": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Site Work": 2,
+    "Rough Carpentry": 1,
+    "Insulation": 1
+  },
+  {
+    "Rough Carpentry": 1,
+    "Interior Trim": 1,
+    "Cleaning": 1
+  },
+  {
+    "Rough Carpentry": 1,
+    "Interior Trim": 1,
+    "Hardware": 1
+  },
+  {
+    "Rough Carpentry": 1,
+    "Interior Trim": 1,
+    "Plumbing Trim": 1
+  },
+  {
+    "Rough Carpentry": 1,
+    "Concrete Slabs": 1,
+    "Interior Trim": 1
+  },
+  {
+    "Bids & Contracts": 1,
+    "Rough Carpentry": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Bids & Contracts": 1,
+    "Rough Carpentry": 1,
+    "Insulation": 1
+  },
+  {
+    "Bids & Contracts": 1,
+    "Site Work": 1,
+    "Rough Carpentry": 1
+  },
+  {
+    "Rough Carpentry": 2
+  },
+  {
+    "Paint": 1,
+    "Final Punch-out": 1,
+    "Cleaning": 1
+  },
+  {
+    "Insulation": 1,
+    "Paint": 1,
+    "Cleaning": 1
+  },
+  {
+    "Site Work": 1,
+    "Paint": 1,
+    "Cleaning": 1
+  },
+  {
+    "Paint": 1,
+    "Hardware": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Insulation": 1,
+    "Paint": 1,
+    "Hardware": 1
+  },
+  {
+    "Site Work": 1,
+    "Paint": 1,
+    "Hardware": 1
+  },
+  {
+    "Paint": 1,
+    "Plumbing Trim": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Insulation": 1,
+    "Paint": 1,
+    "Plumbing Trim": 1
+  },
+  {
+    "Site Work": 1,
+    "Paint": 1,
+    "Plumbing Trim": 1
+  },
+  {
+    "Concrete Slabs": 1,
+    "Paint": 1,
+    "Final Punch-out": 1
+  },
+  {
+    "Concrete Slabs": 1,
+    "Insulation": 1,
+    "Paint": 1
+  },
+  {
+    "Site Work": 1,
+    "Concrete Slabs": 1,
+    "Paint": 1
+  },
+  {
+    "Grading & Building Permits": 1,
+    "Paint": 1
+  },
+  {
+    "Floor Finishes": 1,
+    "Interior Trim": 1
+  },
+  {
+    "Exterior Finishes": 1
+  }
+]
