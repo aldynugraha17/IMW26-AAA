@@ -1,0 +1,1185 @@
+{
+  "2": {
+    "activity_name": "Receive notice to proceed and sign contract",
+    "activity_normal_time": 3,
+    "activity_min_time": 2,
+    "crash_cost": 288.0,
+    "required_activities": []
+  },
+  "3": {
+    "activity_name": "Submit bond and insurance documents",
+    "activity_normal_time": 2,
+    "activity_min_time": 1,
+    "crash_cost": 200.0,
+    "required_activities": [
+      "2"
+    ]
+  },
+  "4": {
+    "activity_name": "Prepare and submit project schedule",
+    "activity_normal_time": 2,
+    "activity_min_time": 1,
+    "crash_cost": 166.0,
+    "required_activities": [
+      "3"
+    ]
+  },
+  "5": {
+    "activity_name": "Prepare and submit schedule of values",
+    "activity_normal_time": 2,
+    "activity_min_time": 1,
+    "crash_cost": 171.2,
+    "required_activities": [
+      "4"
+    ]
+  },
+  "6": {
+    "activity_name": "Obtain building permits",
+    "activity_normal_time": 4,
+    "activity_min_time": 2,
+    "crash_cost": 272.0,
+    "required_activities": [
+      "2"
+    ]
+  },
+  "7": {
+    "activity_name": "Submit preliminary shop drawings",
+    "activity_normal_time": 10,
+    "activity_min_time": 5,
+    "crash_cost": 680.0,
+    "required_activities": [
+      "6"
+    ]
+  },
+  "8": {
+    "activity_name": "Submit monthly requests for payment",
+    "activity_normal_time": 1,
+    "activity_min_time": 1,
+    "crash_cost": 24.0,
+    "required_activities": [
+      "2"
+    ]
+  },
+  "10": {
+    "activity_name": "Submit shop drawings and order long lead items - steel",
+    "activity_normal_time": 10,
+    "activity_min_time": 5,
+    "crash_cost": 680.0,
+    "required_activities": [
+      "8"
+    ]
+  },
+  "11": {
+    "activity_name": "Submit shop drawings and order long lead items - roofing",
+    "activity_normal_time": 10,
+    "activity_min_time": 5,
+    "crash_cost": 600.0,
+    "required_activities": [
+      "7"
+    ]
+  },
+  "12": {
+    "activity_name": "Submit shop drawings and order long lead items - elevator",
+    "activity_normal_time": 10,
+    "activity_min_time": 5,
+    "crash_cost": 720.0,
+    "required_activities": [
+      "7"
+    ]
+  },
+  "13": {
+    "activity_name": "Submit shop drawings and order long lead items - plumbing",
+    "activity_normal_time": 10,
+    "activity_min_time": 5,
+    "crash_cost": 640.0,
+    "required_activities": [
+      "7"
+    ]
+  },
+  "14": {
+    "activity_name": "Submit shop drawings and order long lead items - electric",
+    "activity_normal_time": 10,
+    "activity_min_time": 5,
+    "crash_cost": 640.0,
+    "required_activities": [
+      "7"
+    ]
+  },
+  "15": {
+    "activity_name": "Submit shop drawings and order long lead items - HVAC",
+    "activity_normal_time": 10,
+    "activity_min_time": 5,
+    "crash_cost": 640.0,
+    "required_activities": [
+      "7"
+    ]
+  },
+  "16": {
+    "activity_name": "Detail, fabricate and deliver steel",
+    "activity_normal_time": 60,
+    "activity_min_time": 30,
+    "crash_cost": 3840.0,
+    "required_activities": [
+      "10"
+    ]
+  },
+  "18": {
+    "activity_name": "Install temporary power",
+    "activity_normal_time": 2,
+    "activity_min_time": 1,
+    "crash_cost": 104.0,
+    "required_activities": [
+      "2"
+    ]
+  },
+  "19": {
+    "activity_name": "Install temporary water service",
+    "activity_normal_time": 2,
+    "activity_min_time": 1,
+    "crash_cost": 104.0,
+    "required_activities": [
+      "2"
+    ]
+  },
+  "20": {
+    "activity_name": "Set up site office",
+    "activity_normal_time": 3,
+    "activity_min_time": 2,
+    "crash_cost": 211.2,
+    "required_activities": [
+      "18",
+      "19"
+    ]
+  },
+  "21": {
+    "activity_name": "Set line and grade benchmarks",
+    "activity_normal_time": 3,
+    "activity_min_time": 2,
+    "crash_cost": 156.0,
+    "required_activities": [
+      "20"
+    ]
+  },
+  "22": {
+    "activity_name": "Prepare site - lay down yard and temporary fencing",
+    "activity_normal_time": 2,
+    "activity_min_time": 1,
+    "crash_cost": 116.8,
+    "required_activities": [
+      "21"
+    ]
+  },
+  "24": {
+    "activity_name": "Clear and grub site",
+    "activity_normal_time": 3,
+    "activity_min_time": 2,
+    "crash_cost": 168.0,
+    "required_activities": [
+      "20",
+      "22"
+    ]
+  },
+  "25": {
+    "activity_name": "Stone site access and temporary parking area",
+    "activity_normal_time": 2,
+    "activity_min_time": 1,
+    "crash_cost": 112.0,
+    "required_activities": [
+      "24",
+      "22"
+    ]
+  },
+  "26": {
+    "activity_name": "Rough grade site (cut and fill)",
+    "activity_normal_time": 5,
+    "activity_min_time": 3,
+    "crash_cost": 280.0,
+    "required_activities": [
+      "25"
+    ]
+  },
+  "27": {
+    "activity_name": "Install storm drainage",
+    "activity_normal_time": 10,
+    "activity_min_time": 5,
+    "crash_cost": 560.0,
+    "required_activities": [
+      "26"
+    ]
+  },
+  "28": {
+    "activity_name": "Install exterior fire line and building fire riser",
+    "activity_normal_time": 10,
+    "activity_min_time": 5,
+    "crash_cost": 520.0,
+    "required_activities": [
+      "26"
+    ]
+  },
+  "29": {
+    "activity_name": "Perform final site grading",
+    "activity_normal_time": 10,
+    "activity_min_time": 5,
+    "crash_cost": 560.0,
+    "required_activities": [
+      "27",
+      "28"
+    ]
+  },
+  "30": {
+    "activity_name": "Erect building batter boards and layout building",
+    "activity_normal_time": 5,
+    "activity_min_time": 3,
+    "crash_cost": 260.0,
+    "required_activities": [
+      "29"
+    ]
+  },
+  "32": {
+    "activity_name": "Excavate foundations",
+    "activity_normal_time": 10,
+    "activity_min_time": 5,
+    "crash_cost": 280.0,
+    "required_activities": [
+      "30"
+    ]
+  },
+  "33": {
+    "activity_name": "Excavate elevator pit",
+    "activity_normal_time": 2,
+    "activity_min_time": 1,
+    "crash_cost": 112.0,
+    "required_activities": [
+      "30"
+    ]
+  },
+  "34": {
+    "activity_name": "Form column piers and spread foundations",
+    "activity_normal_time": 4,
+    "activity_min_time": 2,
+    "crash_cost": 176.0,
+    "required_activities": [
+      "32"
+    ]
+  },
+  "35": {
+    "activity_name": "Rough-in electric and plumbing in elevator",
+    "activity_normal_time": 4,
+    "activity_min_time": 2,
+    "crash_cost": 416.0,
+    "required_activities": [
+      "33"
+    ]
+  },
+  "36": {
+    "activity_name": "Form elevator pit walls",
+    "activity_normal_time": 4,
+    "activity_min_time": 2,
+    "crash_cost": 176.0,
+    "required_activities": [
+      "35"
+    ]
+  },
+  "37": {
+    "activity_name": "Set reinforcing and anchor bolts",
+    "activity_normal_time": 4,
+    "activity_min_time": 2,
+    "crash_cost": 176.0,
+    "required_activities": [
+      "34"
+    ]
+  },
+  "38": {
+    "activity_name": "Pour column piers and foundations",
+    "activity_normal_time": 5,
+    "activity_min_time": 3,
+    "crash_cost": 240.0,
+    "required_activities": [
+      "37"
+    ]
+  },
+  "39": {
+    "activity_name": "Pour concrete elevator walls",
+    "activity_normal_time": 1,
+    "activity_min_time": 1,
+    "crash_cost": 48.0,
+    "required_activities": [
+      "36"
+    ]
+  },
+  "40": {
+    "activity_name": "Cure elevator wall concrete",
+    "activity_normal_time": 7,
+    "activity_min_time": 4,
+    "crash_cost": 16.8,
+    "required_activities": [
+      "39"
+    ]
+  },
+  "41": {
+    "activity_name": "Cure piers and foundations",
+    "activity_normal_time": 7,
+    "activity_min_time": 4,
+    "crash_cost": 16.8,
+    "required_activities": [
+      "38"
+    ]
+  },
+  "42": {
+    "activity_name": "Strip wall forms",
+    "activity_normal_time": 1,
+    "activity_min_time": 1,
+    "crash_cost": 2.4,
+    "required_activities": [
+      "40"
+    ]
+  },
+  "43": {
+    "activity_name": "Strip column piers and foundation forms",
+    "activity_normal_time": 3,
+    "activity_min_time": 2,
+    "crash_cost": 72.0,
+    "required_activities": [
+      "41"
+    ]
+  },
+  "44": {
+    "activity_name": "Install pneumatic tube in elevator pit",
+    "activity_normal_time": 3,
+    "activity_min_time": 2,
+    "crash_cost": 192.0,
+    "required_activities": [
+      "42"
+    ]
+  },
+  "45": {
+    "activity_name": "Prepare and pour concrete floor in elevator pit",
+    "activity_normal_time": 1,
+    "activity_min_time": 1,
+    "crash_cost": 48.0,
+    "required_activities": [
+      "44"
+    ]
+  },
+  "47": {
+    "activity_name": "Erect steel columns, beams and joist - 1st and 2nd floors",
+    "activity_normal_time": 10,
+    "activity_min_time": 5,
+    "crash_cost": 600.0,
+    "required_activities": [
+      "43",
+      "16"
+    ]
+  },
+  "48": {
+    "activity_name": "Erect steel columns, beams and joist - 3rd floor and roof",
+    "activity_normal_time": 10,
+    "activity_min_time": 5,
+    "crash_cost": 600.0,
+    "required_activities": [
+      "47"
+    ]
+  },
+  "49": {
+    "activity_name": "Install miscellaneous iron and bracing - 1st and 2nd floors",
+    "activity_normal_time": 10,
+    "activity_min_time": 5,
+    "crash_cost": 450.0,
+    "required_activities": [
+      "47"
+    ]
+  },
+  "50": {
+    "activity_name": "Install miscellaneous iron and bracing - 3rd floor and roof",
+    "activity_normal_time": 10,
+    "activity_min_time": 5,
+    "crash_cost": 450.0,
+    "required_activities": [
+      "48"
+    ]
+  },
+  "51": {
+    "activity_name": "Install stairs and miscellaneous iron railing",
+    "activity_normal_time": 10,
+    "activity_min_time": 5,
+    "crash_cost": 300.0,
+    "required_activities": [
+      "50"
+    ]
+  },
+  "52": {
+    "activity_name": "Touch-up paint on steel",
+    "activity_normal_time": 5,
+    "activity_min_time": 3,
+    "crash_cost": 60.0,
+    "required_activities": [
+      "51"
+    ]
+  },
+  "54": {
+    "activity_name": "Form 2nd floor including all floor openings",
+    "activity_normal_time": 5,
+    "activity_min_time": 3,
+    "crash_cost": 244.0,
+    "required_activities": [
+      "52",
+      "13",
+      "14",
+      "15",
+      "47"
+    ]
+  },
+  "55": {
+    "activity_name": "Install rebar and in-floor utilities (including mechanical, electrical, plumbing)",
+    "activity_normal_time": 5,
+    "activity_min_time": 3,
+    "crash_cost": 211.2,
+    "required_activities": [
+      "47"
+    ]
+  },
+  "56": {
+    "activity_name": "Pour 2nd floor slab",
+    "activity_normal_time": 4,
+    "activity_min_time": 2,
+    "crash_cost": 192.0,
+    "required_activities": [
+      "55",
+      "54"
+    ]
+  },
+  "57": {
+    "activity_name": "Cure 2nd floor slab",
+    "activity_normal_time": 7,
+    "activity_min_time": 4,
+    "crash_cost": 16.8,
+    "required_activities": [
+      "56"
+    ]
+  },
+  "58": {
+    "activity_name": "Strip forms from 2nd floor slab",
+    "activity_normal_time": 2,
+    "activity_min_time": 1,
+    "crash_cost": 48.0,
+    "required_activities": [
+      "57"
+    ]
+  },
+  "59": {
+    "activity_name": "Form 3rd floor including all floor openings",
+    "activity_normal_time": 5,
+    "activity_min_time": 3,
+    "crash_cost": 134.0,
+    "required_activities": [
+      "57"
+    ]
+  },
+  "60": {
+    "activity_name": "Install rebar and in-floor utilities (including mechanical, electrical, plumbing)",
+    "activity_normal_time": 5,
+    "activity_min_time": 3,
+    "crash_cost": 211.2,
+    "required_activities": [
+      "57"
+    ]
+  },
+  "61": {
+    "activity_name": "Pour 3rd floor slab",
+    "activity_normal_time": 4,
+    "activity_min_time": 2,
+    "crash_cost": 192.0,
+    "required_activities": [
+      "60",
+      "59"
+    ]
+  },
+  "62": {
+    "activity_name": "Cure 3rd floor slab",
+    "activity_normal_time": 7,
+    "activity_min_time": 4,
+    "crash_cost": 16.8,
+    "required_activities": [
+      "61"
+    ]
+  },
+  "63": {
+    "activity_name": "Strip forms from 3rd floor slab",
+    "activity_normal_time": 2,
+    "activity_min_time": 1,
+    "crash_cost": 48.0,
+    "required_activities": [
+      "62"
+    ]
+  },
+  "64": {
+    "activity_name": "Form roof slab including all floor openings",
+    "activity_normal_time": 5,
+    "activity_min_time": 3,
+    "crash_cost": 244.0,
+    "required_activities": [
+      "62"
+    ]
+  },
+  "65": {
+    "activity_name": "Install rebar and in-floor utilities (including mechanical, electrical, plumbing)",
+    "activity_normal_time": 5,
+    "activity_min_time": 3,
+    "crash_cost": 211.2,
+    "required_activities": [
+      "62"
+    ]
+  },
+  "66": {
+    "activity_name": "Pour roof slab",
+    "activity_normal_time": 4,
+    "activity_min_time": 2,
+    "crash_cost": 192.0,
+    "required_activities": [
+      "65",
+      "64"
+    ]
+  },
+  "67": {
+    "activity_name": "Cure roof slab",
+    "activity_normal_time": 7,
+    "activity_min_time": 4,
+    "crash_cost": 16.8,
+    "required_activities": [
+      "66"
+    ]
+  },
+  "68": {
+    "activity_name": "Strip forms from roof slab",
+    "activity_normal_time": 2,
+    "activity_min_time": 1,
+    "crash_cost": 48.0,
+    "required_activities": [
+      "67"
+    ]
+  },
+  "69": {
+    "activity_name": "Form 1st floor",
+    "activity_normal_time": 4,
+    "activity_min_time": 2,
+    "crash_cost": 176.0,
+    "required_activities": [
+      "58"
+    ]
+  },
+  "70": {
+    "activity_name": "Install electrical underground",
+    "activity_normal_time": 5,
+    "activity_min_time": 3,
+    "crash_cost": 260.0,
+    "required_activities": [
+      "58"
+    ]
+  },
+  "71": {
+    "activity_name": "Install plumbing underground",
+    "activity_normal_time": 5,
+    "activity_min_time": 3,
+    "crash_cost": 260.0,
+    "required_activities": [
+      "58"
+    ]
+  },
+  "72": {
+    "activity_name": "Install rebar and in-floor utilities",
+    "activity_normal_time": 4,
+    "activity_min_time": 2,
+    "crash_cost": 168.96,
+    "required_activities": [
+      "58"
+    ]
+  },
+  "73": {
+    "activity_name": "Pour 1st floor slab",
+    "activity_normal_time": 4,
+    "activity_min_time": 2,
+    "crash_cost": 192.0,
+    "required_activities": [
+      "69",
+      "72",
+      "70",
+      "71"
+    ]
+  },
+  "74": {
+    "activity_name": "Cure 1st floor slab",
+    "activity_normal_time": 7,
+    "activity_min_time": 4,
+    "crash_cost": 16.8,
+    "required_activities": [
+      "73"
+    ]
+  },
+  "75": {
+    "activity_name": "Strip forms from 1st floor slab",
+    "activity_normal_time": 2,
+    "activity_min_time": 1,
+    "crash_cost": 48.0,
+    "required_activities": [
+      "74"
+    ]
+  },
+  "77": {
+    "activity_name": "Install exterior sheathing and metal studs",
+    "activity_normal_time": 15,
+    "activity_min_time": 8,
+    "crash_cost": 600.0,
+    "required_activities": [
+      "63",
+      "68"
+    ]
+  },
+  "79": {
+    "activity_name": "Rough-in plumbing at toilets and masonry walls",
+    "activity_normal_time": 20,
+    "activity_min_time": 10,
+    "crash_cost": 1040.0,
+    "required_activities": [
+      "75",
+      "13"
+    ]
+  },
+  "80": {
+    "activity_name": "Lay masonry at core, mechanical, and toilets",
+    "activity_normal_time": 20,
+    "activity_min_time": 10,
+    "crash_cost": 880.0,
+    "required_activities": [
+      "49",
+      "50"
+    ]
+  },
+  "81": {
+    "activity_name": "Install exterior masonry work",
+    "activity_normal_time": 25,
+    "activity_min_time": 13,
+    "crash_cost": 1100.0,
+    "required_activities": [
+      "77"
+    ]
+  },
+  "82": {
+    "activity_name": "Install roof drains",
+    "activity_normal_time": 2,
+    "activity_min_time": 1,
+    "crash_cost": 88.0,
+    "required_activities": [
+      "81"
+    ]
+  },
+  "83": {
+    "activity_name": "Install tile in toilet rooms",
+    "activity_normal_time": 10,
+    "activity_min_time": 5,
+    "crash_cost": 440.0,
+    "required_activities": [
+      "79"
+    ]
+  },
+  "84": {
+    "activity_name": "Clean masonry",
+    "activity_normal_time": 5,
+    "activity_min_time": 3,
+    "crash_cost": 110.0,
+    "required_activities": [
+      "81"
+    ]
+  },
+  "85": {
+    "activity_name": "Clean toilet room tile",
+    "activity_normal_time": 5,
+    "activity_min_time": 3,
+    "crash_cost": 110.0,
+    "required_activities": [
+      "83"
+    ]
+  },
+  "87": {
+    "activity_name": "Install flashing at parapet walls",
+    "activity_normal_time": 4,
+    "activity_min_time": 2,
+    "crash_cost": 176.0,
+    "required_activities": [
+      "81"
+    ]
+  },
+  "88": {
+    "activity_name": "Pour lightweight concrete roof fill",
+    "activity_normal_time": 2,
+    "activity_min_time": 1,
+    "crash_cost": 88.0,
+    "required_activities": [
+      "11",
+      "82",
+      "87"
+    ]
+  },
+  "89": {
+    "activity_name": "Install seamless roofing material",
+    "activity_normal_time": 5,
+    "activity_min_time": 3,
+    "crash_cost": 220.0,
+    "required_activities": [
+      "88"
+    ]
+  },
+  "90": {
+    "activity_name": "Spread stone ballast on seamless roof",
+    "activity_normal_time": 5,
+    "activity_min_time": 3,
+    "crash_cost": 220.0,
+    "required_activities": [
+      "89"
+    ]
+  },
+  "91": {
+    "activity_name": "Set rooftop equipment",
+    "activity_normal_time": 10,
+    "activity_min_time": 5,
+    "crash_cost": 520.0,
+    "required_activities": [
+      "90"
+    ]
+  },
+  "93": {
+    "activity_name": "Install window wall aluminum and glass",
+    "activity_normal_time": 25,
+    "activity_min_time": 13,
+    "crash_cost": 1000.0,
+    "required_activities": [
+      "81"
+    ]
+  },
+  "94": {
+    "activity_name": "Install interior stud walls and drywall",
+    "activity_normal_time": 25,
+    "activity_min_time": 13,
+    "crash_cost": 1000.0,
+    "required_activities": [
+      "93"
+    ]
+  },
+  "95": {
+    "activity_name": "Install interior doors and hardware",
+    "activity_normal_time": 10,
+    "activity_min_time": 5,
+    "crash_cost": 480.0,
+    "required_activities": [
+      "94"
+    ]
+  },
+  "96": {
+    "activity_name": "Install store front doors and hardware",
+    "activity_normal_time": 15,
+    "activity_min_time": 8,
+    "crash_cost": 600.0,
+    "required_activities": [
+      "81"
+    ]
+  },
+  "98": {
+    "activity_name": "Install millwork and wood trim",
+    "activity_normal_time": 15,
+    "activity_min_time": 8,
+    "crash_cost": 720.0,
+    "required_activities": [
+      "96",
+      "94"
+    ]
+  },
+  "99": {
+    "activity_name": "Paint walls and woodwork",
+    "activity_normal_time": 20,
+    "activity_min_time": 10,
+    "crash_cost": 720.0,
+    "required_activities": [
+      "98",
+      "95"
+    ]
+  },
+  "100": {
+    "activity_name": "Install conduit at ceiling plenum space",
+    "activity_normal_time": 15,
+    "activity_min_time": 8,
+    "crash_cost": 780.0,
+    "required_activities": [
+      "93"
+    ]
+  },
+  "101": {
+    "activity_name": "Install duct in ceiling plenum space",
+    "activity_normal_time": 15,
+    "activity_min_time": 8,
+    "crash_cost": 780.0,
+    "required_activities": [
+      "94",
+      "100"
+    ]
+  },
+  "102": {
+    "activity_name": "Install ceiling grid",
+    "activity_normal_time": 10,
+    "activity_min_time": 5,
+    "crash_cost": 400.0,
+    "required_activities": [
+      "94",
+      "101"
+    ]
+  },
+  "103": {
+    "activity_name": "Install ceiling tile",
+    "activity_normal_time": 10,
+    "activity_min_time": 5,
+    "crash_cost": 400.0,
+    "required_activities": [
+      "102"
+    ]
+  },
+  "104": {
+    "activity_name": "Hang wallpaper",
+    "activity_normal_time": 10,
+    "activity_min_time": 5,
+    "crash_cost": 360.0,
+    "required_activities": [
+      "102"
+    ]
+  },
+  "105": {
+    "activity_name": "Install building carpet",
+    "activity_normal_time": 20,
+    "activity_min_time": 10,
+    "crash_cost": 720.0,
+    "required_activities": [
+      "99"
+    ]
+  },
+  "106": {
+    "activity_name": "Install hardware and accessories",
+    "activity_normal_time": 15,
+    "activity_min_time": 8,
+    "crash_cost": 720.0,
+    "required_activities": [
+      "99"
+    ]
+  },
+  "107": {
+    "activity_name": "Complete interior and exterior sod and plantings",
+    "activity_normal_time": 10,
+    "activity_min_time": 5,
+    "crash_cost": 360.0,
+    "required_activities": [
+      "99"
+    ]
+  },
+  "108": {
+    "activity_name": "Pave, curb, and stripe parking lot",
+    "activity_normal_time": 10,
+    "activity_min_time": 5,
+    "crash_cost": 480.0,
+    "required_activities": [
+      "107"
+    ]
+  },
+  "110": {
+    "activity_name": "Set elevator equipment in shafts",
+    "activity_normal_time": 20,
+    "activity_min_time": 10,
+    "crash_cost": 1280.0,
+    "required_activities": [
+      "80",
+      "45",
+      "12"
+    ]
+  },
+  "111": {
+    "activity_name": "Set equipment in mechanical room",
+    "activity_normal_time": 10,
+    "activity_min_time": 5,
+    "crash_cost": 640.0,
+    "required_activities": [
+      "110"
+    ]
+  },
+  "112": {
+    "activity_name": "Test and align doors and equipment",
+    "activity_normal_time": 10,
+    "activity_min_time": 5,
+    "crash_cost": 640.0,
+    "required_activities": [
+      "111"
+    ]
+  },
+  "114": {
+    "activity_name": "Rough-in plumbing in drywall walls",
+    "activity_normal_time": 20,
+    "activity_min_time": 10,
+    "crash_cost": 1040.0,
+    "required_activities": [
+      "93"
+    ]
+  },
+  "115": {
+    "activity_name": "Tie-in fire line riser and set valves",
+    "activity_normal_time": 10,
+    "activity_min_time": 5,
+    "crash_cost": 520.0,
+    "required_activities": [
+      "84"
+    ]
+  },
+  "116": {
+    "activity_name": "Set plumbing fixtures and trim",
+    "activity_normal_time": 15,
+    "activity_min_time": 8,
+    "crash_cost": 780.0,
+    "required_activities": [
+      "85",
+      "114",
+      "79"
+    ]
+  },
+  "117": {
+    "activity_name": "Flush, test, and clean piping and fixtures",
+    "activity_normal_time": 10,
+    "activity_min_time": 5,
+    "crash_cost": 520.0,
+    "required_activities": [
+      "99",
+      "115",
+      "116"
+    ]
+  },
+  "119": {
+    "activity_name": "Rough-in electrical in masonry walls",
+    "activity_normal_time": 20,
+    "activity_min_time": 10,
+    "crash_cost": 1040.0,
+    "required_activities": [
+      "75",
+      "14"
+    ]
+  },
+  "120": {
+    "activity_name": "Rough-in electrical in drywall walls",
+    "activity_normal_time": 20,
+    "activity_min_time": 10,
+    "crash_cost": 1040.0,
+    "required_activities": [
+      "93"
+    ]
+  },
+  "121": {
+    "activity_name": "Pull wire in conduit and set area transformers",
+    "activity_normal_time": 15,
+    "activity_min_time": 8,
+    "crash_cost": 780.0,
+    "required_activities": [
+      "119",
+      "100"
+    ]
+  },
+  "122": {
+    "activity_name": "Install and terminate electrical devices",
+    "activity_normal_time": 15,
+    "activity_min_time": 8,
+    "crash_cost": 780.0,
+    "required_activities": [
+      "121",
+      "120"
+    ]
+  },
+  "123": {
+    "activity_name": "Make electrical terminations for HVAC equipment",
+    "activity_normal_time": 2,
+    "activity_min_time": 1,
+    "crash_cost": 104.0,
+    "required_activities": [
+      "121",
+      "91"
+    ]
+  },
+  "124": {
+    "activity_name": "Install light fixtures - test and clean",
+    "activity_normal_time": 10,
+    "activity_min_time": 5,
+    "crash_cost": 520.0,
+    "required_activities": [
+      "102",
+      "122"
+    ]
+  },
+  "126": {
+    "activity_name": "Set equipment in mechanical room",
+    "activity_normal_time": 10,
+    "activity_min_time": 5,
+    "crash_cost": 520.0,
+    "required_activities": [
+      "80",
+      "15"
+    ]
+  },
+  "127": {
+    "activity_name": "Rough-in mechanical in masonry walls",
+    "activity_normal_time": 20,
+    "activity_min_time": 10,
+    "crash_cost": 1040.0,
+    "required_activities": [
+      "75"
+    ]
+  },
+  "128": {
+    "activity_name": "Rough-in mechanical in drywall walls",
+    "activity_normal_time": 10,
+    "activity_min_time": 5,
+    "crash_cost": 520.0,
+    "required_activities": [
+      "93"
+    ]
+  },
+  "129": {
+    "activity_name": "Install duct in building chase",
+    "activity_normal_time": 15,
+    "activity_min_time": 8,
+    "crash_cost": 780.0,
+    "required_activities": [
+      "126",
+      "127",
+      "93"
+    ]
+  },
+  "130": {
+    "activity_name": "Set HVAC trim and test and balance system",
+    "activity_normal_time": 20,
+    "activity_min_time": 10,
+    "crash_cost": 1040.0,
+    "required_activities": [
+      "102",
+      "129",
+      "123"
+    ]
+  },
+  "132": {
+    "activity_name": "Install hard tile flooring in common areas",
+    "activity_normal_time": 5,
+    "activity_min_time": 3,
+    "crash_cost": 220.0,
+    "required_activities": [
+      "94"
+    ]
+  },
+  "133": {
+    "activity_name": "Clean hard tile floors",
+    "activity_normal_time": 4,
+    "activity_min_time": 2,
+    "crash_cost": 88.0,
+    "required_activities": [
+      "132"
+    ]
+  },
+  "134": {
+    "activity_name": "Remove debris from building and do final clean-up",
+    "activity_normal_time": 4,
+    "activity_min_time": 2,
+    "crash_cost": 96.0,
+    "required_activities": [
+      "105",
+      "104",
+      "106",
+      "107",
+      "117",
+      "124",
+      "103",
+      "133"
+    ]
+  },
+  "135": {
+    "activity_name": "Substantial completion date",
+    "activity_normal_time": 1,
+    "activity_min_time": 1,
+    "crash_cost": 68.0,
+    "required_activities": [
+      "134"
+    ]
+  },
+  "137": {
+    "activity_name": "Complete elevator inspection and certification",
+    "activity_normal_time": 3,
+    "activity_min_time": 2,
+    "crash_cost": 192.0,
+    "required_activities": [
+      "134",
+      "112"
+    ]
+  },
+  "138": {
+    "activity_name": "Perform architect's inspection",
+    "activity_normal_time": 1,
+    "activity_min_time": 1,
+    "crash_cost": 72.0,
+    "required_activities": [
+      "134",
+      "108",
+      "137"
+    ]
+  },
+  "139": {
+    "activity_name": "Perform local building agency inspection",
+    "activity_normal_time": 1,
+    "activity_min_time": 1,
+    "crash_cost": 72.0,
+    "required_activities": [
+      "138"
+    ]
+  },
+  "140": {
+    "activity_name": "Perform Fire Marshal's inspection",
+    "activity_normal_time": 1,
+    "activity_min_time": 1,
+    "crash_cost": 72.0,
+    "required_activities": [
+      "139"
+    ]
+  },
+  "141": {
+    "activity_name": "Complete punch list items from all inspections",
+    "activity_normal_time": 10,
+    "activity_min_time": 5,
+    "crash_cost": 448.8,
+    "required_activities": [
+      "140"
+    ]
+  },
+  "142": {
+    "activity_name": "Obtain certificate of occupancy",
+    "activity_normal_time": 2,
+    "activity_min_time": 1,
+    "crash_cost": 152.0,
+    "required_activities": [
+      "141"
+    ]
+  },
+  "143": {
+    "activity_name": "Issue final completion documents including warranties",
+    "activity_normal_time": 1,
+    "activity_min_time": 1,
+    "crash_cost": 76.0,
+    "required_activities": [
+      "141"
+    ]
+  },
+  "144": {
+    "activity_name": "Issue final request for payment",
+    "activity_normal_time": 1,
+    "activity_min_time": 1,
+    "crash_cost": 75.24,
+    "required_activities": [
+      "142",
+      "143"
+    ]
+  }
+}
