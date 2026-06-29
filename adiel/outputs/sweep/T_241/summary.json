@@ -1,0 +1,24 @@
+{
+  "T": 241,
+  "status": "OK",
+  "min_cost": 260.0,
+  "num_diophantine": 2493,
+  "makespan_frequencies": {
+    "241": 3,
+    "242": 37,
+    "243": 184,
+    "244": 441,
+    "245": 633,
+    "246": 636,
+    "247": 393,
+    "248": 137,
+    "249": 29
+  },
+  "num_meeting_deadline": 3,
+  "gantt_files": [
+    "gantt_sol001_ms241.png",
+    "gantt_sol002_ms241.png",
+    "gantt_sol003_ms241.png"
+  ],
+  "elapsed_seconds": 24.98
+}

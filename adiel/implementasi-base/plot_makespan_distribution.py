@@ -83,7 +83,7 @@ def main():
     )
     
     # 1. Find all 346 diophantine solutions for cost = 180
-    diophantine_solutions = find_all_diophantine_solutions(activity_data, 180.0)
+    diophantine_solutions = find_all_diophantine_solutions(activity_data, 220.0)
     print(f"Found {len(diophantine_solutions)} Diophantine solutions.")
     
     # 2. Evaluate makespan for each solution using CP-SAT
@@ -169,10 +169,10 @@ def main():
     plt.grid(axis="y", linestyle="--", alpha=0.7, zorder=0)
     plt.grid(axis="x", linestyle="")
     
-    # Highlight the unique 243 solution
+    # Highlight the unique 242 solution
     plt.annotate(
-        "Unique Feasible Schedule\n(Makespan = 243 days)",
-        xy=(243, 1),
+        "Unique Feasible Schedule\n(Makespan = 242 days)",
+        xy=(242, 1),
         xytext=(242.5, 30),
         arrowprops=dict(facecolor="#e67e22", shrink=0.08, width=1.5, headwidth=6),
         fontsize=10,
@@ -186,7 +186,7 @@ def main():
     # Save the plot
     out_dir = os.path.join(base_dir, "../outputs")
     os.makedirs(out_dir, exist_ok=True)
-    out_path = os.path.join(out_dir, "makespan_distribution_180.png")
+    out_path = os.path.join(out_dir, "makespan_distribution_220.png")
     plt.savefig(out_path, dpi=300)
     print(f"\nPlot saved to {out_path}")
     
