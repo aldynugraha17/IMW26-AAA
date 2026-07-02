@@ -51,7 +51,7 @@ class ProjectCrashingProblem(BaseProblem):
     problem_type = "Diophantine"  # evaluasi diskret via pembulatan, ala SOAC-Diophantine
 
     def __init__(self, tasks, deadline, params=None, unit_cube=True,
-                 cost_tolerance=0.0, local_search=True, expand_plateau=True):
+                 cost_tolerance=0.0):
         """
         Parameters
         ----------
@@ -85,8 +85,6 @@ class ProjectCrashingProblem(BaseProblem):
         self.deadline = int(deadline)
         self.unit_cube = bool(unit_cube)
         self.cost_tolerance = float(cost_tolerance)
-        self.local_search = bool(local_search)
-        self.expand_plateau_flag = bool(expand_plateau)
 
         self.d_min = np.array([int(t["d_min"]) for t in self.tasks])
         self.d_max = np.array([int(t["d_max"]) for t in self.tasks])
@@ -196,61 +194,6 @@ class ProjectCrashingProblem(BaseProblem):
         return 1.0 / (2.0 + Z_norm + violation)    # infeasible: F < 1/2
 
     # ------------------------------------------------------------------ #
-    # Polish: integer local search (memetic) untuk dimensi tinggi
-    # ------------------------------------------------------------------ #
-    def _polish(self, d):
-        """Perbaiki kandidat dengan dua jenis langkah integer sampai stabil:
-        (1) uncrash  : d_j += 1 jika tetap feasible (biaya turun c_j);
-        (2) swap     : d_j += 1, d_k -= 1 jika feasible dan c_j > c_k
-                       (pindahkan hari crash dari task mahal ke murah)."""
-        d = np.array(d, dtype=int)
-        order = np.argsort(-self.c)  # prioritaskan meng-uncrash task termahal
-        improved = True
-        while improved:
-            improved = False
-            for j in order:                                   # uncrash
-                while d[j] < self.d_max[j]:
-                    d[j] += 1
-                    if self.makespan(d) <= self.deadline:
-                        improved = True
-                    else:
-                        d[j] -= 1
-                        break
-            for j in order:                                   # swap
-                if d[j] >= self.d_max[j]:
-                    continue
-                for k in np.argsort(self.c):
-                    if self.c[k] >= self.c[j] or d[k] <= self.d_min[k]:
-                        continue
-                    d[j] += 1; d[k] -= 1
-                    if self.makespan(d) <= self.deadline:
-                        improved = True
-                        if d[j] >= self.d_max[j]:
-                            break
-                    else:
-                        d[j] -= 1; d[k] += 1
-        return d
-
-    def _expand_plateau(self, optima, max_solutions=200):
-        """Cari optimum alternatif: BFS neutral move (swap antar task dengan
-        c_j == c_k) yang menjaga biaya dan feasibility."""
-        queue = [np.array(d, dtype=int) for d in optima]
-        seen = set(tuple(d.tolist()) for d in queue)
-        while queue and len(seen) < max_solutions:
-            d = queue.pop()
-            for j in range(self.n_tasks):
-                if d[j] >= self.d_max[j]:
-                    continue
-                for k in range(self.n_tasks):
-                    if k == j or self.c[k] != self.c[j] or d[k] <= self.d_min[k]:
-                        continue
-                    d2 = d.copy(); d2[j] += 1; d2[k] -= 1
-                    key = tuple(d2.tolist())
-                    if key not in seen and self.makespan(d2) <= self.deadline:
-                        seen.add(key); queue.append(d2)
-        return [np.array(t) for t in sorted(seen)]
-
-    # ------------------------------------------------------------------ #
     # Seleksi akhir: kumpulkan SEMUA vektor durasi feasible berbiaya minimum
     # ------------------------------------------------------------------ #
     def select_final_roots(self, candidates):
@@ -259,20 +202,16 @@ class ProjectCrashingProblem(BaseProblem):
             d = self.decode(cand)
             if self.makespan(d) > self.deadline:
                 continue
-            if self.local_search:
-                d = self._polish(d)
             evaluated.setdefault(tuple(d.tolist()), self.crash_cost(d))
 
         if not evaluated:
             return np.array([])
 
         best_cost = min(evaluated.values())
-        keep = [np.array(d, dtype=int)
+        keep = [np.array(d, dtype=float)
                 for d, z in sorted(evaluated.items(), key=lambda kv: kv[1])
                 if z <= best_cost + self.cost_tolerance]
-        if self.expand_plateau_flag:
-            keep = self._expand_plateau(keep)
-        return np.array([k.astype(float) for k in keep])
+        return np.array(keep)
 
     def select_final_optimal(self, candidates):
         return self.select_final_roots(candidates)
