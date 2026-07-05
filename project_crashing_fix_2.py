@@ -9,9 +9,9 @@ from scipy.stats import qmc
 
 
 CONFIG = {
-    "activity_data_path": "activity_data_2.json",
-    "resource_requirements_path": "resource_requirements_2.json",
-    "resource_capacity_path": "resource_capacity_2.json",
+    "activity_data_path": "activity_data_v3.json",
+    "resource_requirements_path": "resource_requirements_v3.json",
+    "resource_capacity_path": "resource_capacity_v3.json",
     "resource_id_map": None,
     "default_capacity_unmapped": 999, #ini kalau semisal gaada kapasitasnya, tapi mungkin better diilangin aja cuma nanti bisa error (tapi sepertinya lebih baik gini, jadi tau mana yang perlu diperbaiki sm user)
     "max_schedule_horizon": 2000,
@@ -22,7 +22,7 @@ CONFIG = {
     "r_cl": 0.95,
     "theta_cl": np.pi / 4,
     "gamma": -float("inf"),
-    "num_check_points": 3,
+    "num_check_points": 1,
     "sdoa_m": 50,
     "sdoa_k_max": 25,
     "sdoa_r": 0.95,
@@ -752,16 +752,8 @@ if __name__ == "__main__":
     lo = evaluate_schedule(np.zeros(n_tmp), project_tmp)
     print("makespan normal (x=1):", hi["makespan"], "cost:", hi["total_cost"])
     print("makespan full-crash (x=0):", lo["makespan"], "cost:", lo["total_cost"])
-    sample_durations = list(range(lo["makespan"], hi["makespan"] + 1))
+    sample_durations = [240, 241, 242, 243, 244]#list(range(lo["makespan"], hi["makespan"] + 1))
     print("sample_durations:", sample_durations)
-
-    # PENTING: tidak ada sweep_config_overrides -- tiap target durasi D
-    # memakai parameter IDENTIK dengan CONFIG utama (m_cluster=100000,
-    # k_cluster=500, sdoa_m=5000, sdoa_k_max=100), tidak dikecilkan sama
-    # sekali. Ini memastikan kualitas & konsistensi pencarian sama persis
-    # di setiap titik D -- prioritas akurasi, bukan kecepatan. Waktu total
-    # akan jauh lebih lama (proporsional dengan jumlah titik D yang di-sweep
-    # dikali waktu 1x solve_single_problem dengan budget penuh).
     out = solve_time_cost_tradeoff(
         CONFIG,
         target_durations=sample_durations,
