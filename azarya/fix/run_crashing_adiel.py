@@ -16,13 +16,13 @@ from pathlib import Path  # Import Path
 from scipy.optimize import milp, LinearConstraint, Bounds
 
 from pysne.solver import solve_system
-from project_crashing_problem import ProjectCrashingProblem
+from project_crashing_problem_new import ProjectCrashingProblem
 
 # DATA = "/home/claude/IMW26-AAA/adiel/data/activity_data_v3.json"
 # DATA = "E:/p2ms/IMW26-AAA/adiel/data/activity_data_v3.json"
 current_dir = Path(__file__).resolve().parent
 DATA = current_dir.parent.parent / "adiel" / "data" / "activity_data_v3.json"
-DEADLINE = 244  # makespan normal = 249 -> perlu crash jalur kritis 6 hari
+DEADLINE = 241  # makespan normal = 249 -> perlu crash jalur kritis 6 hari
 
 
 def load_tasks(path):
@@ -59,18 +59,20 @@ def ilp_ground_truth(problem):
 
 
 PARAMS = dict(
-    m_cluster=32768, k_cluster=15, gamma=0.5,
+    m_cluster=4096 * 4, k_cluster=100, gamma=0.85,
     r_cl=0.95, theta_cl=np.pi / 4,
-    sdoa_m=1024, sdoa_k_max=300,
-    sdoa_r=0.97, sdoa_theta=np.pi / 4,
-    delta=0.4, epsilon=1e-9,
+    sdoa_m=1024, sdoa_k_max=1000,
+    sdoa_r=0.99, sdoa_theta=np.pi / 16,
+    delta=0.00001, epsilon=1e-9,
 )
 
 
 def run_one(problem, z_star, label):
     t0 = time.time()
-    result = solve_system(problem, problem.get_info()[1], verbose=False)
+    print(f"Menjalankan SOAC dengan parameter: {PARAMS}")
+    result = solve_system(problem, problem.get_info()[1], verbose=True)
     roots = result["roots"]
+    print(f"Waktu SOAC: {time.time() - t0:.1f}s, cluster: {len(result['clusters'])}")
     if len(roots) == 0:
         print(f"{label}: tidak ada solusi feasible."); return roots
     costs = [problem.crash_cost(r) for r in roots]
