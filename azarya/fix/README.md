@@ -1,11 +1,11 @@
-# SOAC untuk Project Crashing (Integer) — Versi Terbaru
+# SPOC untuk Project Crashing (Integer) — Versi Terbaru
 
-Adaptasi **Spiral Optimization Algorithm with Clustering (SOAC)** untuk *project
+Adaptasi **Spiral Optimization Algorithm with Clustering (SPOC)** untuk *project
 crashing*: memilih task mana yang dipercepat (di-*crash*) dan berapa hari agar
 **total biaya crashing minimum** sambil memenuhi **deadline proyek**, dengan
 menemukan **semua** kombinasi durasi optimum sekaligus.
 
-Berbasis Sidarto-Kania-Sumarti (2017, SOAC multimodal) + Sumarti dkk. (2023,
+Berbasis Sidarto-Kania-Sumarti (2017, SPOC multimodal) + Sumarti dkk. (2023,
 prosedur integer Diophantine: pelebaran domain ±0.5 + pembulatan). Berjalan di
 atas pipeline [`pysne`](https://github.com/p2ms-optimization/pysne/tree/eksperimen)
 (branch `eksperimen`) **tanpa mengubah pysne** — hanya satu subclass `BaseProblem`.
@@ -27,11 +27,13 @@ Empat perubahan terhadap versi sebelumnya:
    menyimpan `{x_real, d_int, Z, F, feasible}` ke `self.memory`, sehingga
    pemetaan titik real → solusi integer bisa ditelusuri untuk verifikasi/laporan.
 
-3. **Penanganan domain diserahkan ke pysne (tidak ada cek redundan).** Titik di
-   luar domain sudah disaring pysne di hulu lewat `is_in_domain` (di clustering
-   dan engine SDOA), dan pelebaran ±0.5 menjamin `rint` selalu jatuh di
-   `[d_min, d_max]`. Jadi `decode` cukup memakai `np.clip` sebagai pengaman
-   numerik tepi; tidak ada cek `F=0`/`_in_domain` tambahan (lihat §4).
+3. **Varian B: tanpa clamp, solusi invalid ditolak (bukan dipalsukan).**
+   `decode` tidak lagi menjepit hasil ke `[d_min, d_max]`. Titik dibiarkan apa
+   adanya sesuai posisi spiral; jika pembulatannya keluar rentang, ia (a) diberi
+   `F = 0` di `evaluate_fitness` selama iterasi -- diabaikan sebagai kandidat
+   pusat tanpa memindahkan titik realnya; dan (b) ditolak oleh `_in_domain` di
+   seleksi akhir. Solusi invalid **ditolak secara eksplisit**, bukan disamarkan
+   ke tepi domain (lebih jujur secara semantik untuk pelaporan). Lihat §4.
 
 ---
 
@@ -56,7 +58,7 @@ s.t.  s_j = max_{p∈pred(j)} e_p ;  e_j = s_j + d_j   (forward pass, urutan top
 Tanpa kendala deadline jawabannya trivial (`d_j = d_max_j`, biaya 0); kendala
 `makespan ≤ T` yang membuatnya bermakna, ditangani lewat penalti di fitness.
 
-### Fitness F (SOAC memaksimumkan F ∈ (0,1])
+### Fitness F (SPOC memaksimumkan F ∈ (0,1])
 
 ```
 Z_norm = Z / Z_max,   Z_max = Σ_j c_j (d_max_j − d_min_j)
@@ -77,7 +79,7 @@ baik dari telat 10) agar spiral bisa merambat menuju feasibility.
 
 ```
 titik real x  →  skala [0,1] ke [d_min−0.5, d_max+0.5]  →  BULATKAN (rint)
-              →  d integer  →  cek domain (F=0 bila keluar)
+              →  d integer  →  cek domain (F=0 bila keluar, Varian B)
               →  forward pass CPM (s, e, makespan)  →  Z, v  →  F
 ```
 
@@ -112,30 +114,47 @@ seleksi akhir barulah rounding dipakai untuk menghasilkan output integer final.
 
 ---
 
-## 4. Penanganan Domain: Cukup `is_in_domain` pysne
+## 4. Penanganan Domain (Varian B) & `_in_domain` vs `is_in_domain`
 
-Titik yang keluar domain **sudah ditangani pysne**, jadi problem ini tidak perlu
-cek domain sendiri maupun meng-override apa pun:
+**Varian B** memilih *menolak* alih-alih *menjepit* titik di luar domain, dengan
+dua lapis pertahanan sederhana:
 
-- **Di hulu (pysne).** Clustering dan engine SDOA memanggil
-  `is_in_domain(point, domain)` lalu `continue` untuk titik di luar domain —
-  sebelum titik itu sempat dinilai sebagai kandidat pusat. Untuk problem ini
-  `domain` = `[0,1]^n` (`unit_cube=True`) atau `[d_min−0.5, d_max+0.5]^n`
-  (`False`).
-- **Di hilir (decode).** Pelebaran ±0.5 membuat `rint` atas titik yang lolos
-  domain **selalu** jatuh di `[d_min, d_max]`. `np.clip` di `decode` hanya
-  pengaman numerik untuk titik tepat di tepi (mis. `rint(6.5)=6`).
+- **Selama iterasi (`evaluate_fitness`).** Titik yang pembulatannya keluar
+  `[d_min, d_max]` diberi `F = 0`, sehingga tidak akan pernah terpilih sebagai
+  pusat spiral/cluster. Titik realnya tidak dipindahkan -- geometri spiral tetap
+  murni.
+- **Di seleksi akhir (`select_final_roots`).** Tiap kandidat final dicek
+  `_in_domain`; yang keluar rentang dibuang sebelum dedup. Biaya O(jumlah_solusi
+  × n_task) -- praktis gratis (mis. 5 solusi × 25 task = 125 perbandingan,
+  sekali di ujung).
 
-**Kenapa tidak override `is_in_domain`?** Ia fungsi modul (`pysne.utils`), bukan
-method — meng-override berarti *monkey-patch* global yang rapuh (mengubah pysne
-untuk semua problem di proses itu, harus dijalankan sebelum import solver).
-Tidak sepadan, dan menyalahi prinsip "tanpa mengubah pysne".
+Kenapa "tolak" bukan "clamp"? Clamp *memalsukan* titik: durasi 11 (di luar
+d_max=10) diam-diam dilaporkan sebagai 10, seolah itu yang ditemukan algoritma.
+Varian B tidak menyamarkan -- titik invalid ditolak apa adanya, lebih bersih
+dipertanggungjawabkan di laporan.
 
-**Kenapa tidak menambah cek `_in_domain` sendiri?** Karena redundan: untuk
-`unit_cube=True`, titik yang lolos `is_in_domain` selalu di `[0,1]`, sehingga
-skala+`rint` tak pernah keluar `[d_min, d_max]` — cek tambahan tak pernah aktif.
-Penalti deadline `v` menangani makespan; domain sudah dijaga pysne. Menambah
-`_in_domain` hanya menambah kode mati.
+### `_in_domain` (kelas ini) vs `is_in_domain` (pysne) -- komplementer
+
+| | `is_in_domain` (pysne.utils) | `_in_domain` (kelas ini) |
+|---|---|---|
+| Ruang | titik **real** | vektor **integer** hasil pembulatan |
+| Batas | domain spiral: `[0,1]` atau `[d_min−0.5, d_max+0.5]` | rentang durasi `[d_min, d_max]` |
+| Waktu | **sebelum** pembulatan | **sesudah** pembulatan |
+| Peran | menjaga lintasan spiral di kotak pencarian | menyaring durasi hasil terjemahan agar sah |
+| Dipakai di | clustering, engine SDOA, base pysne (hulu) | evaluate_fitness (F=0) & select_final_roots (hilir) |
+
+Keduanya **berbeda ruang** dan **komplementer**, bukan duplikat: `is_in_domain`
+menjaga *lintasan* real di hulu; `_in_domain` menyaring *hasil* integer di hilir.
+Karena keduanya di ruang berbeda, `_in_domain` tidak bisa digantikan
+`is_in_domain` -- cek pasca-pembulatan wajib dilakukan di ruang integer.
+
+**Catatan cakupan praktis.** Untuk `unit_cube=True`, pysne sudah menyaring titik
+di luar `[0,1]^n` di hulu, sehingga solusi keluar domain jarang muncul dan
+`_in_domain` sebagian besar berfungsi sebagai *jaring pengaman* eksplisit
+(assertion murah yang mendokumentasikan bahwa domain memang dipedulikan di
+ujung). Ia benar-benar menolak kandidat hanya bila titik lolos hulu namun
+membulat keluar rentang -- lebih relevan saat bereksperimen dengan
+`unit_cube=False` atau margin non-standar.
 
 ## 5. Kamus Parameter
 
@@ -144,11 +163,11 @@ Penalti deadline `v` menangani makespan; domain sudah dijaga pysne. Menambah
 |---|---|---|
 | `tasks` | — | list dict: `name`, `predecessors`, `d_min`, `d_max`, `crash_cost` |
 | `deadline` | — | `T`, batas makespan |
-| `params` | `{}` | override hyperparameter SOAC (tabel bawah) |
+| `params` | `{}` | override hyperparameter SPOC (tabel bawah) |
 | `unit_cube` | `True` | `True`: spiral di `[0,1]^n`, dekode di fitness; `False`: spiral di `[d_min−0.5, d_max+0.5]^n` |
 | `cost_tolerance` | `0.0` | laporkan kandidat `Z ≤ Z_best + toleransi` (0 = minimum eksak) |
 
-### Hyperparameter SOAC (dict `params`)
+### Hyperparameter SPOC (dict `params`)
 | Kunci | Default | Fase | Catatan |
 |---|---|---|---|
 | `m_cluster` | 32768 | Clustering | titik Sobol awal. Besar untuk dimensi tinggi; idealnya pangkat 2 |
@@ -174,11 +193,11 @@ mencapai optimum eksak (~16 menit); turunkan untuk instance kecil / iterasi cepa
 Karena F dievaluasi lewat pembulatan, landscape berbentuk **plateau bertingkat**:
 F konstan di dalam tiap "kotak" integer, berubah hanya saat menyeberang batas
 kotak. Di dalam plateau tidak ada gradien, dan beda F antar plateau tetangga
-bisa sangat tipis — sehingga di dimensi tinggi SOAC dengan anggaran kecil bisa
+bisa sangat tipis — sehingga di dimensi tinggi SPOC dengan anggaran kecil bisa
 berhenti di plateau suboptimal (mis. T=243, `m_cluster=2048` → Z=200 vs optimum
 180).
 
-Solusi murni-SOAC: **naikkan anggaran sampling**. `m_cluster=32768`,
+Solusi murni-SPOC: **naikkan anggaran sampling**. `m_cluster=32768`,
 `sdoa_m=1024` menutup gap ke 0 (mis. T=241 → Z=260 = optimum ILP). Kepadatan
 Sobol lebih tinggi menaikkan peluang ada titik awal di basin optimum global.
 Efek "penjepretan ke kisi" akibat pembulatan justru membuat target berupa titik
@@ -241,13 +260,13 @@ Validasi memakai **ILP** (`scipy.optimize.milp`, eksak) karena brute force 25
 task mustahil. Model linear (objektif + precedence + deadline linear, `d_j`
 integer, `s_j` kontinu) → ILP memberi optimum eksak sebagai acuan.
 
-| Instance | ILP Z* | SOAC (anggaran besar) |
+| Instance | ILP Z* | SPOC (anggaran besar) |
 |---|---|---|
 | 5 task serial, T=42 | 220 (4 optimum, brute force) | Z=220, 4/4 |
 | 25 task, T=241 | 260 | Z=260 (gap 0) |
 | 25 task, T=242 | 220 (2 optimum) | Z=220 (gap 0), 1 dari 2 tertangkap |
 
-ILP memberi **satu** optimum; SOAC mengejar **semua** — nilai tambah pendekatan
+ILP memberi **satu** optimum; SPOC mengejar **semua** — nilai tambah pendekatan
 multimodal. Untuk multiplisitas yang tak lengkap (mis. T=242), lihat catatan
 diversifikasi di §6.
 
@@ -256,6 +275,6 @@ diversifikasi di §6.
 ## 9. Arah Pengembangan
 
 - Kendala kapasitas sumber daya harian sebagai penalti kedua di fitness (di sini
-  ILP linear tak lagi memadai — nilai tambah SOAC menguat).
+  ILP linear tak lagi memadai — nilai tambah SPOC menguat).
 - Sweep deadline T → kurva time–cost trade-off.
 - Hook opsional agar `remember=True` aktif otomatis selama run untuk audit penuh.
