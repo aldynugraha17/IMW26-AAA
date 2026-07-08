@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-ProjectCrashingProblem: adaptasi SOAC (Sidarto-Kania-Sumarti 2017 + SOAC
+ProjectCrashingProblem: adaptasi SPOC (Sidarto-Kania-Sumarti 2017 + SPOC
 Diophantine 2023) untuk Project Crashing dengan solusi integer,
 terintegrasi penuh dengan pipeline pysne (branch eksperimen).
 
@@ -14,7 +14,7 @@ Variabel turunan   : s_j = max_{p in pred(j)} e_p  (0 jika tanpa predecessor)
 Objektif           : minimize  Z(d) = sum_j c_j * y_j
 Kendala            : makespan(d) = max_j e_j <= T_deadline
 
-Transformasi ke bentuk maksimisasi SOAC (fitness F dalam (0, 1]):
+Transformasi ke bentuk maksimisasi SPOC (fitness F dalam (0, 1]):
 
     Z_norm  = Z / Z_max,  Z_max = sum_j c_j (d_max_j - d_min_j)
     v       = max(0, makespan - T_deadline)          (pelanggaran deadline)
@@ -46,9 +46,9 @@ from pysne.utils import create_continuous_bounds
 
 
 class ProjectCrashingProblem(BaseProblem):
-    """Problem project crashing (integer) untuk solver SOAC pysne."""
+    """Problem project crashing (integer) untuk solver SPOC pysne."""
 
-    problem_type = "Diophantine"  # evaluasi diskret via pembulatan, ala SOAC-Diophantine
+    problem_type = "Diophantine"  # evaluasi diskret via pembulatan, ala SPOC-Diophantine
 
     def __init__(self, tasks, deadline, params=None, unit_cube=True,
                  cost_tolerance=0.0):
@@ -66,7 +66,7 @@ class ProjectCrashingProblem(BaseProblem):
         deadline : int
             T_deadline, batas hari selesai proyek (makespan <= deadline).
         params : dict, optional
-            Hyperparameter SOAC (m_cluster, k_cluster, gamma, r_cl, theta_cl,
+            Hyperparameter SPOC (m_cluster, k_cluster, gamma, r_cl, theta_cl,
             sdoa_m, sdoa_k_max, sdoa_r, sdoa_theta, delta, epsilon).
         unit_cube : bool
             True  -> spiral berotasi di [0,1]^n, dekode affine di fitness
@@ -116,6 +116,9 @@ class ProjectCrashingProblem(BaseProblem):
         self._pred_arrays = None  # diisi lazy setelah topo_order tersedia
 
         self._params = dict(params) if params else {}
+        # Memori pasangan (real, integer, Z, F) -- diisi bila evaluate_fitness
+        # dipanggil dengan remember=True (untuk verifikasi/pelaporan).
+        self.memory = []
         super().__init__()  # BaseProblem membaca get_info() -> set self.domain, n_var
         self.equations = None  # bukan SNE; matikan early-stopping residual di SDOA
 
@@ -136,11 +139,11 @@ class ProjectCrashingProblem(BaseProblem):
         else:
             domain = self._widened
         default_params = {
-            "m_cluster": 32768, "k_cluster": 12, "gamma": 0.85,
+            "m_cluster": 32768, "k_cluster": 20, "gamma": 0.85,
             "r_cl": 0.95, "theta_cl": np.pi / 4, "num_check_points": 1,
             "sdoa_m": 1024, "sdoa_k_max": 300,
             "sdoa_r": 0.97, "sdoa_theta": np.pi / 4,
-            "delta": 0.4, "epsilon": 1e-9,
+            "delta": 0.00001, "epsilon": 1e-9,
         }
         default_params.update(self._params)
         return domain, default_params
@@ -149,16 +152,27 @@ class ProjectCrashingProblem(BaseProblem):
     # Dekode titik kontinu -> vektor durasi integer
     # ------------------------------------------------------------------ #
     def decode(self, x):
-        """x (kontinu) -> d (durasi integer, sudah di-clamp ke [d_min, d_max])."""
+        """x (kontinu) -> d (durasi integer). VARIAN B: TANPA clamp rentang.
+
+        Titik dibiarkan apa adanya sesuai posisi spiral; hasil rint bisa keluar
+        [d_min, d_max] bila titik keluar domain. Validitas rentang diperiksa
+        secara eksplisit oleh _in_domain (di seleksi akhir) dan diberi F=0 di
+        evaluate_fitness selama iterasi -- solusi invalid DITOLAK, bukan
+        dipalsukan ke tepi (lebih jujur secara semantik).
+        """
         x = np.asarray(x, dtype=float)
         if self.unit_cube:
             lo = self.d_min - 0.5
             hi = self.d_max + 0.5
-            scaled = lo + np.clip(x, 0.0, 1.0) * (hi - lo)  # [0,1] -> [dmin-0.5, dmax+0.5]
+            scaled = lo + x * (hi - lo)          # tanpa clip [0,1]
         else:
             scaled = x
-        d = np.rint(scaled).astype(int)          # pembulatan ke integer terdekat
-        return np.clip(d, self.d_min, self.d_max)
+        return np.rint(scaled).astype(int)       # tanpa clamp ke [d_min,d_max]
+
+    def _in_domain(self, d):
+        """True jika seluruh durasi integer berada dalam [d_min, d_max]."""
+        d = np.asarray(d)
+        return bool(np.all(d >= self.d_min) and np.all(d <= self.d_max))
 
     # ------------------------------------------------------------------ #
     # Penjadwalan (forward pass) dan biaya
@@ -192,11 +206,10 @@ class ProjectCrashingProblem(BaseProblem):
         if self.unit_cube:
             lo = self.d_min - 0.5
             hi = self.d_max + 0.5
-            scaled = lo + np.clip(X, 0.0, 1.0) * (hi - lo)
+            scaled = lo + X * (hi - lo)          # tanpa clip [0,1]
         else:
             scaled = X
-        D = np.rint(scaled).astype(int)
-        return np.clip(D, self.d_min, self.d_max)
+        return np.rint(scaled).astype(int)       # tanpa clamp ke [d_min,d_max]
 
     def _forward_pass_batch(self, D):
         """Forward pass CPM untuk seluruh populasi sekaligus.
@@ -215,20 +228,40 @@ class ProjectCrashingProblem(BaseProblem):
             E[:, j] = s + D[:, j]
         return E
 
-    def evaluate_fitness(self, x):
+    def evaluate_fitness(self, x, remember=False):
+        """Fitness F pada titik real x (di-rounding dulu untuk dinilai).
+
+        VARIAN B: karena decode tak lagi clamp, titik yang membulat keluar
+        [d_min,d_max] diberi F=0 -- diabaikan sebagai kandidat pusat, tanpa
+        memindahkan titik realnya.
+
+        remember=True menyimpan pasangan (x_real, d_int, Z, F, feasible) ke
+        buffer memori self.memory untuk verifikasi/pelaporan.
+        """
         x = np.asarray(x, dtype=float)
         single = (x.ndim == 1)
         X = x.reshape(1, -1) if single else x
 
-        D = self.decode_batch(X)
-        E = self._forward_pass_batch(D)
+        D = self.decode_batch(X)                       # real -> rounding -> integer
+        in_domain = np.all((D >= self.d_min) & (D <= self.d_max), axis=1)
+
+        E = self._forward_pass_batch(D)                # forward pass di atas integer
         makespan = E.max(axis=1)
-        Z_norm = ((self.d_max - D) @ self.c) / self.Z_max
+        Z = (self.d_max - D) @ self.c
+        Z_norm = Z / self.Z_max
         violation = np.maximum(0, makespan - self.deadline)
 
         F = np.where(violation == 0,
-                     1.0 / (1.0 + Z_norm),               # feasible: F dalam [1/2, 1]
-                     1.0 / (2.0 + Z_norm + violation))   # infeasible: F < 1/2
+                     1.0 / (1.0 + Z_norm),              # feasible: F dalam [1/2, 1]
+                     1.0 / (2.0 + Z_norm + violation))  # infeasible: F < 1/2
+        F = np.where(in_domain, F, 0.0)                 # keluar domain -> F=0 (diabaikan)
+
+        if remember:
+            for xi, di, zi, fi, fe in zip(X, D, Z, F, (violation == 0) & in_domain):
+                self.memory.append({
+                    "x_real": np.array(xi), "d_int": np.array(di),
+                    "Z": float(zi), "F": float(fi), "feasible": bool(fe),
+                })
         return float(F[0]) if single else F
 
     # ------------------------------------------------------------------ #
@@ -238,7 +271,9 @@ class ProjectCrashingProblem(BaseProblem):
         evaluated = {}
         for cand in candidates:
             d = self.decode(cand)
-            if self.makespan(d) > self.deadline:
+            if not self._in_domain(d):              # VARIAN B: buang solusi keluar rentang durasi
+                continue
+            if self.makespan(d) > self.deadline:    # buang yang langgar deadline
                 continue
             evaluated.setdefault(tuple(d.tolist()), self.crash_cost(d))
 
