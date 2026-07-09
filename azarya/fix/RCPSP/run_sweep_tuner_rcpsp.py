@@ -51,11 +51,11 @@ OUT_ROOT = current_dir / "outputs" / "sweep"
 # =====================================================================
 # Tiered configs: dari ringan (cepat) ke berat (lambat tapi akurat).
 
-GRID = {
-    "m_cluster":  [4096, 4096*2],
-    "gamma":      [0.85, 0.9],
-    "sdoa_r":     [0.97, 0.99],
-    "sdoa_theta": [np.pi / 8, np.pi / 16],
+GRID = { #add another configuration to the grid search
+    "m_cluster":  [1024], 
+    "gamma":      [0.85],
+    "sdoa_r":     [0.95],
+    "sdoa_theta": [np.pi / 8],
     "num_check_points": [1, 2]
 }
 
@@ -83,7 +83,7 @@ PARAM_CONFIGS = build_param_configs()
 
 def config_label(cfg):
     return (f"m={cfg['m_cluster']}, g={cfg['gamma']}, "
-            f"sr={cfg['sdoa_r']}, st={cfg['sdoa_theta']:.4f}")
+            f"sr={cfg['sdoa_r']}, st={cfg['sdoa_theta']:.4f}, nc={cfg['num_check_points']}")
 
 # =====================================================================
 # DATA LOADING
@@ -303,7 +303,7 @@ def run_soac_with_config(tasks, res_cap, res_req, T, cfg, z_star):
         resource_requirements=res_req
     )
     t0 = time.time()
-    result = solve_system(problem, problem.get_info()[1], verbose=False)
+    result = solve_system(problem, problem.get_info()[1], verbose=True)
     elapsed = time.time() - t0
     roots = result["roots"]
 
@@ -385,7 +385,8 @@ def run_sweep():
     sweep_results = []
     tuning_report = []
 
-    for T in range(T_normal, T_min - 1, -1):
+    # for T in range(T_normal, T_min - 1, -1): # uncomment this line to sweep from T_normal down to T_min
+    for T in range(T_min, T_normal - 1, 1):
         print("-" * 70)
         print(f"[T = {T}]  Mulai grid search...")
         t_iter = time.time()
