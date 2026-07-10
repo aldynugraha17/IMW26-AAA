@@ -18,7 +18,7 @@ from scipy.optimize import milp, LinearConstraint, Bounds
 
 from pysne.solver import solve_system
 # from project_crashing_problem_new import ProjectCrashingProblem
-from project_crashing_problem_newest_compare_lagi import ProjectCrashingProblem # uncomment this if you want to use the new version (faster)
+from project_crashing_problem_final_fix import ProjectCrashingProblem # uncomment this if you want to use the new version (faster)
 
 # DATA = "/home/claude/IMW26-AAA/adiel/data/activity_data_v3.json"
 # DATA = "E:/p2ms/IMW26-AAA/adiel/data/activity_data_v3.json"

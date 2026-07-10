@@ -32,7 +32,7 @@ from matplotlib.patches import Patch
 from matplotlib.lines import Line2D
 
 from pysne.solver import solve_system
-from project_crashing_problem_newest_compare import ProjectCrashingProblem
+from project_crashing_problem_final_fix import ProjectCrashingProblem
 
 # =====================================================================
 # KONFIGURASI
