@@ -18,6 +18,7 @@ from scipy.optimize import milp, LinearConstraint, Bounds
 
 from pysne.solver import solve_system
 from project_crashing_problem_new import ProjectCrashingProblem
+# from project_crashing_problem_new_compare import ProjectCrashingProblem # uncomment this if you want to use the new version (faster)
 
 # DATA = "/home/claude/IMW26-AAA/adiel/data/activity_data_v3.json"
 # DATA = "E:/p2ms/IMW26-AAA/adiel/data/activity_data_v3.json"
@@ -129,10 +130,10 @@ def ilp_ground_truth(problem):
 # (lebih mahal dari CPM murni), jadi setelan cluster/iterasi dibuat lebih hemat.
 # Perbesar bila ingin cakupan plateau lebih lengkap (dengan biaya waktu).
 PARAMS = dict(
-    m_cluster=4096 * 4, k_cluster=500, gamma=0.85,
+    m_cluster=1024, k_cluster=500, gamma=0.85,
     r_cl=0.95, theta_cl=np.pi / 4,
     sdoa_m=2048, sdoa_k_max=400,
-    sdoa_r=0.99, sdoa_theta=np.pi / 16,
+    sdoa_r=0.95, sdoa_theta=np.pi / 8,
     delta=0.00001, epsilon=1e-9,
 )
 
