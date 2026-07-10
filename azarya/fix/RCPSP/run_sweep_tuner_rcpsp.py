@@ -386,7 +386,10 @@ def run_sweep():
     tuning_report = []
 
     # for T in range(T_normal, T_min - 1, -1): # uncomment this line to sweep from T_normal down to T_min
-    for T in range(T_min, T_normal - 1, 1):
+    # for T in range(T_min, T_normal - 1, 1): # uncomment this line to sweep from T
+    # Ubah isi list ini dengan deadline yang spesifik ingin di-run
+    target_deadlines = [T_normal, T_min] # Contoh: [30, 32, 35]
+    for T in target_deadlines:
         print("-" * 70)
         print(f"[T = {T}]  Mulai grid search...")
         t_iter = time.time()
