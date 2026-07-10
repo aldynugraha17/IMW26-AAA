@@ -147,21 +147,25 @@ class ProjectCrashingProblem(BaseProblem):
         x = np.asarray(x, dtype=float)
         if self.unit_cube:
             lo = self.d_min - 0.5; hi = self.d_max + 0.5
-            scaled = lo + np.clip(x, 0.0, 1.0) * (hi - lo)
+            # scaled = lo + np.clip(x, 0.0, 1.0) * (hi - lo)
+            scaled = lo + x * (hi - lo)  # tanpa clip agar SDOA bisa eksplorasi luar unit cube
         else:
             scaled = x
         d = np.rint(scaled).astype(int)
-        return np.clip(d, self.d_min, self.d_max)
+        # return np.clip(d, self.d_min, self.d_max)
+        return d  # tanpa clip agar SDOA bisa eksplorasi luar domain integer
 
     def decode_batch(self, X):
         X = np.atleast_2d(np.asarray(X, dtype=float))
         if self.unit_cube:
             lo = self.d_min - 0.5; hi = self.d_max + 0.5
-            scaled = lo + np.clip(X, 0.0, 1.0) * (hi - lo)
+            # scaled = lo + np.clip(X, 0.0, 1.0) * (hi - lo)
+            scaled = lo + X * (hi - lo)  # tanpa clip agar SDOA bisa eksplorasi luar unit cube
         else:
             scaled = X
         D = np.rint(scaled).astype(int)
-        return np.clip(D, self.d_min, self.d_max)
+        # return np.clip(D, self.d_min, self.d_max)
+        return D  # tanpa clip agar SDOA bisa eksplorasi luar domain integer
 
     # ------------- penjadwalan CPM (tanpa sumber daya) -------------
     def cpm_schedule(self, d):
