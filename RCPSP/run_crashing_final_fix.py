@@ -27,7 +27,7 @@ DATA = current_dir / "activity_data_v3.json"
 CAP_DATA = current_dir / "resource_capacity_v3.json"
 REQ_DATA = current_dir / "resource_requirements_v3.json"
 
-DEADLINE = 241  # makespan normal = 249 -> perlu crash jalur kritis 6 hari
+DEADLINE = 244  # makespan normal = 249 -> perlu crash jalur kritis 6 hari
 
 
 def load_tasks(path):
@@ -130,9 +130,9 @@ def ilp_ground_truth(problem):
 # (lebih mahal dari CPM murni), jadi setelan cluster/iterasi dibuat lebih hemat.
 # Perbesar bila ingin cakupan plateau lebih lengkap (dengan biaya waktu).
 PARAMS = dict(
-    m_cluster=1024, k_cluster=500, gamma=0.85,
+    m_cluster=1024, k_cluster=100, gamma=0.85,
     r_cl=0.95, theta_cl=np.pi / 4,
-    sdoa_m=1024, sdoa_k_max=400,
+    sdoa_m=2048, sdoa_k_max=100,
     sdoa_r=0.95, sdoa_theta=np.pi / 8,
     delta=0.00001, epsilon=1e-9,
 )

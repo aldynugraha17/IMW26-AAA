@@ -68,7 +68,7 @@ FIXED_PARAMS = {
     "k_cluster": 500,
     "r_cl": 0.95,
     "theta_cl": np.pi / 4,
-    "sdoa_m": 2048,
+    "sdoa_m": 4096,
     "sdoa_k_max": 400,
     "delta": 0.00001,
     "epsilon": 1e-9,
@@ -419,7 +419,7 @@ def run_sweep():
     # for T in range(T_normal, T_min - 1, -1): # uncomment this line to sweep from T_normal down to T_min
     # for T in range(T_min, T_normal - 1, 1): # uncomment this line to sweep from T
     # Ubah isi list ini dengan deadline yang spesifik ingin di-run
-    target_deadlines = [241] # Contoh: [30, 32, 35]
+    target_deadlines = [235, 236, 237, 238, 239, 240] # Contoh: [30, 32, 35]
     for T in target_deadlines:
         print("-" * 70)
         print(f"[T = {T}]  Mulai grid search...")
