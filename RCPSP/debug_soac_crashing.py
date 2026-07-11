@@ -17,25 +17,30 @@ from pathlib import Path
 
 import numpy as np
 from pysne.solver import solve_system
-from project_crashing_problem import ProjectCrashingProblem
+from project_crashing_problem_final_fix import ProjectCrashingProblem
 
+# current_dir = Path(__file__).resolve().parent
+# DATA = current_dir.parent / "adiel" / "data" / "activity_data_v3.json"
 current_dir = Path(__file__).resolve().parent
-DATA = current_dir.parent / "adiel" / "data" / "activity_data_v3.json"
-DEADLINE = 242
+DATA_DIR = current_dir.parent / "adiel" / "data"
+DATA = DATA_DIR / "activity_data_v3.json"
+RES_CAP = DATA_DIR / "resource_capacity_v3.json"
+RES_REQ = DATA_DIR / "resource_requirements_v3.json"
+DEADLINE = 245
 
 # Budget penuh (punyamu sekarang) -- +-524rb eval fase cluster,
 # +-307rb eval per cluster di fase SDOA.
 PARAMS_FULL = {
-    "m_cluster": 32768, "k_cluster": 15, "gamma": 0.8,
-    "r_cl": 0.95, "theta_cl": np.pi / 4,
-    "sdoa_m": 1024, "sdoa_k_max": 300,
-    "sdoa_r": 0.97, "sdoa_theta": np.pi / 4,
-    "delta": 0.4, "epsilon": 1e-9,
+    "m_cluster": 1024, "k_cluster": 300, "gamma": 0.99,
+    "r_cl": 0.95, "theta_cl": np.pi / 2,
+    "sdoa_m": 8096, "sdoa_k_max": 300,
+    "sdoa_r": 0.97, "sdoa_theta": np.pi / 8,
+    "delta": 0.4, "epsilon": 1e-9, "num_check_points": 2
 }
 
 # Budget kecil untuk verifikasi cepat (harusnya selesai < 1 menit).
 PARAMS_DEBUG = {
-    "m_cluster": 2048, "k_cluster": 15, "gamma": 0.8,
+    "m_cluster": 4096, "k_cluster": 100, "gamma": 0.95,
     "r_cl": 0.95, "theta_cl": np.pi / 4,
     "sdoa_m": 256, "sdoa_k_max": 60,
     "sdoa_r": 0.97, "sdoa_theta": np.pi / 4,
@@ -173,7 +178,7 @@ class DebugProblem:
 
 
 def main():
-    params = PARAMS_DEBUG  # ganti ke PARAMS_FULL kalau pipeline sudah oke
+    params = PARAMS_FULL  # ganti ke PARAMS_FULL kalau pipeline sudah oke
     problem = ProjectCrashingProblem(load_tasks(DATA), DEADLINE,
                                      unit_cube=True, params=params)
 
@@ -184,6 +189,8 @@ def main():
           f"min={problem.makespan(problem.d_min)}")
     print(f"Perkiraan budget: fase cluster ~{m * (k + 1):,} eval, "
           f"fase SDOA ~{sm * sk:,} eval PER CLUSTER\n")
+    print(f"param: {PARAMS_FULL}")
+
 
     dbg = DebugProblem(problem, report_every=25000, report_sec=5.0)
 
