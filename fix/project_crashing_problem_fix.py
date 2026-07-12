@@ -40,6 +40,7 @@ Representasi titik (prosedur integer ala paper Diophantine):
 
 import json
 import numpy as np
+from numpy.lib.stride_tricks import sliding_window_view as _swv
 
 from pysne.problems.base import BaseProblem
 from pysne.utils import create_continuous_bounds
@@ -49,7 +50,7 @@ from pysne.utils import create_continuous_bounds
 class ProjectCrashingProblem(BaseProblem):
     def __init__(self, tasks, deadline, params=None, unit_cube=True,
                  cost_tolerance=0.0, resource_capacity=None,
-                 resource_requirements=None):
+                 resource_requirements=None, sched_cache=None):
         self.tasks = list(tasks)
         self.task_names = [t["name"] for t in self.tasks]
         self.n_tasks = len(self.tasks)
@@ -91,9 +92,26 @@ class ProjectCrashingProblem(BaseProblem):
                 [[int(resource_requirements.get(nm, {}).get(r, 0))
                   for r in self.resource_names]
                  for nm in self.task_names])            # (n_tasks, n_res)
-            self._need = [np.where(self.Req[j] > 0)[0] for j in range(self.n_tasks)]
             self._H = int(self.d_max.sum()) + 2          # horizon aman utk SGS
-            self._sched_cache = {}                       # memo: tuple(d) -> (mk,s,e)
+            # Memo jadwal: kunci bytes(d) -> (makespan, s, e). Jadwal SGS
+            # TIDAK bergantung deadline (pergeseran Tref menggeser semua LF
+            # seragam sehingga urutan LFT tak berubah), jadi cache ini aman
+            # DIBAGIKAN lintas deadline/konfigurasi lewat argumen sched_cache
+            # (mis. pada sweep) selama data task & resource-nya sama.
+            self._sched_cache = sched_cache if sched_cache is not None else {}
+
+            # -- Analisis sumber daya PENGIKAT (binding) --
+            # Pada jadwal apa pun yang menghormati precedence, task-task yang
+            # aktif bersamaan membentuk ANTICHAIN pada DAG precedence (pasangan
+            # yang terurut tak mungkin tumpang tindih). Maka sumber daya yang
+            # permintaan antichain maksimumnya <= kapasitas TIDAK MUNGKIN
+            # dilanggar oleh jadwal mana pun, dan aman diabaikan total.
+            # Ini eksak (bukan aproksimasi) sehingga hasil SGS tidak berubah.
+            self._bind = self._binding_resources()       # indeks resource pengikat
+            self.CapB = self.Cap[self._bind]
+            self.ReqB = self.Req[:, self._bind]          # (n_tasks, n_bind)
+            self._need = [np.where(self.ReqB[j] > 0)[0]
+                          for j in range(self.n_tasks)]  # per task: bind saja
         # --------------------------------------------
 
         self._params = dict(params) if params else {}
@@ -172,8 +190,9 @@ class ProjectCrashingProblem(BaseProblem):
         return E
 
     # ------------- penjadwalan resource-feasible (SGS) -------------
-    def _lft_order(self, d):
-        s, e = self.cpm_schedule(d)
+    def _lft_order(self, d, s=None, e=None):
+        if s is None or e is None:
+            s, e = self.cpm_schedule(d)
         Tref = max(int(e.max()), self.deadline)
         LF = np.full(self.n_tasks, Tref, int)
         for j in reversed(self.topo_order):
@@ -182,24 +201,46 @@ class ProjectCrashingProblem(BaseProblem):
         return sorted(range(self.n_tasks), key=lambda j: (LF[j], s[j], j))
 
     def _serial_sgs(self, d, order):
-        usage = np.zeros((len(self.resource_names), self._H), int)
+        # usage hanya untuk resource PENGIKAT; resource lain terbukti tak
+        # mungkin dilanggar (lihat _binding_resources), jadi tak perlu dicek.
+        # Timeline usage disimpan sebagai list Python: untuk jendela pendek
+        # (durasi <= ~30) max() bawaan jauh lebih murah daripada numpy kecil.
+        usage = [[0] * self._H for _ in range(len(self._bind))]
         s = np.zeros(self.n_tasks, int); e = np.zeros(self.n_tasks, int)
+        CapB = self.CapB; ReqB = self.ReqB
         for j in order:
-            est = max((e[p] for p in self.pred_idx[j]), default=0)
-            dj = int(d[j]); need = self._need[j]; t = est
-            if need.size == 0:
+            est = 0
+            for p in self.pred_idx[j]:
+                ep = e[p]
+                if ep > est:
+                    est = ep
+            dj = int(d[j]); need = self._need[j]
+            if need.size == 0 or dj == 0:
                 s[j] = est; e[j] = est + dj; continue
-            capN = self.Cap[need][:, None]; rN = self.Req[j, need][:, None]
-            while True:
-                if bool((usage[need, t:t + dj] + rN <= capN).all()):
-                    for r in need:
-                        usage[r, t:t + dj] += self.Req[j, r]
-                    s[j] = t; e[j] = t + dj; break
-                t += 1
+            # jalur cepat: mayoritas penempatan langsung feasible di est
+            t = est; placed = True
+            for b in need:
+                if max(usage[b][est:est + dj]) + ReqB[j, b] > CapB[b]:
+                    placed = False; break
+            if not placed:
+                # jalur lambat (jarang): cari start feasible pertama sekaligus
+                # via sliding-window-max, satu operasi numpy per resource.
+                ok = None
+                for b in need:
+                    ub = np.asarray(usage[b][est:], dtype=np.int32)
+                    wm = _swv(ub, dj).max(axis=1)
+                    cond = wm + ReqB[j, b] <= CapB[b]
+                    ok = cond if ok is None else (ok & cond)
+                t = est + int(np.argmax(ok))
+            for b in need:
+                w = int(ReqB[j, b]); ub = usage[b]
+                for k in range(t, t + dj):
+                    ub[k] += w
+            s[j] = t; e[j] = t + dj
         return int(e.max()), s, e
 
     def _parallel_sgs(self, d):
-        usage = np.zeros((len(self.resource_names), self._H), int)
+        usage = np.zeros((len(self._bind), self._H), int)
         s = -np.ones(self.n_tasks, int); e = -np.ones(self.n_tasks, int)
         remaining = set(range(self.n_tasks))
         while remaining:
@@ -211,23 +252,66 @@ class ProjectCrashingProblem(BaseProblem):
             if need.size == 0:
                 s[j] = est; e[j] = est + dj
             else:
-                capN = self.Cap[need][:, None]; rN = self.Req[j, need][:, None]
+                capN = self.CapB[need][:, None]; rN = self.ReqB[j, need][:, None]
                 while True:
                     if bool((usage[need, t:t + dj] + rN <= capN).all()):
                         for r in need:
-                            usage[r, t:t + dj] += self.Req[j, r]
+                            usage[r, t:t + dj] += self.ReqB[j, r]
                         s[j] = t; e[j] = t + dj; break
                     t += 1
             remaining.discard(j)
         return int(e.max()), s, e
 
-    def _resource_schedule(self, d):
-        key = tuple(int(x) for x in d)
+    def _binding_resources(self):
+        """Indeks resource yang MUNGKIN dilanggar (pengikat).
+
+        Untuk tiap resource dihitung permintaan antichain-maksimum pada DAG
+        precedence (ILP kecil 0/1: maks sum w_i x_i, s.t. x_i + x_j <= 1 untuk
+        tiap pasangan terurut). Bila nilai maks <= kapasitas, resource itu
+        mustahil dilanggar oleh jadwal precedence-feasible mana pun -> aman
+        diabaikan. Bila scipy tak tersedia, semua resource dianggap pengikat
+        (fallback konservatif; hasil tetap benar, hanya lebih lambat).
+        """
+        try:
+            from scipy.optimize import milp, LinearConstraint, Bounds
+        except ImportError:
+            return np.arange(len(self.resource_names))
+        n = self.n_tasks
+        before = np.zeros((n, n), dtype=bool)            # transitive closure
+        for j in self.topo_order:
+            for p in self.pred_idx[j]:
+                before[p, j] = True
+                before[:, j] |= before[:, p]
+        binding = []
+        for ri in range(len(self.resource_names)):
+            w = self.Req[:, ri]
+            js = np.where(w > 0)[0]
+            if js.size == 0:
+                continue
+            m = len(js)
+            rows = []
+            for a in range(m):
+                for b in range(a + 1, m):
+                    i, jj = js[a], js[b]
+                    if before[i, jj] or before[jj, i]:
+                        row = np.zeros(m); row[a] = row[b] = 1
+                        rows.append(row)
+            cons = [LinearConstraint(np.array(rows), -np.inf, 1)] if rows else []
+            res = milp(c=-w[js].astype(float), constraints=cons,
+                       bounds=Bounds(0, 1), integrality=np.ones(m))
+            if res.x is None or -res.fun > self.Cap[ri]:
+                binding.append(ri)                       # gagal solve -> konservatif
+        return np.array(binding, dtype=int)
+
+    def _resource_schedule(self, d, s_cpm=None, e_cpm=None):
+        key = np.ascontiguousarray(d, dtype=np.int64).tobytes()
         cached = self._sched_cache.get(key)
         if cached is not None:
             return cached
-        cpm_ms = self.makespan(d)                       # batas bawah makespan
-        m1, s1, e1 = self._serial_sgs(d, self._lft_order(d))
+        if e_cpm is None:
+            s_cpm, e_cpm = self.cpm_schedule(d)
+        cpm_ms = int(np.max(e_cpm))                     # batas bawah makespan
+        m1, s1, e1 = self._serial_sgs(d, self._lft_order(d, s_cpm, e_cpm))
         if m1 <= cpm_ms:                                # capai batas bawah -> optimal
             res = (m1, s1, e1)
         else:                                           # baru pakai parallel utk perketat
@@ -239,7 +323,62 @@ class ProjectCrashingProblem(BaseProblem):
     def resource_makespan(self, d):
         if not self.has_resources:
             return self.makespan(d)
+        if not len(self._bind):
+            return self.makespan(d)                      # tak ada resource pengikat
         return self._resource_schedule(np.asarray(d))[0]
+
+    def _resource_makespan_batch(self, D, E, cpm_ms):
+        """Makespan resource-feasible untuk batch (cache-first + tervektorisasi).
+
+        Urutan kerja per batch:
+          1. Konsultasi memo dulu (kunci bytes per baris) -- fase SDOA yang
+             sudah mengerucut praktis 100% kena cache, biayanya cuma lookup.
+          2. Baris yang belum ada di cache dideduplikasi (np.unique).
+          3. Untuk baris unik: cek pelanggaran resource PENGIKAT pada jadwal
+             CPM earliest-start, tervektorisasi via difference-array + cumsum.
+             Tanpa pelanggaran -> jadwal CPM sudah resource-feasible dan
+             mencapai batas bawah, jadi makespan_resource == makespan_CPM.
+          4. Hanya pelanggar yang menjalani SGS per titik.
+        """
+        D64 = np.ascontiguousarray(D, dtype=np.int64)
+        B = D64.shape[0]
+        out = np.empty(B, dtype=float)
+        cache = self._sched_cache
+        miss = []
+        for i in range(B):
+            c = cache.get(D64[i].tobytes())
+            if c is not None:
+                out[i] = c[0]
+            else:
+                miss.append(i)
+        if not miss:
+            return out
+        idx = np.array(miss)
+        Du, inv = np.unique(D64[idx], axis=0, return_inverse=True)
+        U = Du.shape[0]
+        Eu = self._forward_pass_batch(Du)
+        Su = Eu - Du
+        H = int(Eu.max()) + 1
+        viol = np.zeros(U, dtype=bool)
+        rows = np.arange(U)
+        for b in range(len(self._bind)):
+            js = np.where(self.ReqB[:, b] > 0)[0]
+            diff = np.zeros((U, H + 1), dtype=np.int32)
+            for j in js:
+                w = int(self.ReqB[j, b])
+                # pasangan indeks (row, kolom) unik per task -> fancy-index aman
+                diff[rows, Su[:, j]] += w
+                diff[rows, Eu[:, j]] -= w
+            usage = np.cumsum(diff, axis=1)
+            viol |= (usage > self.CapB[b]).any(axis=1)
+        mk_u = Eu.max(axis=1).astype(float)
+        clean = np.where(~viol)[0]
+        for i in clean:                                  # CPM sudah feasible: memo-kan
+            cache[Du[i].tobytes()] = (int(mk_u[i]), Su[i].copy(), Eu[i].copy())
+        for i in np.where(viol)[0]:                      # sisanya baru SGS
+            mk_u[i] = self._resource_schedule(Du[i], Su[i], Eu[i])[0]
+        out[idx] = mk_u[inv]
+        return out
 
     def schedule(self, d):
         """Jadwal untuk pelaporan: resource-feasible bila ada sumber daya."""
@@ -270,8 +409,10 @@ class ProjectCrashingProblem(BaseProblem):
             # SGS resource-feasible hanya untuk yang lolos CPM (hemat komputasi).
             eff = cpm_ms.astype(float).copy()
             near = np.where(cpm_ms <= self.deadline)[0]
-            for i in near:
-                eff[i] = self.resource_makespan(D[i])
+            if near.size and len(self._bind):
+                eff[near] = self._resource_makespan_batch(
+                    D[near], E_cpm[near], cpm_ms[near])
+            # bila tak ada resource pengikat, makespan_resource == makespan_CPM
             makespan = eff
         else:
             makespan = cpm_ms
