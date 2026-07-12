@@ -42,7 +42,7 @@ N = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
      2, 1, 3, 5, 6, 5, 3, 1]
 assert len(Ts) == len(Z) == len(N) == 58
 
-HIGHLIGHT = (241,)   # case-study deadlines; kosongkan () jika tak ingin highlight
+HIGHLIGHT = ()   # case-study deadlines; kosongkan () jika tak ingin highlight
 BLUE, ORANGE, HL = '#1f4e79', '#e07b39', '#c0392b'
 
 plt.rcParams.update({'font.size': 11, 'axes.spines.top': False})
