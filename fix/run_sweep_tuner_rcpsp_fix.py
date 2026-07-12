@@ -85,9 +85,45 @@ def build_param_configs():
 
 PARAM_CONFIGS = build_param_configs()
 
-def config_label(cfg):
-    return (f"m={cfg['m_cluster']}, g={cfg['gamma']}, "
-            f"sr={cfg['sdoa_r']}, st={cfg['sdoa_theta']:.4f}, nc={cfg['num_check_points']}")
+
+# urutan tampil: grid dulu, lalu fixed
+_LABEL_ORDER = ["m_cluster", "gamma", "sdoa_r", "sdoa_theta",
+                "k_cluster", "r_cl", "theta_cl",
+                "sdoa_m", "sdoa_k_max", "delta", "epsilon"]
+
+_SHORT = {
+    "m_cluster": "m",      "gamma": "g",        "sdoa_r": "sr",
+    "sdoa_theta": "st",    "k_cluster": "k",    "r_cl": "rcl",
+    "theta_cl": "tcl",     "sdoa_m": "sm",      "sdoa_k_max": "skmax",
+    "delta": "del",        "epsilon": "eps",
+}
+
+def _fmt(key, val):
+    if isinstance(val, (int, np.integer)):
+        return str(val)
+    if isinstance(val, float):
+        # sudut: tampilkan sebagai kelipatan pi bila rapi
+        if "theta" in key:
+            ratio = np.pi / val if val else 0.0
+            if val > 0 and abs(ratio - round(ratio)) < 1e-9:
+                return f"pi/{round(ratio)}"
+            return f"{val:.4f}"
+        if 0 < abs(val) < 1e-3:          # delta, epsilon
+            return f"{val:.0e}"
+        return f"{val:g}"                # 0.9 -> "0.9", bukan "0.9000"
+    return str(val)
+
+def config_label(cfg, fixed=None, multiline=False):
+    """Label lengkap semua parameter. `fixed` opsional bila cfg hanya berisi grid."""
+    full = {**(fixed or {}), **cfg}
+    keys = [k for k in _LABEL_ORDER if k in full]
+    keys += [k for k in full if k not in _LABEL_ORDER]   # key baru ikut otomatis
+    parts = [f"{_SHORT.get(k, k)}={_fmt(k, full[k])}" for k in keys]
+    return "\n".join(parts) if multiline else ", ".join(parts)
+
+# def config_label(cfg):
+#     return (f"m={cfg['m_cluster']}, g={cfg['gamma']}, "
+#             f"sr={cfg['sdoa_r']}, st={cfg['sdoa_theta']:.4f}")
 
 # =====================================================================
 # DATA LOADING
