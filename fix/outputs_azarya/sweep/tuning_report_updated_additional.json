@@ -1,0 +1,931 @@
+[
+  {
+    "T": 210,
+    "status": "OK",
+    "z_star": 2890.0,
+    "best_config_idx": 0,
+    "best_config_label": "m=1024, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_gap": 0.0,
+    "trials": [
+      {
+        "config_idx": 0,
+        "config_label": "m=1024, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 1024.0,
+          "gamma": 0.85,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 2890.0,
+        "gap": 0.0,
+        "num_solutions": 1,
+        "elapsed": 249.12
+      }
+    ]
+  },
+  {
+    "T": 201,
+    "status": "OK",
+    "z_star": 4530.0,
+    "best_config_idx": 1,
+    "best_config_label": "m=1024, g=0.9, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_gap": 0.0,
+    "trials": [
+      {
+        "config_idx": 0,
+        "config_label": "m=1024, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 1024.0,
+          "gamma": 0.85,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 5100.0,
+        "gap": 570.0,
+        "num_solutions": 1,
+        "elapsed": 158.82
+      },
+      {
+        "config_idx": 1,
+        "config_label": "m=1024, g=0.9, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 1024.0,
+          "gamma": 0.9,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 4530.0,
+        "gap": 0.0,
+        "num_solutions": 1,
+        "elapsed": 153.62
+      }
+    ]
+  },
+  {
+    "T": 200,
+    "status": "OK",
+    "z_star": 4730.0,
+    "best_config_idx": 1,
+    "best_config_label": "m=1024, g=0.9, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_gap": 250.0,
+    "trials": [
+      {
+        "config_idx": 0,
+        "config_label": "m=1024, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 1024.0,
+          "gamma": 0.85,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 5250.0,
+        "gap": 520.0,
+        "num_solutions": 1,
+        "elapsed": 158.86
+      },
+      {
+        "config_idx": 1,
+        "config_label": "m=1024, g=0.9, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 1024.0,
+          "gamma": 0.9,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 4980.0,
+        "gap": 250.0,
+        "num_solutions": 1,
+        "elapsed": 150.73
+      },
+      {
+        "config_idx": 2,
+        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 2048.0,
+          "gamma": 0.85,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 5250.0,
+        "gap": 520.0,
+        "num_solutions": 1,
+        "elapsed": 300.73
+      },
+      {
+        "config_idx": 3,
+        "config_label": "m=2048, g=0.9, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 2048.0,
+          "gamma": 0.9,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 4980.0,
+        "gap": 250.0,
+        "num_solutions": 1,
+        "elapsed": 297.58
+      }
+    ]
+  },
+  {
+    "T": 199,
+    "status": "OK",
+    "z_star": 4930.0,
+    "best_config_idx": 0,
+    "best_config_label": "m=1024, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_gap": 540.0,
+    "trials": [
+      {
+        "config_idx": 0,
+        "config_label": "m=1024, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 1024.0,
+          "gamma": 0.85,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 5470.0,
+        "gap": 540.0,
+        "num_solutions": 1,
+        "elapsed": 161.17
+      },
+      {
+        "config_idx": 1,
+        "config_label": "m=1024, g=0.9, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 1024.0,
+          "gamma": 0.9,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 5470.0,
+        "gap": 540.0,
+        "num_solutions": 1,
+        "elapsed": 157.57
+      },
+      {
+        "config_idx": 2,
+        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 2048.0,
+          "gamma": 0.85,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 5470.0,
+        "gap": 540.0,
+        "num_solutions": 1,
+        "elapsed": 309.99
+      },
+      {
+        "config_idx": 3,
+        "config_label": "m=2048, g=0.9, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 2048.0,
+          "gamma": 0.9,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 5470.0,
+        "gap": 540.0,
+        "num_solutions": 1,
+        "elapsed": 306.62
+      }
+    ]
+  },
+  {
+    "T": 198,
+    "status": "OK",
+    "z_star": 5130.0,
+    "best_config_idx": 0,
+    "best_config_label": "m=1024, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_gap": 230.0,
+    "trials": [
+      {
+        "config_idx": 0,
+        "config_label": "m=1024, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 1024.0,
+          "gamma": 0.85,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 5360.0,
+        "gap": 230.0,
+        "num_solutions": 1,
+        "elapsed": 156.01
+      },
+      {
+        "config_idx": 1,
+        "config_label": "m=1024, g=0.9, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 1024.0,
+          "gamma": 0.9,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 5360.0,
+        "gap": 230.0,
+        "num_solutions": 1,
+        "elapsed": 148.06
+      },
+      {
+        "config_idx": 2,
+        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 2048.0,
+          "gamma": 0.85,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 5360.0,
+        "gap": 230.0,
+        "num_solutions": 1,
+        "elapsed": 317.63
+      },
+      {
+        "config_idx": 3,
+        "config_label": "m=2048, g=0.9, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 2048.0,
+          "gamma": 0.9,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 5360.0,
+        "gap": 230.0,
+        "num_solutions": 1,
+        "elapsed": 292.43
+      }
+    ]
+  },
+  {
+    "T": 197,
+    "status": "OK",
+    "z_star": 5330.0,
+    "best_config_idx": 0,
+    "best_config_label": "m=1024, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_gap": 465.0,
+    "trials": [
+      {
+        "config_idx": 0,
+        "config_label": "m=1024, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 1024.0,
+          "gamma": 0.85,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 5795.0,
+        "gap": 465.0,
+        "num_solutions": 1,
+        "elapsed": 173.24
+      },
+      {
+        "config_idx": 1,
+        "config_label": "m=1024, g=0.9, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 1024.0,
+          "gamma": 0.9,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 5795.0,
+        "gap": 465.0,
+        "num_solutions": 1,
+        "elapsed": 171.8
+      },
+      {
+        "config_idx": 2,
+        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 2048.0,
+          "gamma": 0.85,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 5795.0,
+        "gap": 465.0,
+        "num_solutions": 1,
+        "elapsed": 339.55
+      },
+      {
+        "config_idx": 3,
+        "config_label": "m=2048, g=0.9, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 2048.0,
+          "gamma": 0.9,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 5795.0,
+        "gap": 465.0,
+        "num_solutions": 1,
+        "elapsed": 340.63
+      }
+    ]
+  },
+  {
+    "T": 196,
+    "status": "OK",
+    "z_star": 5580.0,
+    "best_config_idx": 0,
+    "best_config_label": "m=1024, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_gap": 605.0,
+    "trials": [
+      {
+        "config_idx": 0,
+        "config_label": "m=1024, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 1024.0,
+          "gamma": 0.85,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 6185.0,
+        "gap": 605.0,
+        "num_solutions": 1,
+        "elapsed": 190.51
+      },
+      {
+        "config_idx": 1,
+        "config_label": "m=1024, g=0.9, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 1024.0,
+          "gamma": 0.9,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 6185.0,
+        "gap": 605.0,
+        "num_solutions": 1,
+        "elapsed": 171.19
+      },
+      {
+        "config_idx": 2,
+        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 2048.0,
+          "gamma": 0.85,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 6185.0,
+        "gap": 605.0,
+        "num_solutions": 1,
+        "elapsed": 325.66
+      },
+      {
+        "config_idx": 3,
+        "config_label": "m=2048, g=0.9, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 2048.0,
+          "gamma": 0.9,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 6185.0,
+        "gap": 605.0,
+        "num_solutions": 1,
+        "elapsed": 328.75
+      }
+    ]
+  },
+  {
+    "T": 195,
+    "status": "OK",
+    "z_star": 5830.0,
+    "best_config_idx": 0,
+    "best_config_label": "m=1024, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_gap": 440.0,
+    "trials": [
+      {
+        "config_idx": 0,
+        "config_label": "m=1024, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 1024.0,
+          "gamma": 0.85,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 6270.0,
+        "gap": 440.0,
+        "num_solutions": 1,
+        "elapsed": 155.76
+      },
+      {
+        "config_idx": 1,
+        "config_label": "m=1024, g=0.9, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 1024.0,
+          "gamma": 0.9,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 6270.0,
+        "gap": 440.0,
+        "num_solutions": 1,
+        "elapsed": 147.93
+      },
+      {
+        "config_idx": 2,
+        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 2048.0,
+          "gamma": 0.85,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 6270.0,
+        "gap": 440.0,
+        "num_solutions": 1,
+        "elapsed": 337.72
+      },
+      {
+        "config_idx": 3,
+        "config_label": "m=2048, g=0.9, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 2048.0,
+          "gamma": 0.9,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 6270.0,
+        "gap": 440.0,
+        "num_solutions": 1,
+        "elapsed": 329.74
+      }
+    ]
+  },
+  {
+    "T": 194,
+    "status": "OK",
+    "z_star": 6080.0,
+    "best_config_idx": 0,
+    "best_config_label": "m=1024, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_gap": 605.0,
+    "trials": [
+      {
+        "config_idx": 0,
+        "config_label": "m=1024, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 1024.0,
+          "gamma": 0.85,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 6685.0,
+        "gap": 605.0,
+        "num_solutions": 1,
+        "elapsed": 160.05
+      },
+      {
+        "config_idx": 1,
+        "config_label": "m=1024, g=0.9, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 1024.0,
+          "gamma": 0.9,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 6685.0,
+        "gap": 605.0,
+        "num_solutions": 1,
+        "elapsed": 147.23
+      },
+      {
+        "config_idx": 2,
+        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 2048.0,
+          "gamma": 0.85,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 6685.0,
+        "gap": 605.0,
+        "num_solutions": 1,
+        "elapsed": 333.65
+      },
+      {
+        "config_idx": 3,
+        "config_label": "m=2048, g=0.9, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 2048.0,
+          "gamma": 0.9,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 6685.0,
+        "gap": 605.0,
+        "num_solutions": 1,
+        "elapsed": 335.22
+      }
+    ]
+  },
+  {
+    "T": 193,
+    "status": "OK",
+    "z_star": 6330.0,
+    "best_config_idx": 0,
+    "best_config_label": "m=1024, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_gap": 390.0,
+    "trials": [
+      {
+        "config_idx": 0,
+        "config_label": "m=1024, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 1024.0,
+          "gamma": 0.85,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 6720.0,
+        "gap": 390.0,
+        "num_solutions": 1,
+        "elapsed": 180.39
+      },
+      {
+        "config_idx": 1,
+        "config_label": "m=1024, g=0.9, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 1024.0,
+          "gamma": 0.9,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 6720.0,
+        "gap": 390.0,
+        "num_solutions": 1,
+        "elapsed": 173.69
+      },
+      {
+        "config_idx": 2,
+        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 2048.0,
+          "gamma": 0.85,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 6720.0,
+        "gap": 390.0,
+        "num_solutions": 1,
+        "elapsed": 332.35
+      },
+      {
+        "config_idx": 3,
+        "config_label": "m=2048, g=0.9, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 2048.0,
+          "gamma": 0.9,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 6720.0,
+        "gap": 390.0,
+        "num_solutions": 1,
+        "elapsed": 315.98
+      }
+    ]
+  },
+  {
+    "T": 192,
+    "status": "OK",
+    "z_star": 6580.0,
+    "best_config_idx": 0,
+    "best_config_label": "m=1024, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_gap": 80.0,
+    "trials": [
+      {
+        "config_idx": 0,
+        "config_label": "m=1024, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 1024.0,
+          "gamma": 0.85,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 6660.0,
+        "gap": 80.0,
+        "num_solutions": 1,
+        "elapsed": 149.03
+      },
+      {
+        "config_idx": 1,
+        "config_label": "m=1024, g=0.9, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 1024.0,
+          "gamma": 0.9,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 6660.0,
+        "gap": 80.0,
+        "num_solutions": 1,
+        "elapsed": 148.01
+      },
+      {
+        "config_idx": 2,
+        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 2048.0,
+          "gamma": 0.85,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 6660.0,
+        "gap": 80.0,
+        "num_solutions": 1,
+        "elapsed": 296.65
+      },
+      {
+        "config_idx": 3,
+        "config_label": "m=2048, g=0.9, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 2048.0,
+          "gamma": 0.9,
+          "sdoa_r": 0.95,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.975,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 6660.0,
+        "gap": 80.0,
+        "num_solutions": 1,
+        "elapsed": 331.12
+      }
+    ]
+  }
+]
