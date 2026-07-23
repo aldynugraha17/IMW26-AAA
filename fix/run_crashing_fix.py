@@ -17,17 +17,16 @@ import scipy.sparse as sp
 from scipy.optimize import milp, LinearConstraint, Bounds
 
 from pysne.solver import solve_system
-# from project_crashing_problem_new import ProjectCrashingProblem
-from project_crashing_problem_fix import ProjectCrashingProblem # uncomment this if you want to use the new version (faster)
+from project_crashing_problem_fix import ProjectCrashingProblem
+# from project_crashing_problem_fix_try_192 import ProjectCrashingProblem # uncomment this if you want to use the new version (faster)
 
-# DATA = "/home/claude/IMW26-AAA/adiel/data/activity_data_v3.json"
 # DATA = "E:/p2ms/IMW26-AAA/adiel/data/activity_data_v3.json"
 current_dir = Path(__file__).resolve().parent
 DATA = current_dir / "activity_data_v3.json"
 CAP_DATA = current_dir / "resource_capacity_v3.json"
 REQ_DATA = current_dir / "resource_requirements_v3.json"
 
-DEADLINE = 241  # makespan normal = 249 -> perlu crash jalur kritis 6 hari
+DEADLINE = 246  # makespan normal = 249 -> perlu crash jalur kritis 6 hari
 
 
 def load_tasks(path):
@@ -130,10 +129,10 @@ def ilp_ground_truth(problem):
 # (lebih mahal dari CPM murni), jadi setelan cluster/iterasi dibuat lebih hemat.
 # Perbesar bila ingin cakupan plateau lebih lengkap (dengan biaya waktu).
 PARAMS = dict(
-    m_cluster=1024, k_cluster=100, gamma=0.95,
-    r_cl=0.95, theta_cl=np.pi / 4,
-    sdoa_m=1024, sdoa_k_max=100,
-    sdoa_r=0.95, sdoa_theta=np.pi / 8,
+    m_cluster=2048, k_cluster=500, gamma=0.85,
+    r_cl=0.975, theta_cl=np.pi/4,
+    sdoa_m=2048, sdoa_k_max=400,
+    sdoa_r=0.95, sdoa_theta=np.pi/8,
     delta=0.00001, epsilon=1e-9,
 )
 
@@ -152,6 +151,88 @@ def run_one(problem, z_star, label):
     return roots
 
 
+def build_solution_json(prob, d, solution_label="Solusi #1"):
+    """Konversi vektor durasi ke dict terstruktur per task."""
+    d = np.asarray(d, dtype=int)
+    s, e = prob.schedule(d)
+    y = prob.d_max - d
+    tasks_detail = []
+    for j in range(prob.n_tasks):
+        tasks_detail.append({
+            "task_name": prob.task_names[j],
+            "duration": int(d[j]),
+            "normal_duration": int(prob.d_max[j]),
+            "min_duration": int(prob.d_min[j]),
+            "crash_days": int(y[j]),
+            "crash_cost_per_day": float(prob.c[j]),
+            "crash_cost_total": float(prob.c[j] * y[j]),
+            "start": int(s[j]),
+            "end": int(e[j]),
+        })
+    return {
+        "label": solution_label,
+        "total_crash_cost": float(prob.crash_cost(d)),
+        "makespan": int(e.max()),
+        "deadline": prob.deadline,
+        "resource_feasible": prob.has_resources,
+        "tasks": tasks_detail,
+    }
+
+
+def export_report_json(prob, d_ilp, roots, z_star, ilp_time, spoc_time):
+    """Simpan laporan ILP vs SPOC side-by-side ke JSON di folder sweep."""
+    output_dir = current_dir / "outputs_azarya" / "sweep"
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    # --- ILP solution ---
+    ilp_solution = build_solution_json(prob, d_ilp, "ILP Ground Truth")
+    ilp_solution["solver"] = "ILP (scipy.optimize.milp)"
+    ilp_solution["elapsed_seconds"] = round(ilp_time, 2)
+
+    # --- SPOC solutions ---
+    spoc_solutions = []
+    for k, root in enumerate(roots):
+        sol = build_solution_json(prob, root, f"SPOC Solusi #{k + 1}")
+        sol["solver"] = "SPOC (SOAC)"
+        spoc_solutions.append(sol)
+
+    # --- Perbandingan per task ---
+    d_ilp_arr = np.asarray(d_ilp, dtype=int)
+    best_spoc = np.asarray(roots[0], dtype=int) if len(roots) else None
+    comparison = {
+        "ilp_cost": z_star,
+        "spoc_best_cost": float(prob.crash_cost(best_spoc)) if best_spoc is not None else None,
+        "gap": float(prob.crash_cost(best_spoc) - z_star) if best_spoc is not None else None,
+        "duration_identical": bool(np.array_equal(d_ilp_arr, best_spoc)) if best_spoc is not None else False,
+        "num_spoc_solutions": len(roots),
+    }
+    if best_spoc is not None:
+        task_comparison = []
+        for j in range(prob.n_tasks):
+            task_comparison.append({
+                "task_name": prob.task_names[j],
+                "ilp_duration": int(d_ilp_arr[j]),
+                "spoc_duration": int(best_spoc[j]),
+                "match": bool(d_ilp_arr[j] == best_spoc[j]),
+            })
+        comparison["tasks"] = task_comparison
+
+    report = {
+        "deadline": prob.deadline,
+        "n_tasks": prob.n_tasks,
+        "has_resources": prob.has_resources,
+        "ilp_solution": ilp_solution,
+        "spoc_solutions": spoc_solutions,
+        "comparison": comparison,
+    }
+
+    filename = f"report_ilp_vs_spoc_T{prob.deadline}.json"
+    filepath = output_dir / filename
+    with open(filepath, "w", encoding="utf-8") as f:
+        json.dump(report, f, indent=2, ensure_ascii=False)
+    print(f"\n[JSON] Laporan disimpan: {filepath}")
+    return filepath
+
 def main():
     tasks = load_tasks(DATA)
     resource_capacity = json.load(open(CAP_DATA))
@@ -167,13 +248,62 @@ def main():
     print(f"Sumber daya aktif: {len(prob.resource_names)} jenis "
           f"(kapasitas ditegakkan via SGS pada makespan).")
     t0 = time.time()
-    z_star, _ = ilp_ground_truth(prob)
+    z_star, d_ilp = ilp_ground_truth(prob)
+    ilp_time = time.time() - t0
     print(f"ILP ground truth (RCPSP-TCT): Z* = {z_star}  "
-          f"[{time.time() - t0:.1f}s]\n")
+          f"[{ilp_time:.1f}s]")
+    print()
+    print("=" * 70)
+    print("  LAPORAN SOLUSI ILP (Ground Truth)")
+    print("=" * 70)
+    print(prob.report([d_ilp]))
+    print("=" * 70)
+    print()
+
+    t1 = time.time()
     roots = run_one(prob, z_star, "SOAC")
+    spoc_time = time.time() - t1
     if len(roots):
         print()
-        print(prob.report(roots[:3]))
+        print("=" * 70)
+        print("  LAPORAN SOLUSI SPOC")
+        print("=" * 70)
+        print(prob.report(roots))  # Removed [:3] to show all solutions
+        print("=" * 70)
+
+        # --- Perbandingan ILP vs SPOC ---
+        d_ilp_arr = np.asarray(d_ilp, dtype=int)
+        best_spoc = np.asarray(roots[0], dtype=int)
+        
+        # Check if ANY of the SPOC solutions match the ILP exactly
+        match_idx = -1
+        for i, r in enumerate(roots):
+            if np.array_equal(d_ilp_arr, np.asarray(r, dtype=int)):
+                match_idx = i
+                break
+                
+        z_spoc = prob.crash_cost(best_spoc)
+        print()
+        print("=" * 70)
+        print("  PERBANDINGAN ILP vs SPOC")
+        print("=" * 70)
+        print(f"  Z* ILP   = {z_star:.2f}")
+        print(f"  Z  SPOC  = {z_spoc:.2f}")
+        print(f"  Gap      = {z_spoc - z_star:.2f}")
+        
+        if match_idx != -1:
+            print(f"  Durasi identik? YA (Match dengan SPOC Solusi #{match_idx + 1})")
+        else:
+            print(f"  Durasi identik? TIDAK (Tidak ada dari {len(roots)} solusi SPOC yang identik dengan ILP)")
+            diffs = np.where(d_ilp_arr != best_spoc)[0]
+            print(f"  Task berbeda (dibandingkan dengan SPOC Solusi #1) ({len(diffs)}):")
+            for j in diffs:
+                print(f"    {prob.task_names[j]:<22} "
+                      f"ILP d={d_ilp_arr[j]:>3}  vs  SPOC d={best_spoc[j]:>3}")
+        print("=" * 70)
+
+        # --- Export JSON report ---
+        export_report_json(prob, d_ilp, roots, z_star, ilp_time, spoc_time)
 
 if __name__ == "__main__":
     main()
