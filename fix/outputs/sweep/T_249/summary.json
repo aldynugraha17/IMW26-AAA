@@ -1,0 +1,15 @@
+{
+  "T": 249,
+  "status": "OK",
+  "ilp_min_cost": 0.0,
+  "soac_min_cost": 0.0,
+  "gap": 0.0,
+  "num_solutions": 1,
+  "makespan_frequencies": {
+    "249": 1
+  },
+  "num_meeting_deadline": 0,
+  "gantt_files": [],
+  "best_config": "N/A (no crashing needed)",
+  "elapsed_seconds": 8.75
+}
