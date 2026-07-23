@@ -247,6 +247,17 @@ def main():
           f"min (CPM)={prob.makespan(prob.d_min)}")
     print(f"Sumber daya aktif: {len(prob.resource_names)} jenis "
           f"(kapasitas ditegakkan via SGS pada makespan).")
+    prob_unconstrained = ProjectCrashingProblem(
+        tasks, DEADLINE, params=PARAMS,
+        resource_capacity={},
+        resource_requirements={},
+    )
+    
+    t0_cpm = time.time()
+    z_cpm, d_cpm = ilp_ground_truth(prob_unconstrained)
+    cpm_time = time.time() - t0_cpm
+    print(f"CPM Unconstrained ILP: Z* = {z_cpm}  [{cpm_time:.1f}s]")
+    
     t0 = time.time()
     z_star, d_ilp = ilp_ground_truth(prob)
     ilp_time = time.time() - t0
@@ -254,10 +265,31 @@ def main():
           f"[{ilp_time:.1f}s]")
     print()
     print("=" * 70)
-    print("  LAPORAN SOLUSI ILP (Ground Truth)")
+    print("  LAPORAN SOLUSI ILP (RCPSP Ground Truth)")
     print("=" * 70)
     print(prob.report([d_ilp]))
     print("=" * 70)
+    print()
+    
+    print("=" * 70)
+    print("  LAPORAN SOLUSI CPM (Tanpa Kendala Sumber Daya)")
+    print("=" * 70)
+    print(prob_unconstrained.report([d_cpm]))
+    print("=" * 70)
+    
+    # Analyze Resource Leveling Shifts (RCPSP vs CPM)
+    s_cpm, e_cpm = prob_unconstrained.schedule(d_cpm)
+    s_rcpsp, e_rcpsp = prob.schedule(d_ilp)
+    shifts = []
+    for j in range(prob.n_tasks):
+        if s_cpm[j] != s_rcpsp[j]:
+            shifts.append(f"    {prob.task_names[j]:<22} CPM start: {s_cpm[j]:>3}  => RCPSP start: {s_rcpsp[j]:>3} (delay: {s_rcpsp[j]-s_cpm[j]})")
+    
+    if shifts:
+        print("\n  >> PERGESERAN JADWAL AKIBAT RESOURCE LEVELING (RCPSP vs CPM):")
+        for shift in shifts:
+            print(shift)
+        print("=" * 70)
     print()
 
     t1 = time.time()
