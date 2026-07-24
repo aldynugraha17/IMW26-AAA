@@ -1,0 +1,31 @@
+{
+  "T": 200,
+  "status": "OK",
+  "ilp_min_cost": 4730.0,
+  "soac_min_cost": 4730.0,
+  "gap": 0.0,
+  "num_solutions": 1,
+  "makespan_frequencies": {
+    "200": 1
+  },
+  "num_meeting_deadline": 1,
+  "gantt_files": [
+    "gantt_sol001_ms200.png"
+  ],
+  "best_config": "m=4096, g=0.85, sr=0.99, st=pi/16, k=250, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
+  "best_config_params": {
+    "m_cluster": 4096.0,
+    "gamma": 0.85,
+    "sdoa_r": 0.99,
+    "sdoa_theta": 0.19634954084936207,
+    "k_cluster": 250.0,
+    "r_cl": 0.95,
+    "theta_cl": 0.7853981633974483,
+    "sdoa_m": 4096.0,
+    "sdoa_k_max": 1000.0,
+    "delta": 1e-05,
+    "epsilon": 1e-09
+  },
+  "configs_tried": 9,
+  "elapsed_seconds": 916.79
+}
