@@ -17,7 +17,7 @@
     "m_cluster": 750.0,
     "gamma": 0.25,
     "sdoa_r": 0.9949,
-    "sdoa_theta": 1.4922565104551517,
+    "sdoa_theta": 1.4923,
     "k_cluster": 4050.0,
     "r_cl": 0.9304,
     "theta_cl": 0.07853981633974483,
@@ -27,5 +27,5 @@
     "epsilon": 1e-09
   },
   "configs_tried": 1,
-  "elapsed_seconds": 320.21
+  "elapsed_seconds": 306.62
 }

@@ -41,19 +41,19 @@
     "status": "OK",
     "z_star": 60.0,
     "best_config_idx": 0,
-    "best_config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
     "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
         "config": {
-          "m_cluster": 2048.0,
+          "m_cluster": 1024.0,
           "gamma": 0.85,
-          "sdoa_r": 0.95,
+          "sdoa_r": 0.975,
           "sdoa_theta": 0.39269908169872414,
           "k_cluster": 500.0,
-          "r_cl": 0.975,
+          "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
           "sdoa_m": 2048.0,
           "sdoa_k_max": 400.0,
@@ -62,8 +62,8 @@
         },
         "soac_best": 60.0,
         "gap": 0.0,
-        "num_solutions": 5,
-        "elapsed": 2232.04
+        "num_solutions": 4,
+        "elapsed": 178.84
       }
     ]
   },
@@ -72,19 +72,19 @@
     "status": "OK",
     "z_star": 90.0,
     "best_config_idx": 0,
-    "best_config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
     "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
         "config": {
-          "m_cluster": 2048.0,
+          "m_cluster": 1024.0,
           "gamma": 0.85,
-          "sdoa_r": 0.95,
+          "sdoa_r": 0.975,
           "sdoa_theta": 0.39269908169872414,
           "k_cluster": 500.0,
-          "r_cl": 0.975,
+          "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
           "sdoa_m": 2048.0,
           "sdoa_k_max": 400.0,
@@ -93,8 +93,8 @@
         },
         "soac_best": 90.0,
         "gap": 0.0,
-        "num_solutions": 6,
-        "elapsed": 2438.82
+        "num_solutions": 4,
+        "elapsed": 85.61
       }
     ]
   },
@@ -103,19 +103,19 @@
     "status": "OK",
     "z_star": 120.0,
     "best_config_idx": 0,
-    "best_config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
     "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
         "config": {
-          "m_cluster": 2048.0,
+          "m_cluster": 1024.0,
           "gamma": 0.85,
-          "sdoa_r": 0.95,
+          "sdoa_r": 0.975,
           "sdoa_theta": 0.39269908169872414,
           "k_cluster": 500.0,
-          "r_cl": 0.975,
+          "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
           "sdoa_m": 2048.0,
           "sdoa_k_max": 400.0,
@@ -125,7 +125,7 @@
         "soac_best": 120.0,
         "gap": 0.0,
         "num_solutions": 5,
-        "elapsed": 2502.88
+        "elapsed": 97.3
       }
     ]
   },
@@ -134,19 +134,19 @@
     "status": "OK",
     "z_star": 150.0,
     "best_config_idx": 0,
-    "best_config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
     "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
         "config": {
-          "m_cluster": 2048.0,
+          "m_cluster": 1024.0,
           "gamma": 0.85,
-          "sdoa_r": 0.95,
+          "sdoa_r": 0.975,
           "sdoa_theta": 0.39269908169872414,
           "k_cluster": 500.0,
-          "r_cl": 0.975,
+          "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
           "sdoa_m": 2048.0,
           "sdoa_k_max": 400.0,
@@ -155,8 +155,8 @@
         },
         "soac_best": 150.0,
         "gap": 0.0,
-        "num_solutions": 3,
-        "elapsed": 2497.15
+        "num_solutions": 2,
+        "elapsed": 105.77
       }
     ]
   },
@@ -165,19 +165,19 @@
     "status": "OK",
     "z_star": 180.0,
     "best_config_idx": 0,
-    "best_config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
     "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
         "config": {
-          "m_cluster": 2048.0,
+          "m_cluster": 1024.0,
           "gamma": 0.85,
-          "sdoa_r": 0.95,
+          "sdoa_r": 0.975,
           "sdoa_theta": 0.39269908169872414,
           "k_cluster": 500.0,
-          "r_cl": 0.975,
+          "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
           "sdoa_m": 2048.0,
           "sdoa_k_max": 400.0,
@@ -187,7 +187,7 @@
         "soac_best": 180.0,
         "gap": 0.0,
         "num_solutions": 1,
-        "elapsed": 2653.47
+        "elapsed": 112.19
       }
     ]
   },
@@ -196,19 +196,19 @@
     "status": "OK",
     "z_star": 220.0,
     "best_config_idx": 0,
-    "best_config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
     "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
         "config": {
-          "m_cluster": 2048.0,
+          "m_cluster": 1024.0,
           "gamma": 0.85,
-          "sdoa_r": 0.95,
+          "sdoa_r": 0.975,
           "sdoa_theta": 0.39269908169872414,
           "k_cluster": 500.0,
-          "r_cl": 0.975,
+          "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
           "sdoa_m": 2048.0,
           "sdoa_k_max": 400.0,
@@ -218,7 +218,7 @@
         "soac_best": 220.0,
         "gap": 0.0,
         "num_solutions": 2,
-        "elapsed": 2517.69
+        "elapsed": 121.5
       }
     ]
   },
@@ -227,19 +227,19 @@
     "status": "OK",
     "z_star": 260.0,
     "best_config_idx": 0,
-    "best_config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
     "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
         "config": {
-          "m_cluster": 2048.0,
+          "m_cluster": 1024.0,
           "gamma": 0.85,
-          "sdoa_r": 0.95,
+          "sdoa_r": 0.975,
           "sdoa_theta": 0.39269908169872414,
           "k_cluster": 500.0,
-          "r_cl": 0.975,
+          "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
           "sdoa_m": 2048.0,
           "sdoa_k_max": 400.0,
@@ -248,8 +248,8 @@
         },
         "soac_best": 260.0,
         "gap": 0.0,
-        "num_solutions": 3,
-        "elapsed": 2635.07
+        "num_solutions": 2,
+        "elapsed": 131.58
       }
     ]
   },
@@ -258,19 +258,19 @@
     "status": "OK",
     "z_star": 300.0,
     "best_config_idx": 0,
-    "best_config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
     "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
         "config": {
-          "m_cluster": 2048.0,
+          "m_cluster": 1024.0,
           "gamma": 0.85,
-          "sdoa_r": 0.95,
+          "sdoa_r": 0.975,
           "sdoa_theta": 0.39269908169872414,
           "k_cluster": 500.0,
-          "r_cl": 0.975,
+          "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
           "sdoa_m": 2048.0,
           "sdoa_k_max": 400.0,
@@ -279,8 +279,8 @@
         },
         "soac_best": 300.0,
         "gap": 0.0,
-        "num_solutions": 3,
-        "elapsed": 2674.74
+        "num_solutions": 2,
+        "elapsed": 133.94
       }
     ]
   },
@@ -289,19 +289,19 @@
     "status": "OK",
     "z_star": 340.0,
     "best_config_idx": 0,
-    "best_config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
     "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
         "config": {
-          "m_cluster": 2048.0,
+          "m_cluster": 1024.0,
           "gamma": 0.85,
-          "sdoa_r": 0.95,
+          "sdoa_r": 0.975,
           "sdoa_theta": 0.39269908169872414,
           "k_cluster": 500.0,
-          "r_cl": 0.975,
+          "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
           "sdoa_m": 2048.0,
           "sdoa_k_max": 400.0,
@@ -310,8 +310,8 @@
         },
         "soac_best": 340.0,
         "gap": 0.0,
-        "num_solutions": 3,
-        "elapsed": 2722.11
+        "num_solutions": 2,
+        "elapsed": 178.83
       }
     ]
   },
@@ -320,19 +320,19 @@
     "status": "OK",
     "z_star": 380.0,
     "best_config_idx": 0,
-    "best_config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
     "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
         "config": {
-          "m_cluster": 2048.0,
+          "m_cluster": 1024.0,
           "gamma": 0.85,
-          "sdoa_r": 0.95,
+          "sdoa_r": 0.975,
           "sdoa_theta": 0.39269908169872414,
           "k_cluster": 500.0,
-          "r_cl": 0.975,
+          "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
           "sdoa_m": 2048.0,
           "sdoa_k_max": 400.0,
@@ -342,7 +342,7 @@
         "soac_best": 380.0,
         "gap": 0.0,
         "num_solutions": 2,
-        "elapsed": 2895.75
+        "elapsed": 160.82
       }
     ]
   },
@@ -351,19 +351,19 @@
     "status": "OK",
     "z_star": 420.0,
     "best_config_idx": 0,
-    "best_config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
     "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
         "config": {
-          "m_cluster": 2048.0,
+          "m_cluster": 1024.0,
           "gamma": 0.85,
-          "sdoa_r": 0.95,
+          "sdoa_r": 0.975,
           "sdoa_theta": 0.39269908169872414,
           "k_cluster": 500.0,
-          "r_cl": 0.975,
+          "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
           "sdoa_m": 2048.0,
           "sdoa_k_max": 400.0,
@@ -373,7 +373,7 @@
         "soac_best": 420.0,
         "gap": 0.0,
         "num_solutions": 1,
-        "elapsed": 3311.75
+        "elapsed": 169.39
       }
     ]
   },
@@ -381,20 +381,41 @@
     "T": 236,
     "status": "OK",
     "z_star": 480.0,
-    "best_config_idx": 0,
-    "best_config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_config_idx": 1,
+    "best_config_label": "m=2048, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
     "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 1024.0,
+          "gamma": 0.85,
+          "sdoa_r": 0.975,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.95,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 490.0,
+        "gap": 10.0,
+        "num_solutions": 1,
+        "elapsed": 79.55
+      },
+      {
+        "config_idx": 1,
+        "config_label": "m=2048, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
         "config": {
           "m_cluster": 2048.0,
           "gamma": 0.85,
-          "sdoa_r": 0.95,
+          "sdoa_r": 0.975,
           "sdoa_theta": 0.39269908169872414,
           "k_cluster": 500.0,
-          "r_cl": 0.975,
+          "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
           "sdoa_m": 2048.0,
           "sdoa_k_max": 400.0,
@@ -404,7 +425,7 @@
         "soac_best": 480.0,
         "gap": 0.0,
         "num_solutions": 1,
-        "elapsed": 3740.58
+        "elapsed": 606.6
       }
     ]
   },
@@ -412,20 +433,41 @@
     "T": 235,
     "status": "OK",
     "z_star": 540.0,
-    "best_config_idx": 0,
-    "best_config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_config_idx": 1,
+    "best_config_label": "m=2048, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
     "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config": {
+          "m_cluster": 1024.0,
+          "gamma": 0.85,
+          "sdoa_r": 0.975,
+          "sdoa_theta": 0.39269908169872414,
+          "k_cluster": 500.0,
+          "r_cl": 0.95,
+          "theta_cl": 0.7853981633974483,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
+          "delta": 1e-05,
+          "epsilon": 1e-09
+        },
+        "soac_best": 560.0,
+        "gap": 20.0,
+        "num_solutions": 1,
+        "elapsed": 102.67
+      },
+      {
+        "config_idx": 1,
+        "config_label": "m=2048, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
         "config": {
           "m_cluster": 2048.0,
           "gamma": 0.85,
-          "sdoa_r": 0.95,
+          "sdoa_r": 0.975,
           "sdoa_theta": 0.39269908169872414,
           "k_cluster": 500.0,
-          "r_cl": 0.975,
+          "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
           "sdoa_m": 2048.0,
           "sdoa_k_max": 400.0,
@@ -435,7 +477,7 @@
         "soac_best": 540.0,
         "gap": 0.0,
         "num_solutions": 1,
-        "elapsed": 3440.05
+        "elapsed": 631.62
       }
     ]
   },
@@ -444,19 +486,19 @@
     "status": "OK",
     "z_star": 600.0,
     "best_config_idx": 0,
-    "best_config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
     "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
         "config": {
-          "m_cluster": 2048.0,
+          "m_cluster": 1024.0,
           "gamma": 0.85,
-          "sdoa_r": 0.95,
+          "sdoa_r": 0.975,
           "sdoa_theta": 0.39269908169872414,
           "k_cluster": 500.0,
-          "r_cl": 0.975,
+          "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
           "sdoa_m": 2048.0,
           "sdoa_k_max": 400.0,
@@ -466,7 +508,7 @@
         "soac_best": 600.0,
         "gap": 0.0,
         "num_solutions": 1,
-        "elapsed": 3365.85
+        "elapsed": 95.93
       }
     ]
   },
@@ -475,19 +517,19 @@
     "status": "OK",
     "z_star": 670.0,
     "best_config_idx": 0,
-    "best_config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
     "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
         "config": {
-          "m_cluster": 2048.0,
+          "m_cluster": 1024.0,
           "gamma": 0.85,
-          "sdoa_r": 0.95,
+          "sdoa_r": 0.975,
           "sdoa_theta": 0.39269908169872414,
           "k_cluster": 500.0,
-          "r_cl": 0.975,
+          "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
           "sdoa_m": 2048.0,
           "sdoa_k_max": 400.0,
@@ -497,7 +539,7 @@
         "soac_best": 670.0,
         "gap": 0.0,
         "num_solutions": 1,
-        "elapsed": 931.77
+        "elapsed": 109.46
       }
     ]
   },
@@ -506,19 +548,19 @@
     "status": "OK",
     "z_star": 740.0,
     "best_config_idx": 0,
-    "best_config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
     "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
         "config": {
-          "m_cluster": 2048.0,
+          "m_cluster": 1024.0,
           "gamma": 0.85,
-          "sdoa_r": 0.95,
+          "sdoa_r": 0.975,
           "sdoa_theta": 0.39269908169872414,
           "k_cluster": 500.0,
-          "r_cl": 0.975,
+          "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
           "sdoa_m": 2048.0,
           "sdoa_k_max": 400.0,
@@ -528,7 +570,7 @@
         "soac_best": 740.0,
         "gap": 0.0,
         "num_solutions": 1,
-        "elapsed": 2277.95
+        "elapsed": 135.97
       }
     ]
   },
@@ -537,19 +579,19 @@
     "status": "OK",
     "z_star": 810.0,
     "best_config_idx": 0,
-    "best_config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
     "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
         "config": {
-          "m_cluster": 2048.0,
+          "m_cluster": 1024.0,
           "gamma": 0.85,
-          "sdoa_r": 0.95,
+          "sdoa_r": 0.975,
           "sdoa_theta": 0.39269908169872414,
           "k_cluster": 500.0,
-          "r_cl": 0.975,
+          "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
           "sdoa_m": 2048.0,
           "sdoa_k_max": 400.0,
@@ -559,7 +601,7 @@
         "soac_best": 810.0,
         "gap": 0.0,
         "num_solutions": 1,
-        "elapsed": 2970.52
+        "elapsed": 275.19
       }
     ]
   },
@@ -568,19 +610,19 @@
     "status": "OK",
     "z_star": 890.0,
     "best_config_idx": 0,
-    "best_config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
     "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
         "config": {
-          "m_cluster": 2048.0,
+          "m_cluster": 1024.0,
           "gamma": 0.85,
-          "sdoa_r": 0.95,
+          "sdoa_r": 0.975,
           "sdoa_theta": 0.39269908169872414,
           "k_cluster": 500.0,
-          "r_cl": 0.975,
+          "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
           "sdoa_m": 2048.0,
           "sdoa_k_max": 400.0,
@@ -590,7 +632,7 @@
         "soac_best": 890.0,
         "gap": 0.0,
         "num_solutions": 2,
-        "elapsed": 3057.76
+        "elapsed": 391.08
       }
     ]
   },
@@ -599,19 +641,19 @@
     "status": "OK",
     "z_star": 970.0,
     "best_config_idx": 0,
-    "best_config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
     "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
         "config": {
-          "m_cluster": 2048.0,
+          "m_cluster": 1024.0,
           "gamma": 0.85,
-          "sdoa_r": 0.95,
+          "sdoa_r": 0.975,
           "sdoa_theta": 0.39269908169872414,
           "k_cluster": 500.0,
-          "r_cl": 0.975,
+          "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
           "sdoa_m": 2048.0,
           "sdoa_k_max": 400.0,
@@ -621,7 +663,7 @@
         "soac_best": 970.0,
         "gap": 0.0,
         "num_solutions": 3,
-        "elapsed": 3058.16
+        "elapsed": 248.91
       }
     ]
   },
@@ -630,19 +672,19 @@
     "status": "OK",
     "z_star": 1050.0,
     "best_config_idx": 0,
-    "best_config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
     "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
         "config": {
-          "m_cluster": 2048.0,
+          "m_cluster": 1024.0,
           "gamma": 0.85,
-          "sdoa_r": 0.95,
+          "sdoa_r": 0.975,
           "sdoa_theta": 0.39269908169872414,
           "k_cluster": 500.0,
-          "r_cl": 0.975,
+          "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
           "sdoa_m": 2048.0,
           "sdoa_k_max": 400.0,
@@ -652,7 +694,7 @@
         "soac_best": 1050.0,
         "gap": 0.0,
         "num_solutions": 4,
-        "elapsed": 3314.8
+        "elapsed": 283.66
       }
     ]
   },
@@ -661,19 +703,19 @@
     "status": "OK",
     "z_star": 1130.0,
     "best_config_idx": 0,
-    "best_config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
     "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
         "config": {
-          "m_cluster": 2048.0,
+          "m_cluster": 1024.0,
           "gamma": 0.85,
-          "sdoa_r": 0.95,
+          "sdoa_r": 0.975,
           "sdoa_theta": 0.39269908169872414,
           "k_cluster": 500.0,
-          "r_cl": 0.975,
+          "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
           "sdoa_m": 2048.0,
           "sdoa_k_max": 400.0,
@@ -683,7 +725,7 @@
         "soac_best": 1130.0,
         "gap": 0.0,
         "num_solutions": 5,
-        "elapsed": 3021.93
+        "elapsed": 493.02
       }
     ]
   },
@@ -692,19 +734,19 @@
     "status": "OK",
     "z_star": 1210.0,
     "best_config_idx": 0,
-    "best_config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
     "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
         "config": {
-          "m_cluster": 2048.0,
+          "m_cluster": 1024.0,
           "gamma": 0.85,
-          "sdoa_r": 0.95,
+          "sdoa_r": 0.975,
           "sdoa_theta": 0.39269908169872414,
           "k_cluster": 500.0,
-          "r_cl": 0.975,
+          "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
           "sdoa_m": 2048.0,
           "sdoa_k_max": 400.0,
@@ -714,7 +756,7 @@
         "soac_best": 1210.0,
         "gap": 0.0,
         "num_solutions": 5,
-        "elapsed": 2926.74
+        "elapsed": 546.79
       }
     ]
   },
@@ -723,19 +765,19 @@
     "status": "OK",
     "z_star": 1290.0,
     "best_config_idx": 0,
-    "best_config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
     "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
         "config": {
-          "m_cluster": 2048.0,
+          "m_cluster": 1024.0,
           "gamma": 0.85,
-          "sdoa_r": 0.95,
+          "sdoa_r": 0.975,
           "sdoa_theta": 0.39269908169872414,
           "k_cluster": 500.0,
-          "r_cl": 0.975,
+          "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
           "sdoa_m": 2048.0,
           "sdoa_k_max": 400.0,
@@ -745,7 +787,7 @@
         "soac_best": 1290.0,
         "gap": 0.0,
         "num_solutions": 4,
-        "elapsed": 2367.29
+        "elapsed": 635.02
       }
     ]
   },
@@ -754,19 +796,19 @@
     "status": "OK",
     "z_star": 1370.0,
     "best_config_idx": 0,
-    "best_config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
     "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
         "config": {
-          "m_cluster": 2048.0,
+          "m_cluster": 1024.0,
           "gamma": 0.85,
-          "sdoa_r": 0.95,
+          "sdoa_r": 0.975,
           "sdoa_theta": 0.39269908169872414,
           "k_cluster": 500.0,
-          "r_cl": 0.975,
+          "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
           "sdoa_m": 2048.0,
           "sdoa_k_max": 400.0,
@@ -776,7 +818,7 @@
         "soac_best": 1370.0,
         "gap": 0.0,
         "num_solutions": 3,
-        "elapsed": 1853.02
+        "elapsed": 631.82
       }
     ]
   },
@@ -785,19 +827,19 @@
     "status": "OK",
     "z_star": 1450.0,
     "best_config_idx": 0,
-    "best_config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
     "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
         "config": {
-          "m_cluster": 2048.0,
+          "m_cluster": 1024.0,
           "gamma": 0.85,
-          "sdoa_r": 0.95,
+          "sdoa_r": 0.975,
           "sdoa_theta": 0.39269908169872414,
           "k_cluster": 500.0,
-          "r_cl": 0.975,
+          "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
           "sdoa_m": 2048.0,
           "sdoa_k_max": 400.0,
@@ -807,7 +849,7 @@
         "soac_best": 1450.0,
         "gap": 0.0,
         "num_solutions": 2,
-        "elapsed": 1296.66
+        "elapsed": 747.32
       }
     ]
   },
@@ -816,19 +858,19 @@
     "status": "OK",
     "z_star": 1530.0,
     "best_config_idx": 0,
-    "best_config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
     "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
         "config": {
-          "m_cluster": 2048.0,
+          "m_cluster": 1024.0,
           "gamma": 0.85,
-          "sdoa_r": 0.95,
+          "sdoa_r": 0.975,
           "sdoa_theta": 0.39269908169872414,
           "k_cluster": 500.0,
-          "r_cl": 0.975,
+          "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
           "sdoa_m": 2048.0,
           "sdoa_k_max": 400.0,
@@ -838,7 +880,7 @@
         "soac_best": 1530.0,
         "gap": 0.0,
         "num_solutions": 1,
-        "elapsed": 818.31
+        "elapsed": 748.84
       }
     ]
   },
@@ -847,19 +889,19 @@
     "status": "OK",
     "z_star": 1620.0,
     "best_config_idx": 0,
-    "best_config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
     "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
         "config": {
-          "m_cluster": 2048.0,
+          "m_cluster": 1024.0,
           "gamma": 0.85,
-          "sdoa_r": 0.95,
+          "sdoa_r": 0.975,
           "sdoa_theta": 0.39269908169872414,
           "k_cluster": 500.0,
-          "r_cl": 0.975,
+          "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
           "sdoa_m": 2048.0,
           "sdoa_k_max": 400.0,
@@ -869,7 +911,7 @@
         "soac_best": 1620.0,
         "gap": 0.0,
         "num_solutions": 1,
-        "elapsed": 839.92
+        "elapsed": 723.55
       }
     ]
   },
@@ -878,19 +920,19 @@
     "status": "OK",
     "z_star": 1710.0,
     "best_config_idx": 0,
-    "best_config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
     "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
         "config": {
-          "m_cluster": 2048.0,
+          "m_cluster": 1024.0,
           "gamma": 0.85,
-          "sdoa_r": 0.95,
+          "sdoa_r": 0.975,
           "sdoa_theta": 0.39269908169872414,
           "k_cluster": 500.0,
-          "r_cl": 0.975,
+          "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
           "sdoa_m": 2048.0,
           "sdoa_k_max": 400.0,
@@ -900,7 +942,7 @@
         "soac_best": 1710.0,
         "gap": 0.0,
         "num_solutions": 1,
-        "elapsed": 525.92
+        "elapsed": 437.59
       }
     ]
   },
@@ -909,19 +951,19 @@
     "status": "OK",
     "z_star": 1800.0,
     "best_config_idx": 0,
-    "best_config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+    "best_config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
     "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
         "config": {
-          "m_cluster": 2048.0,
+          "m_cluster": 1024.0,
           "gamma": 0.85,
-          "sdoa_r": 0.95,
+          "sdoa_r": 0.975,
           "sdoa_theta": 0.39269908169872414,
           "k_cluster": 500.0,
-          "r_cl": 0.975,
+          "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
           "sdoa_m": 2048.0,
           "sdoa_k_max": 400.0,
@@ -931,7 +973,7 @@
         "soac_best": 1800.0,
         "gap": 0.0,
         "num_solutions": 1,
-        "elapsed": 534.78
+        "elapsed": 193.59
       }
     ]
   },
@@ -1467,29 +1509,29 @@
     "status": "OK",
     "z_star": 4530.0,
     "best_config_idx": 0,
-    "best_config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
-    "best_gap": 570.0,
+    "best_config_label": "m=4096, g=0.85, sr=0.99, st=pi/8, k=250, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
+    "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config_label": "m=4096, g=0.85, sr=0.99, st=pi/8, k=250, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
         "config": {
-          "m_cluster": 2048.0,
+          "m_cluster": 4096.0,
           "gamma": 0.85,
-          "sdoa_r": 0.95,
+          "sdoa_r": 0.99,
           "sdoa_theta": 0.39269908169872414,
-          "k_cluster": 500.0,
-          "r_cl": 0.975,
+          "k_cluster": 250.0,
+          "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
-          "sdoa_m": 2048.0,
-          "sdoa_k_max": 400.0,
+          "sdoa_m": 4096.0,
+          "sdoa_k_max": 1000.0,
           "delta": 1e-05,
           "epsilon": 1e-09
         },
-        "soac_best": 5100.0,
-        "gap": 570.0,
+        "soac_best": 4530.0,
+        "gap": 0.0,
         "num_solutions": 1,
-        "elapsed": 96.67
+        "elapsed": 106.03
       }
     ]
   },
@@ -1498,29 +1540,29 @@
     "status": "OK",
     "z_star": 4730.0,
     "best_config_idx": 0,
-    "best_config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
-    "best_gap": 520.0,
+    "best_config_label": "m=4096, g=0.85, sr=0.99, st=pi/16, k=250, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
+    "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config_label": "m=4096, g=0.85, sr=0.99, st=pi/16, k=250, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
         "config": {
-          "m_cluster": 2048.0,
+          "m_cluster": 4096.0,
           "gamma": 0.85,
-          "sdoa_r": 0.95,
-          "sdoa_theta": 0.39269908169872414,
-          "k_cluster": 500.0,
-          "r_cl": 0.975,
+          "sdoa_r": 0.99,
+          "sdoa_theta": 0.19634954084936207,
+          "k_cluster": 250.0,
+          "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
-          "sdoa_m": 2048.0,
-          "sdoa_k_max": 400.0,
+          "sdoa_m": 4096.0,
+          "sdoa_k_max": 1000.0,
           "delta": 1e-05,
           "epsilon": 1e-09
         },
-        "soac_best": 5250.0,
-        "gap": 520.0,
+        "soac_best": 4730.0,
+        "gap": 0.0,
         "num_solutions": 1,
-        "elapsed": 98.75
+        "elapsed": 105.47
       }
     ]
   },
@@ -1528,303 +1570,30 @@
     "T": 199,
     "status": "OK",
     "z_star": 4930.0,
-    "best_config_idx": 13,
-    "best_config_label": "m=4096, g=0.75, sr=0.975, st=pi/4, k=300, rcl=0.95, tcl=pi/4, sm=8192, skmax=1000, del=1e-05, eps=1e-09",
+    "best_config_idx": 0,
+    "best_config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
     "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=4096, g=0.75, sr=0.95, st=pi/8, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
+        "config_label": "m=1024, g=0.85, sr=0.975, st=pi/8, k=500, rcl=0.95, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
         "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.95,
-          "sdoa_theta": 0.39269908169872414,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 5575.0,
-        "gap": 645.0,
-        "num_solutions": 1,
-        "elapsed": 123.21
-      },
-      {
-        "config_idx": 1,
-        "config_label": "m=4096, g=0.75, sr=0.95, st=pi/4, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.95,
-          "sdoa_theta": 0.7853981633974483,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 5145.0,
-        "gap": 215.0,
-        "num_solutions": 1,
-        "elapsed": 119.47
-      },
-      {
-        "config_idx": 2,
-        "config_label": "m=4096, g=0.75, sr=0.95, st=pi/16, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.95,
-          "sdoa_theta": 0.19634954084936207,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 5635.0,
-        "gap": 705.0,
-        "num_solutions": 1,
-        "elapsed": 118.34
-      },
-      {
-        "config_idx": 3,
-        "config_label": "m=4096, g=0.75, sr=0.975, st=pi/8, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
+          "m_cluster": 1024.0,
+          "gamma": 0.85,
           "sdoa_r": 0.975,
           "sdoa_theta": 0.39269908169872414,
-          "k_cluster": 300.0,
+          "k_cluster": 500.0,
           "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 5170.0,
-        "gap": 240.0,
-        "num_solutions": 1,
-        "elapsed": 118.0
-      },
-      {
-        "config_idx": 4,
-        "config_label": "m=4096, g=0.75, sr=0.975, st=pi/4, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.975,
-          "sdoa_theta": 0.7853981633974483,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 5255.0,
-        "gap": 325.0,
-        "num_solutions": 1,
-        "elapsed": 119.85
-      },
-      {
-        "config_idx": 5,
-        "config_label": "m=4096, g=0.75, sr=0.975, st=pi/16, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.975,
-          "sdoa_theta": 0.19634954084936207,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 5260.0,
-        "gap": 330.0,
-        "num_solutions": 1,
-        "elapsed": 119.66
-      },
-      {
-        "config_idx": 6,
-        "config_label": "m=4096, g=0.75, sr=0.99, st=pi/8, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.99,
-          "sdoa_theta": 0.39269908169872414,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 5250.0,
-        "gap": 320.0,
-        "num_solutions": 1,
-        "elapsed": 118.33
-      },
-      {
-        "config_idx": 7,
-        "config_label": "m=4096, g=0.75, sr=0.99, st=pi/4, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.99,
-          "sdoa_theta": 0.7853981633974483,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 5255.0,
-        "gap": 325.0,
-        "num_solutions": 1,
-        "elapsed": 119.03
-      },
-      {
-        "config_idx": 8,
-        "config_label": "m=4096, g=0.75, sr=0.99, st=pi/16, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.99,
-          "sdoa_theta": 0.19634954084936207,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 5180.0,
-        "gap": 250.0,
-        "num_solutions": 1,
-        "elapsed": 119.31
-      },
-      {
-        "config_idx": 9,
-        "config_label": "m=4096, g=0.75, sr=0.95, st=pi/8, k=300, rcl=0.95, tcl=pi/4, sm=8192, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 8192.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.95,
-          "sdoa_theta": 0.39269908169872414,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 5200.0,
-        "gap": 270.0,
-        "num_solutions": 1,
-        "elapsed": 127.24
-      },
-      {
-        "config_idx": 10,
-        "config_label": "m=4096, g=0.75, sr=0.95, st=pi/4, k=300, rcl=0.95, tcl=pi/4, sm=8192, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 8192.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.95,
-          "sdoa_theta": 0.7853981633974483,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 5240.0,
-        "gap": 310.0,
-        "num_solutions": 1,
-        "elapsed": 126.64
-      },
-      {
-        "config_idx": 11,
-        "config_label": "m=4096, g=0.75, sr=0.95, st=pi/16, k=300, rcl=0.95, tcl=pi/4, sm=8192, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 8192.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.95,
-          "sdoa_theta": 0.19634954084936207,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 5800.0,
-        "gap": 870.0,
-        "num_solutions": 1,
-        "elapsed": 127.37
-      },
-      {
-        "config_idx": 12,
-        "config_label": "m=4096, g=0.75, sr=0.975, st=pi/8, k=300, rcl=0.95, tcl=pi/4, sm=8192, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 8192.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.975,
-          "sdoa_theta": 0.39269908169872414,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 5170.0,
-        "gap": 240.0,
-        "num_solutions": 1,
-        "elapsed": 126.87
-      },
-      {
-        "config_idx": 13,
-        "config_label": "m=4096, g=0.75, sr=0.975, st=pi/4, k=300, rcl=0.95, tcl=pi/4, sm=8192, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 8192.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.975,
-          "sdoa_theta": 0.7853981633974483,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
+          "sdoa_m": 2048.0,
+          "sdoa_k_max": 400.0,
           "delta": 1e-05,
           "epsilon": 1e-09
         },
         "soac_best": 4930.0,
         "gap": 0.0,
         "num_solutions": 1,
-        "elapsed": 127.85
+        "elapsed": 52.23
       }
     ]
   },
@@ -1833,29 +1602,29 @@
     "status": "OK",
     "z_star": 5130.0,
     "best_config_idx": 0,
-    "best_config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
-    "best_gap": 230.0,
+    "best_config_label": "m=4096, g=0.85, sr=0.99, st=pi/4, k=250, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
+    "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config_label": "m=4096, g=0.85, sr=0.99, st=pi/4, k=250, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
         "config": {
-          "m_cluster": 2048.0,
+          "m_cluster": 4096.0,
           "gamma": 0.85,
-          "sdoa_r": 0.95,
-          "sdoa_theta": 0.39269908169872414,
-          "k_cluster": 500.0,
-          "r_cl": 0.975,
+          "sdoa_r": 0.99,
+          "sdoa_theta": 0.7853981633974483,
+          "k_cluster": 250.0,
+          "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
-          "sdoa_m": 2048.0,
-          "sdoa_k_max": 400.0,
+          "sdoa_m": 4096.0,
+          "sdoa_k_max": 1000.0,
           "delta": 1e-05,
           "epsilon": 1e-09
         },
-        "soac_best": 5360.0,
-        "gap": 230.0,
+        "soac_best": 5130.0,
+        "gap": 0.0,
         "num_solutions": 1,
-        "elapsed": 102.73
+        "elapsed": 103.52
       }
     ]
   },
@@ -1864,29 +1633,29 @@
     "status": "OK",
     "z_star": 5330.0,
     "best_config_idx": 0,
-    "best_config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
-    "best_gap": 465.0,
+    "best_config_label": "m=4096, g=0.85, sr=0.99, st=pi/8, k=250, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
+    "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=2048, g=0.85, sr=0.95, st=pi/8, k=500, rcl=0.975, tcl=pi/4, sm=2048, skmax=400, del=1e-05, eps=1e-09",
+        "config_label": "m=4096, g=0.85, sr=0.99, st=pi/8, k=250, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
         "config": {
-          "m_cluster": 2048.0,
+          "m_cluster": 4096.0,
           "gamma": 0.85,
-          "sdoa_r": 0.95,
+          "sdoa_r": 0.99,
           "sdoa_theta": 0.39269908169872414,
-          "k_cluster": 500.0,
-          "r_cl": 0.975,
+          "k_cluster": 250.0,
+          "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
-          "sdoa_m": 2048.0,
-          "sdoa_k_max": 400.0,
+          "sdoa_m": 4096.0,
+          "sdoa_k_max": 1000.0,
           "delta": 1e-05,
           "epsilon": 1e-09
         },
-        "soac_best": 5795.0,
-        "gap": 465.0,
+        "soac_best": 5330.0,
+        "gap": 0.0,
         "num_solutions": 1,
-        "elapsed": 101.3
+        "elapsed": 101.44
       }
     ]
   },
@@ -1894,22 +1663,22 @@
     "T": 196,
     "status": "OK",
     "z_star": 5580.0,
-    "best_config_idx": 16,
-    "best_config_label": "m=4096, g=0.75, sr=0.99, st=pi/4, k=300, rcl=0.95, tcl=pi/4, sm=8192, skmax=1000, del=1e-05, eps=1e-09",
-    "best_gap": 0.0,
+    "best_config_idx": 0,
+    "best_config_label": "m=4096, g=0.85, sr=0.975, st=pi/8, k=250, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
+    "best_gap": 200.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=4096, g=0.75, sr=0.95, st=pi/8, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
+        "config_label": "m=4096, g=0.85, sr=0.975, st=pi/8, k=250, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
         "config": {
           "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.95,
+          "gamma": 0.85,
+          "sdoa_r": 0.975,
           "sdoa_theta": 0.39269908169872414,
-          "k_cluster": 300.0,
+          "k_cluster": 250.0,
           "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
+          "sdoa_m": 4096.0,
           "sdoa_k_max": 1000.0,
           "delta": 1e-05,
           "epsilon": 1e-09
@@ -1917,343 +1686,7 @@
         "soac_best": 5780.0,
         "gap": 200.0,
         "num_solutions": 1,
-        "elapsed": 120.34
-      },
-      {
-        "config_idx": 1,
-        "config_label": "m=4096, g=0.75, sr=0.95, st=pi/4, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.95,
-          "sdoa_theta": 0.7853981633974483,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 5780.0,
-        "gap": 200.0,
-        "num_solutions": 1,
-        "elapsed": 119.18
-      },
-      {
-        "config_idx": 2,
-        "config_label": "m=4096, g=0.75, sr=0.95, st=pi/16, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.95,
-          "sdoa_theta": 0.19634954084936207,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 6475.0,
-        "gap": 895.0,
-        "num_solutions": 1,
-        "elapsed": 118.96
-      },
-      {
-        "config_idx": 3,
-        "config_label": "m=4096, g=0.75, sr=0.975, st=pi/8, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.975,
-          "sdoa_theta": 0.39269908169872414,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 5780.0,
-        "gap": 200.0,
-        "num_solutions": 1,
-        "elapsed": 118.48
-      },
-      {
-        "config_idx": 4,
-        "config_label": "m=4096, g=0.75, sr=0.975, st=pi/4, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.975,
-          "sdoa_theta": 0.7853981633974483,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 6055.0,
-        "gap": 475.0,
-        "num_solutions": 1,
-        "elapsed": 117.89
-      },
-      {
-        "config_idx": 5,
-        "config_label": "m=4096, g=0.75, sr=0.975, st=pi/16, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.975,
-          "sdoa_theta": 0.19634954084936207,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 6220.0,
-        "gap": 640.0,
-        "num_solutions": 1,
-        "elapsed": 118.36
-      },
-      {
-        "config_idx": 6,
-        "config_label": "m=4096, g=0.75, sr=0.99, st=pi/8, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.99,
-          "sdoa_theta": 0.39269908169872414,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 6100.0,
-        "gap": 520.0,
-        "num_solutions": 1,
-        "elapsed": 120.53
-      },
-      {
-        "config_idx": 7,
-        "config_label": "m=4096, g=0.75, sr=0.99, st=pi/4, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.99,
-          "sdoa_theta": 0.7853981633974483,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 5855.0,
-        "gap": 275.0,
-        "num_solutions": 1,
-        "elapsed": 119.89
-      },
-      {
-        "config_idx": 8,
-        "config_label": "m=4096, g=0.75, sr=0.99, st=pi/16, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.99,
-          "sdoa_theta": 0.19634954084936207,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 6030.0,
-        "gap": 450.0,
-        "num_solutions": 1,
-        "elapsed": 119.27
-      },
-      {
-        "config_idx": 9,
-        "config_label": "m=4096, g=0.75, sr=0.95, st=pi/8, k=300, rcl=0.95, tcl=pi/4, sm=8192, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 8192.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.95,
-          "sdoa_theta": 0.39269908169872414,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 5820.0,
-        "gap": 240.0,
-        "num_solutions": 1,
-        "elapsed": 127.61
-      },
-      {
-        "config_idx": 10,
-        "config_label": "m=4096, g=0.75, sr=0.95, st=pi/4, k=300, rcl=0.95, tcl=pi/4, sm=8192, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 8192.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.95,
-          "sdoa_theta": 0.7853981633974483,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 5745.0,
-        "gap": 165.0,
-        "num_solutions": 1,
-        "elapsed": 126.99
-      },
-      {
-        "config_idx": 11,
-        "config_label": "m=4096, g=0.75, sr=0.95, st=pi/16, k=300, rcl=0.95, tcl=pi/4, sm=8192, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 8192.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.95,
-          "sdoa_theta": 0.19634954084936207,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 7085.0,
-        "gap": 1505.0,
-        "num_solutions": 1,
-        "elapsed": 126.67
-      },
-      {
-        "config_idx": 12,
-        "config_label": "m=4096, g=0.75, sr=0.975, st=pi/8, k=300, rcl=0.95, tcl=pi/4, sm=8192, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 8192.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.975,
-          "sdoa_theta": 0.39269908169872414,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 5780.0,
-        "gap": 200.0,
-        "num_solutions": 1,
-        "elapsed": 125.69
-      },
-      {
-        "config_idx": 13,
-        "config_label": "m=4096, g=0.75, sr=0.975, st=pi/4, k=300, rcl=0.95, tcl=pi/4, sm=8192, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 8192.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.975,
-          "sdoa_theta": 0.7853981633974483,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 5905.0,
-        "gap": 325.0,
-        "num_solutions": 1,
-        "elapsed": 126.73
-      },
-      {
-        "config_idx": 14,
-        "config_label": "m=4096, g=0.75, sr=0.975, st=pi/16, k=300, rcl=0.95, tcl=pi/4, sm=8192, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 8192.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.975,
-          "sdoa_theta": 0.19634954084936207,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 6280.0,
-        "gap": 700.0,
-        "num_solutions": 1,
-        "elapsed": 125.61
-      },
-      {
-        "config_idx": 15,
-        "config_label": "m=4096, g=0.75, sr=0.99, st=pi/8, k=300, rcl=0.95, tcl=pi/4, sm=8192, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 8192.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.99,
-          "sdoa_theta": 0.39269908169872414,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 5780.0,
-        "gap": 200.0,
-        "num_solutions": 1,
-        "elapsed": 125.5
-      },
-      {
-        "config_idx": 16,
-        "config_label": "m=4096, g=0.75, sr=0.99, st=pi/4, k=300, rcl=0.95, tcl=pi/4, sm=8192, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 8192.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.99,
-          "sdoa_theta": 0.7853981633974483,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 5580.0,
-        "gap": 0.0,
-        "num_solutions": 1,
-        "elapsed": 127.61
+        "elapsed": 102.45
       }
     ]
   },
@@ -2292,85 +1725,22 @@
     "T": 194,
     "status": "OK",
     "z_star": 6080.0,
-    "best_config_idx": 13,
-    "best_config_label": "m=4096, g=0.75, sr=0.975, st=pi/4, k=300, rcl=0.95, tcl=pi/4, sm=8192, skmax=1000, del=1e-05, eps=1e-09",
-    "best_gap": 0.0,
+    "best_config_idx": 0,
+    "best_config_label": "m=4096, g=0.85, sr=0.975, st=pi/8, k=250, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
+    "best_gap": 100.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=4096, g=0.75, sr=0.95, st=pi/8, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
+        "config_label": "m=4096, g=0.85, sr=0.975, st=pi/8, k=250, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
         "config": {
           "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.95,
-          "sdoa_theta": 0.39269908169872414,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 6340.0,
-        "gap": 260.0,
-        "num_solutions": 1,
-        "elapsed": 119.26
-      },
-      {
-        "config_idx": 1,
-        "config_label": "m=4096, g=0.75, sr=0.95, st=pi/4, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.95,
-          "sdoa_theta": 0.7853981633974483,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 6445.0,
-        "gap": 365.0,
-        "num_solutions": 1,
-        "elapsed": 117.2
-      },
-      {
-        "config_idx": 2,
-        "config_label": "m=4096, g=0.75, sr=0.95, st=pi/16, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.95,
-          "sdoa_theta": 0.19634954084936207,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 6650.0,
-        "gap": 570.0,
-        "num_solutions": 1,
-        "elapsed": 117.43
-      },
-      {
-        "config_idx": 3,
-        "config_label": "m=4096, g=0.75, sr=0.975, st=pi/8, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
+          "gamma": 0.85,
           "sdoa_r": 0.975,
           "sdoa_theta": 0.39269908169872414,
-          "k_cluster": 300.0,
+          "k_cluster": 250.0,
           "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
+          "sdoa_m": 4096.0,
           "sdoa_k_max": 1000.0,
           "delta": 1e-05,
           "epsilon": 1e-09
@@ -2378,217 +1748,7 @@
         "soac_best": 6180.0,
         "gap": 100.0,
         "num_solutions": 1,
-        "elapsed": 118.5
-      },
-      {
-        "config_idx": 4,
-        "config_label": "m=4096, g=0.75, sr=0.975, st=pi/4, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.975,
-          "sdoa_theta": 0.7853981633974483,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 6505.0,
-        "gap": 425.0,
-        "num_solutions": 1,
-        "elapsed": 118.6
-      },
-      {
-        "config_idx": 5,
-        "config_label": "m=4096, g=0.75, sr=0.975, st=pi/16, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.975,
-          "sdoa_theta": 0.19634954084936207,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 6630.0,
-        "gap": 550.0,
-        "num_solutions": 1,
-        "elapsed": 118.04
-      },
-      {
-        "config_idx": 6,
-        "config_label": "m=4096, g=0.75, sr=0.99, st=pi/8, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.99,
-          "sdoa_theta": 0.39269908169872414,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 6260.0,
-        "gap": 180.0,
-        "num_solutions": 1,
-        "elapsed": 118.24
-      },
-      {
-        "config_idx": 7,
-        "config_label": "m=4096, g=0.75, sr=0.99, st=pi/4, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.99,
-          "sdoa_theta": 0.7853981633974483,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 6505.0,
-        "gap": 425.0,
-        "num_solutions": 1,
-        "elapsed": 118.33
-      },
-      {
-        "config_idx": 8,
-        "config_label": "m=4096, g=0.75, sr=0.99, st=pi/16, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.99,
-          "sdoa_theta": 0.19634954084936207,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 6410.0,
-        "gap": 330.0,
-        "num_solutions": 1,
-        "elapsed": 118.62
-      },
-      {
-        "config_idx": 9,
-        "config_label": "m=4096, g=0.75, sr=0.95, st=pi/8, k=300, rcl=0.95, tcl=pi/4, sm=8192, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 8192.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.95,
-          "sdoa_theta": 0.39269908169872414,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 6370.0,
-        "gap": 290.0,
-        "num_solutions": 1,
-        "elapsed": 126.2
-      },
-      {
-        "config_idx": 10,
-        "config_label": "m=4096, g=0.75, sr=0.95, st=pi/4, k=300, rcl=0.95, tcl=pi/4, sm=8192, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 8192.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.95,
-          "sdoa_theta": 0.7853981633974483,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 6505.0,
-        "gap": 425.0,
-        "num_solutions": 1,
-        "elapsed": 125.57
-      },
-      {
-        "config_idx": 11,
-        "config_label": "m=4096, g=0.75, sr=0.95, st=pi/16, k=300, rcl=0.95, tcl=pi/4, sm=8192, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 8192.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.95,
-          "sdoa_theta": 0.19634954084936207,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 6895.0,
-        "gap": 815.0,
-        "num_solutions": 1,
-        "elapsed": 125.67
-      },
-      {
-        "config_idx": 12,
-        "config_label": "m=4096, g=0.75, sr=0.975, st=pi/8, k=300, rcl=0.95, tcl=pi/4, sm=8192, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 8192.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.975,
-          "sdoa_theta": 0.39269908169872414,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 6330.0,
-        "gap": 250.0,
-        "num_solutions": 1,
-        "elapsed": 125.5
-      },
-      {
-        "config_idx": 13,
-        "config_label": "m=4096, g=0.75, sr=0.975, st=pi/4, k=300, rcl=0.95, tcl=pi/4, sm=8192, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 8192.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.975,
-          "sdoa_theta": 0.7853981633974483,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 6080.0,
-        "gap": 0.0,
-        "num_solutions": 1,
-        "elapsed": 126.27
+        "elapsed": 107.93
       }
     ]
   },
@@ -2596,274 +1756,22 @@
     "T": 193,
     "status": "OK",
     "z_star": 6330.0,
-    "best_config_idx": 12,
+    "best_config_idx": 0,
     "best_config_label": "m=4096, g=0.75, sr=0.975, st=pi/8, k=300, rcl=0.95, tcl=pi/4, sm=8192, skmax=1000, del=1e-05, eps=1e-09",
     "best_gap": 0.0,
     "trials": [
       {
         "config_idx": 0,
-        "config_label": "m=4096, g=0.75, sr=0.95, st=pi/8, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.95,
-          "sdoa_theta": 0.39269908169872414,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 6720.0,
-        "gap": 390.0,
-        "num_solutions": 1,
-        "elapsed": 116.89
-      },
-      {
-        "config_idx": 1,
-        "config_label": "m=4096, g=0.75, sr=0.95, st=pi/4, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.95,
-          "sdoa_theta": 0.7853981633974483,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 6705.0,
-        "gap": 375.0,
-        "num_solutions": 1,
-        "elapsed": 117.58
-      },
-      {
-        "config_idx": 2,
-        "config_label": "m=4096, g=0.75, sr=0.95, st=pi/16, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.95,
-          "sdoa_theta": 0.19634954084936207,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 6875.0,
-        "gap": 545.0,
-        "num_solutions": 1,
-        "elapsed": 117.5
-      },
-      {
-        "config_idx": 3,
-        "config_label": "m=4096, g=0.75, sr=0.975, st=pi/8, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.975,
-          "sdoa_theta": 0.39269908169872414,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 6580.0,
-        "gap": 250.0,
-        "num_solutions": 1,
-        "elapsed": 116.97
-      },
-      {
-        "config_idx": 4,
-        "config_label": "m=4096, g=0.75, sr=0.975, st=pi/4, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.975,
-          "sdoa_theta": 0.7853981633974483,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 6380.0,
-        "gap": 50.0,
-        "num_solutions": 1,
-        "elapsed": 117.59
-      },
-      {
-        "config_idx": 5,
-        "config_label": "m=4096, g=0.75, sr=0.975, st=pi/16, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.975,
-          "sdoa_theta": 0.19634954084936207,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 6710.0,
-        "gap": 380.0,
-        "num_solutions": 1,
-        "elapsed": 117.74
-      },
-      {
-        "config_idx": 6,
-        "config_label": "m=4096, g=0.75, sr=0.99, st=pi/8, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.99,
-          "sdoa_theta": 0.39269908169872414,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 6580.0,
-        "gap": 250.0,
-        "num_solutions": 1,
-        "elapsed": 117.51
-      },
-      {
-        "config_idx": 7,
-        "config_label": "m=4096, g=0.75, sr=0.99, st=pi/4, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.99,
-          "sdoa_theta": 0.7853981633974483,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 6380.0,
-        "gap": 50.0,
-        "num_solutions": 1,
-        "elapsed": 121.69
-      },
-      {
-        "config_idx": 8,
-        "config_label": "m=4096, g=0.75, sr=0.99, st=pi/16, k=300, rcl=0.95, tcl=pi/4, sm=4096, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 4096.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.99,
-          "sdoa_theta": 0.19634954084936207,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 6710.0,
-        "gap": 380.0,
-        "num_solutions": 1,
-        "elapsed": 117.07
-      },
-      {
-        "config_idx": 9,
-        "config_label": "m=4096, g=0.75, sr=0.95, st=pi/8, k=300, rcl=0.95, tcl=pi/4, sm=8192, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 8192.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.95,
-          "sdoa_theta": 0.39269908169872414,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 6580.0,
-        "gap": 250.0,
-        "num_solutions": 1,
-        "elapsed": 125.28
-      },
-      {
-        "config_idx": 10,
-        "config_label": "m=4096, g=0.75, sr=0.95, st=pi/4, k=300, rcl=0.95, tcl=pi/4, sm=8192, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 8192.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.95,
-          "sdoa_theta": 0.7853981633974483,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 6380.0,
-        "gap": 50.0,
-        "num_solutions": 1,
-        "elapsed": 125.48
-      },
-      {
-        "config_idx": 11,
-        "config_label": "m=4096, g=0.75, sr=0.95, st=pi/16, k=300, rcl=0.95, tcl=pi/4, sm=8192, skmax=1000, del=1e-05, eps=1e-09",
-        "config": {
-          "m_cluster": 4096.0,
-          "sdoa_m": 8192.0,
-          "gamma": 0.75,
-          "sdoa_r": 0.95,
-          "sdoa_theta": 0.19634954084936207,
-          "k_cluster": 300.0,
-          "r_cl": 0.95,
-          "theta_cl": 0.7853981633974483,
-          "sdoa_k_max": 1000.0,
-          "delta": 1e-05,
-          "epsilon": 1e-09
-        },
-        "soac_best": 7000.0,
-        "gap": 670.0,
-        "num_solutions": 1,
-        "elapsed": 125.76
-      },
-      {
-        "config_idx": 12,
         "config_label": "m=4096, g=0.75, sr=0.975, st=pi/8, k=300, rcl=0.95, tcl=pi/4, sm=8192, skmax=1000, del=1e-05, eps=1e-09",
         "config": {
           "m_cluster": 4096.0,
-          "sdoa_m": 8192.0,
           "gamma": 0.75,
           "sdoa_r": 0.975,
           "sdoa_theta": 0.39269908169872414,
           "k_cluster": 300.0,
           "r_cl": 0.95,
           "theta_cl": 0.7853981633974483,
+          "sdoa_m": 8192.0,
           "sdoa_k_max": 1000.0,
           "delta": 1e-05,
           "epsilon": 1e-09
@@ -2871,7 +1779,7 @@
         "soac_best": 6330.0,
         "gap": 0.0,
         "num_solutions": 1,
-        "elapsed": 125.36
+        "elapsed": 126.35
       }
     ]
   },
@@ -2890,7 +1798,7 @@
           "m_cluster": 750.0,
           "gamma": 0.25,
           "sdoa_r": 0.9949,
-          "sdoa_theta": 1.4922565104551517,
+          "sdoa_theta": 1.4923,
           "k_cluster": 4050.0,
           "r_cl": 0.9304,
           "theta_cl": 0.07853981633974483,
@@ -2902,7 +1810,7 @@
         "soac_best": 6580.0,
         "gap": 0.0,
         "num_solutions": 1,
-        "elapsed": 318.69
+        "elapsed": 305.21
       }
     ]
   },

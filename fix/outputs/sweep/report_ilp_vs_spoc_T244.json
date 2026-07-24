@@ -1,0 +1,1307 @@
+{
+  "deadline": 244,
+  "n_tasks": 25,
+  "has_resources": true,
+  "ilp_solution": {
+    "label": "ILP Ground Truth",
+    "total_crash_cost": 150.0,
+    "makespan": 244,
+    "deadline": 244,
+    "resource_feasible": true,
+    "tasks": [
+      {
+        "task_name": "Bids & Contracts",
+        "duration": 10,
+        "normal_duration": 10,
+        "min_duration": 7,
+        "crash_days": 0,
+        "crash_cost_per_day": 60.0,
+        "crash_cost_total": 0.0,
+        "start": 0,
+        "end": 10
+      },
+      {
+        "task_name": "Grading & Building Permits",
+        "duration": 10,
+        "normal_duration": 10,
+        "min_duration": 7,
+        "crash_days": 0,
+        "crash_cost_per_day": 70.0,
+        "crash_cost_total": 0.0,
+        "start": 10,
+        "end": 20
+      },
+      {
+        "task_name": "Site Work",
+        "duration": 5,
+        "normal_duration": 7,
+        "min_duration": 5,
+        "crash_days": 2,
+        "crash_cost_per_day": 30.0,
+        "crash_cost_total": 60.0,
+        "start": 20,
+        "end": 25
+      },
+      {
+        "task_name": "Foundation",
+        "duration": 22,
+        "normal_duration": 22,
+        "min_duration": 18,
+        "crash_days": 0,
+        "crash_cost_per_day": 80.0,
+        "crash_cost_total": 0.0,
+        "start": 25,
+        "end": 47
+      },
+      {
+        "task_name": "Rough Carpentry",
+        "duration": 30,
+        "normal_duration": 30,
+        "min_duration": 25,
+        "crash_days": 0,
+        "crash_cost_per_day": 90.0,
+        "crash_cost_total": 0.0,
+        "start": 47,
+        "end": 77
+      },
+      {
+        "task_name": "Concrete Slabs",
+        "duration": 8,
+        "normal_duration": 8,
+        "min_duration": 6,
+        "crash_days": 0,
+        "crash_cost_per_day": 40.0,
+        "crash_cost_total": 0.0,
+        "start": 77,
+        "end": 85
+      },
+      {
+        "task_name": "H.V.A.C.",
+        "duration": 17,
+        "normal_duration": 17,
+        "min_duration": 12,
+        "crash_days": 0,
+        "crash_cost_per_day": 55.0,
+        "crash_cost_total": 0.0,
+        "start": 107,
+        "end": 124
+      },
+      {
+        "task_name": "Plumbing Rough-in",
+        "duration": 30,
+        "normal_duration": 30,
+        "min_duration": 25,
+        "crash_days": 0,
+        "crash_cost_per_day": 65.0,
+        "crash_cost_total": 0.0,
+        "start": 124,
+        "end": 154
+      },
+      {
+        "task_name": "Electric Rough-in",
+        "duration": 19,
+        "normal_duration": 19,
+        "min_duration": 14,
+        "crash_days": 0,
+        "crash_cost_per_day": 55.0,
+        "crash_cost_total": 0.0,
+        "start": 77,
+        "end": 96
+      },
+      {
+        "task_name": "Roofing",
+        "duration": 30,
+        "normal_duration": 30,
+        "min_duration": 25,
+        "crash_days": 0,
+        "crash_cost_per_day": 200.0,
+        "crash_cost_total": 0.0,
+        "start": 107,
+        "end": 137
+      },
+      {
+        "task_name": "Exterior Finishes",
+        "duration": 30,
+        "normal_duration": 30,
+        "min_duration": 20,
+        "crash_days": 0,
+        "crash_cost_per_day": 180.0,
+        "crash_cost_total": 0.0,
+        "start": 77,
+        "end": 107
+      },
+      {
+        "task_name": "Insulation",
+        "duration": 5,
+        "normal_duration": 5,
+        "min_duration": 4,
+        "crash_days": 0,
+        "crash_cost_per_day": 30.0,
+        "crash_cost_total": 0.0,
+        "start": 137,
+        "end": 142
+      },
+      {
+        "task_name": "Drywall",
+        "duration": 20,
+        "normal_duration": 20,
+        "min_duration": 15,
+        "crash_days": 0,
+        "crash_cost_per_day": 80.0,
+        "crash_cost_total": 0.0,
+        "start": 142,
+        "end": 162
+      },
+      {
+        "task_name": "Floor Finishes",
+        "duration": 30,
+        "normal_duration": 30,
+        "min_duration": 25,
+        "crash_days": 0,
+        "crash_cost_per_day": 130.0,
+        "crash_cost_total": 0.0,
+        "start": 20,
+        "end": 50
+      },
+      {
+        "task_name": "Paint",
+        "duration": 30,
+        "normal_duration": 30,
+        "min_duration": 25,
+        "crash_days": 0,
+        "crash_cost_per_day": 110.0,
+        "crash_cost_total": 0.0,
+        "start": 162,
+        "end": 192
+      },
+      {
+        "task_name": "Interior Trim",
+        "duration": 20,
+        "normal_duration": 20,
+        "min_duration": 15,
+        "crash_days": 0,
+        "crash_cost_per_day": 50.0,
+        "crash_cost_total": 0.0,
+        "start": 0,
+        "end": 20
+      },
+      {
+        "task_name": "Plumbing Trim",
+        "duration": 5,
+        "normal_duration": 5,
+        "min_duration": 3,
+        "crash_days": 0,
+        "crash_cost_per_day": 40.0,
+        "crash_cost_total": 0.0,
+        "start": 192,
+        "end": 197
+      },
+      {
+        "task_name": "Electrical Final Trim",
+        "duration": 23,
+        "normal_duration": 23,
+        "min_duration": 18,
+        "crash_days": 0,
+        "crash_cost_per_day": 250.0,
+        "crash_cost_total": 0.0,
+        "start": 197,
+        "end": 220
+      },
+      {
+        "task_name": "Hardware",
+        "duration": 12,
+        "normal_duration": 12,
+        "min_duration": 8,
+        "crash_days": 0,
+        "crash_cost_per_day": 40.0,
+        "crash_cost_total": 0.0,
+        "start": 192,
+        "end": 204
+      },
+      {
+        "task_name": "Final Building Inspection",
+        "duration": 1,
+        "normal_duration": 1,
+        "min_duration": 1,
+        "crash_days": 0,
+        "crash_cost_per_day": 20.0,
+        "crash_cost_total": 0.0,
+        "start": 220,
+        "end": 221
+      },
+      {
+        "task_name": "Use & Occupancy Certificate",
+        "duration": 1,
+        "normal_duration": 1,
+        "min_duration": 1,
+        "crash_days": 0,
+        "crash_cost_per_day": 10.0,
+        "crash_cost_total": 0.0,
+        "start": 221,
+        "end": 222
+      },
+      {
+        "task_name": "First Walk-thru",
+        "duration": 1,
+        "normal_duration": 1,
+        "min_duration": 1,
+        "crash_days": 0,
+        "crash_cost_per_day": 10.0,
+        "crash_cost_total": 0.0,
+        "start": 222,
+        "end": 223
+      },
+      {
+        "task_name": "Final Punch-out",
+        "duration": 6,
+        "normal_duration": 9,
+        "min_duration": 6,
+        "crash_days": 3,
+        "crash_cost_per_day": 30.0,
+        "crash_cost_total": 90.0,
+        "start": 223,
+        "end": 229
+      },
+      {
+        "task_name": "Cleaning",
+        "duration": 14,
+        "normal_duration": 14,
+        "min_duration": 10,
+        "crash_days": 0,
+        "crash_cost_per_day": 40.0,
+        "crash_cost_total": 0.0,
+        "start": 229,
+        "end": 243
+      },
+      {
+        "task_name": "Final Walk-through",
+        "duration": 1,
+        "normal_duration": 1,
+        "min_duration": 1,
+        "crash_days": 0,
+        "crash_cost_per_day": 0.0,
+        "crash_cost_total": 0.0,
+        "start": 243,
+        "end": 244
+      }
+    ],
+    "solver": "ILP (scipy.optimize.milp)",
+    "elapsed_seconds": 10.06
+  },
+  "spoc_solutions": [
+    {
+      "label": "SPOC Solusi #1",
+      "total_crash_cost": 150.0,
+      "makespan": 244,
+      "deadline": 244,
+      "resource_feasible": true,
+      "tasks": [
+        {
+          "task_name": "Bids & Contracts",
+          "duration": 10,
+          "normal_duration": 10,
+          "min_duration": 7,
+          "crash_days": 0,
+          "crash_cost_per_day": 60.0,
+          "crash_cost_total": 0.0,
+          "start": 0,
+          "end": 10
+        },
+        {
+          "task_name": "Grading & Building Permits",
+          "duration": 10,
+          "normal_duration": 10,
+          "min_duration": 7,
+          "crash_days": 0,
+          "crash_cost_per_day": 70.0,
+          "crash_cost_total": 0.0,
+          "start": 10,
+          "end": 20
+        },
+        {
+          "task_name": "Site Work",
+          "duration": 5,
+          "normal_duration": 7,
+          "min_duration": 5,
+          "crash_days": 2,
+          "crash_cost_per_day": 30.0,
+          "crash_cost_total": 60.0,
+          "start": 20,
+          "end": 25
+        },
+        {
+          "task_name": "Foundation",
+          "duration": 22,
+          "normal_duration": 22,
+          "min_duration": 18,
+          "crash_days": 0,
+          "crash_cost_per_day": 80.0,
+          "crash_cost_total": 0.0,
+          "start": 25,
+          "end": 47
+        },
+        {
+          "task_name": "Rough Carpentry",
+          "duration": 30,
+          "normal_duration": 30,
+          "min_duration": 25,
+          "crash_days": 0,
+          "crash_cost_per_day": 90.0,
+          "crash_cost_total": 0.0,
+          "start": 47,
+          "end": 77
+        },
+        {
+          "task_name": "Concrete Slabs",
+          "duration": 8,
+          "normal_duration": 8,
+          "min_duration": 6,
+          "crash_days": 0,
+          "crash_cost_per_day": 40.0,
+          "crash_cost_total": 0.0,
+          "start": 77,
+          "end": 85
+        },
+        {
+          "task_name": "H.V.A.C.",
+          "duration": 17,
+          "normal_duration": 17,
+          "min_duration": 12,
+          "crash_days": 0,
+          "crash_cost_per_day": 55.0,
+          "crash_cost_total": 0.0,
+          "start": 107,
+          "end": 124
+        },
+        {
+          "task_name": "Plumbing Rough-in",
+          "duration": 30,
+          "normal_duration": 30,
+          "min_duration": 25,
+          "crash_days": 0,
+          "crash_cost_per_day": 65.0,
+          "crash_cost_total": 0.0,
+          "start": 124,
+          "end": 154
+        },
+        {
+          "task_name": "Electric Rough-in",
+          "duration": 19,
+          "normal_duration": 19,
+          "min_duration": 14,
+          "crash_days": 0,
+          "crash_cost_per_day": 55.0,
+          "crash_cost_total": 0.0,
+          "start": 77,
+          "end": 96
+        },
+        {
+          "task_name": "Roofing",
+          "duration": 30,
+          "normal_duration": 30,
+          "min_duration": 25,
+          "crash_days": 0,
+          "crash_cost_per_day": 200.0,
+          "crash_cost_total": 0.0,
+          "start": 107,
+          "end": 137
+        },
+        {
+          "task_name": "Exterior Finishes",
+          "duration": 30,
+          "normal_duration": 30,
+          "min_duration": 20,
+          "crash_days": 0,
+          "crash_cost_per_day": 180.0,
+          "crash_cost_total": 0.0,
+          "start": 77,
+          "end": 107
+        },
+        {
+          "task_name": "Insulation",
+          "duration": 4,
+          "normal_duration": 5,
+          "min_duration": 4,
+          "crash_days": 1,
+          "crash_cost_per_day": 30.0,
+          "crash_cost_total": 30.0,
+          "start": 137,
+          "end": 141
+        },
+        {
+          "task_name": "Drywall",
+          "duration": 20,
+          "normal_duration": 20,
+          "min_duration": 15,
+          "crash_days": 0,
+          "crash_cost_per_day": 80.0,
+          "crash_cost_total": 0.0,
+          "start": 141,
+          "end": 161
+        },
+        {
+          "task_name": "Floor Finishes",
+          "duration": 30,
+          "normal_duration": 30,
+          "min_duration": 25,
+          "crash_days": 0,
+          "crash_cost_per_day": 130.0,
+          "crash_cost_total": 0.0,
+          "start": 20,
+          "end": 50
+        },
+        {
+          "task_name": "Paint",
+          "duration": 30,
+          "normal_duration": 30,
+          "min_duration": 25,
+          "crash_days": 0,
+          "crash_cost_per_day": 110.0,
+          "crash_cost_total": 0.0,
+          "start": 161,
+          "end": 191
+        },
+        {
+          "task_name": "Interior Trim",
+          "duration": 20,
+          "normal_duration": 20,
+          "min_duration": 15,
+          "crash_days": 0,
+          "crash_cost_per_day": 50.0,
+          "crash_cost_total": 0.0,
+          "start": 0,
+          "end": 20
+        },
+        {
+          "task_name": "Plumbing Trim",
+          "duration": 5,
+          "normal_duration": 5,
+          "min_duration": 3,
+          "crash_days": 0,
+          "crash_cost_per_day": 40.0,
+          "crash_cost_total": 0.0,
+          "start": 191,
+          "end": 196
+        },
+        {
+          "task_name": "Electrical Final Trim",
+          "duration": 23,
+          "normal_duration": 23,
+          "min_duration": 18,
+          "crash_days": 0,
+          "crash_cost_per_day": 250.0,
+          "crash_cost_total": 0.0,
+          "start": 196,
+          "end": 219
+        },
+        {
+          "task_name": "Hardware",
+          "duration": 12,
+          "normal_duration": 12,
+          "min_duration": 8,
+          "crash_days": 0,
+          "crash_cost_per_day": 40.0,
+          "crash_cost_total": 0.0,
+          "start": 191,
+          "end": 203
+        },
+        {
+          "task_name": "Final Building Inspection",
+          "duration": 1,
+          "normal_duration": 1,
+          "min_duration": 1,
+          "crash_days": 0,
+          "crash_cost_per_day": 20.0,
+          "crash_cost_total": 0.0,
+          "start": 219,
+          "end": 220
+        },
+        {
+          "task_name": "Use & Occupancy Certificate",
+          "duration": 1,
+          "normal_duration": 1,
+          "min_duration": 1,
+          "crash_days": 0,
+          "crash_cost_per_day": 10.0,
+          "crash_cost_total": 0.0,
+          "start": 220,
+          "end": 221
+        },
+        {
+          "task_name": "First Walk-thru",
+          "duration": 1,
+          "normal_duration": 1,
+          "min_duration": 1,
+          "crash_days": 0,
+          "crash_cost_per_day": 10.0,
+          "crash_cost_total": 0.0,
+          "start": 221,
+          "end": 222
+        },
+        {
+          "task_name": "Final Punch-out",
+          "duration": 7,
+          "normal_duration": 9,
+          "min_duration": 6,
+          "crash_days": 2,
+          "crash_cost_per_day": 30.0,
+          "crash_cost_total": 60.0,
+          "start": 222,
+          "end": 229
+        },
+        {
+          "task_name": "Cleaning",
+          "duration": 14,
+          "normal_duration": 14,
+          "min_duration": 10,
+          "crash_days": 0,
+          "crash_cost_per_day": 40.0,
+          "crash_cost_total": 0.0,
+          "start": 229,
+          "end": 243
+        },
+        {
+          "task_name": "Final Walk-through",
+          "duration": 1,
+          "normal_duration": 1,
+          "min_duration": 1,
+          "crash_days": 0,
+          "crash_cost_per_day": 0.0,
+          "crash_cost_total": 0.0,
+          "start": 243,
+          "end": 244
+        }
+      ],
+      "solver": "SPOC (SOAC)"
+    },
+    {
+      "label": "SPOC Solusi #2",
+      "total_crash_cost": 150.0,
+      "makespan": 244,
+      "deadline": 244,
+      "resource_feasible": true,
+      "tasks": [
+        {
+          "task_name": "Bids & Contracts",
+          "duration": 10,
+          "normal_duration": 10,
+          "min_duration": 7,
+          "crash_days": 0,
+          "crash_cost_per_day": 60.0,
+          "crash_cost_total": 0.0,
+          "start": 0,
+          "end": 10
+        },
+        {
+          "task_name": "Grading & Building Permits",
+          "duration": 10,
+          "normal_duration": 10,
+          "min_duration": 7,
+          "crash_days": 0,
+          "crash_cost_per_day": 70.0,
+          "crash_cost_total": 0.0,
+          "start": 10,
+          "end": 20
+        },
+        {
+          "task_name": "Site Work",
+          "duration": 5,
+          "normal_duration": 7,
+          "min_duration": 5,
+          "crash_days": 2,
+          "crash_cost_per_day": 30.0,
+          "crash_cost_total": 60.0,
+          "start": 20,
+          "end": 25
+        },
+        {
+          "task_name": "Foundation",
+          "duration": 22,
+          "normal_duration": 22,
+          "min_duration": 18,
+          "crash_days": 0,
+          "crash_cost_per_day": 80.0,
+          "crash_cost_total": 0.0,
+          "start": 25,
+          "end": 47
+        },
+        {
+          "task_name": "Rough Carpentry",
+          "duration": 30,
+          "normal_duration": 30,
+          "min_duration": 25,
+          "crash_days": 0,
+          "crash_cost_per_day": 90.0,
+          "crash_cost_total": 0.0,
+          "start": 47,
+          "end": 77
+        },
+        {
+          "task_name": "Concrete Slabs",
+          "duration": 8,
+          "normal_duration": 8,
+          "min_duration": 6,
+          "crash_days": 0,
+          "crash_cost_per_day": 40.0,
+          "crash_cost_total": 0.0,
+          "start": 77,
+          "end": 85
+        },
+        {
+          "task_name": "H.V.A.C.",
+          "duration": 17,
+          "normal_duration": 17,
+          "min_duration": 12,
+          "crash_days": 0,
+          "crash_cost_per_day": 55.0,
+          "crash_cost_total": 0.0,
+          "start": 107,
+          "end": 124
+        },
+        {
+          "task_name": "Plumbing Rough-in",
+          "duration": 30,
+          "normal_duration": 30,
+          "min_duration": 25,
+          "crash_days": 0,
+          "crash_cost_per_day": 65.0,
+          "crash_cost_total": 0.0,
+          "start": 124,
+          "end": 154
+        },
+        {
+          "task_name": "Electric Rough-in",
+          "duration": 19,
+          "normal_duration": 19,
+          "min_duration": 14,
+          "crash_days": 0,
+          "crash_cost_per_day": 55.0,
+          "crash_cost_total": 0.0,
+          "start": 77,
+          "end": 96
+        },
+        {
+          "task_name": "Roofing",
+          "duration": 30,
+          "normal_duration": 30,
+          "min_duration": 25,
+          "crash_days": 0,
+          "crash_cost_per_day": 200.0,
+          "crash_cost_total": 0.0,
+          "start": 107,
+          "end": 137
+        },
+        {
+          "task_name": "Exterior Finishes",
+          "duration": 30,
+          "normal_duration": 30,
+          "min_duration": 20,
+          "crash_days": 0,
+          "crash_cost_per_day": 180.0,
+          "crash_cost_total": 0.0,
+          "start": 77,
+          "end": 107
+        },
+        {
+          "task_name": "Insulation",
+          "duration": 5,
+          "normal_duration": 5,
+          "min_duration": 4,
+          "crash_days": 0,
+          "crash_cost_per_day": 30.0,
+          "crash_cost_total": 0.0,
+          "start": 137,
+          "end": 142
+        },
+        {
+          "task_name": "Drywall",
+          "duration": 20,
+          "normal_duration": 20,
+          "min_duration": 15,
+          "crash_days": 0,
+          "crash_cost_per_day": 80.0,
+          "crash_cost_total": 0.0,
+          "start": 142,
+          "end": 162
+        },
+        {
+          "task_name": "Floor Finishes",
+          "duration": 30,
+          "normal_duration": 30,
+          "min_duration": 25,
+          "crash_days": 0,
+          "crash_cost_per_day": 130.0,
+          "crash_cost_total": 0.0,
+          "start": 20,
+          "end": 50
+        },
+        {
+          "task_name": "Paint",
+          "duration": 30,
+          "normal_duration": 30,
+          "min_duration": 25,
+          "crash_days": 0,
+          "crash_cost_per_day": 110.0,
+          "crash_cost_total": 0.0,
+          "start": 162,
+          "end": 192
+        },
+        {
+          "task_name": "Interior Trim",
+          "duration": 20,
+          "normal_duration": 20,
+          "min_duration": 15,
+          "crash_days": 0,
+          "crash_cost_per_day": 50.0,
+          "crash_cost_total": 0.0,
+          "start": 0,
+          "end": 20
+        },
+        {
+          "task_name": "Plumbing Trim",
+          "duration": 5,
+          "normal_duration": 5,
+          "min_duration": 3,
+          "crash_days": 0,
+          "crash_cost_per_day": 40.0,
+          "crash_cost_total": 0.0,
+          "start": 192,
+          "end": 197
+        },
+        {
+          "task_name": "Electrical Final Trim",
+          "duration": 23,
+          "normal_duration": 23,
+          "min_duration": 18,
+          "crash_days": 0,
+          "crash_cost_per_day": 250.0,
+          "crash_cost_total": 0.0,
+          "start": 197,
+          "end": 220
+        },
+        {
+          "task_name": "Hardware",
+          "duration": 12,
+          "normal_duration": 12,
+          "min_duration": 8,
+          "crash_days": 0,
+          "crash_cost_per_day": 40.0,
+          "crash_cost_total": 0.0,
+          "start": 192,
+          "end": 204
+        },
+        {
+          "task_name": "Final Building Inspection",
+          "duration": 1,
+          "normal_duration": 1,
+          "min_duration": 1,
+          "crash_days": 0,
+          "crash_cost_per_day": 20.0,
+          "crash_cost_total": 0.0,
+          "start": 220,
+          "end": 221
+        },
+        {
+          "task_name": "Use & Occupancy Certificate",
+          "duration": 1,
+          "normal_duration": 1,
+          "min_duration": 1,
+          "crash_days": 0,
+          "crash_cost_per_day": 10.0,
+          "crash_cost_total": 0.0,
+          "start": 221,
+          "end": 222
+        },
+        {
+          "task_name": "First Walk-thru",
+          "duration": 1,
+          "normal_duration": 1,
+          "min_duration": 1,
+          "crash_days": 0,
+          "crash_cost_per_day": 10.0,
+          "crash_cost_total": 0.0,
+          "start": 222,
+          "end": 223
+        },
+        {
+          "task_name": "Final Punch-out",
+          "duration": 6,
+          "normal_duration": 9,
+          "min_duration": 6,
+          "crash_days": 3,
+          "crash_cost_per_day": 30.0,
+          "crash_cost_total": 90.0,
+          "start": 223,
+          "end": 229
+        },
+        {
+          "task_name": "Cleaning",
+          "duration": 14,
+          "normal_duration": 14,
+          "min_duration": 10,
+          "crash_days": 0,
+          "crash_cost_per_day": 40.0,
+          "crash_cost_total": 0.0,
+          "start": 229,
+          "end": 243
+        },
+        {
+          "task_name": "Final Walk-through",
+          "duration": 1,
+          "normal_duration": 1,
+          "min_duration": 1,
+          "crash_days": 0,
+          "crash_cost_per_day": 0.0,
+          "crash_cost_total": 0.0,
+          "start": 243,
+          "end": 244
+        }
+      ],
+      "solver": "SPOC (SOAC)"
+    },
+    {
+      "label": "SPOC Solusi #3",
+      "total_crash_cost": 150.0,
+      "makespan": 244,
+      "deadline": 244,
+      "resource_feasible": true,
+      "tasks": [
+        {
+          "task_name": "Bids & Contracts",
+          "duration": 10,
+          "normal_duration": 10,
+          "min_duration": 7,
+          "crash_days": 0,
+          "crash_cost_per_day": 60.0,
+          "crash_cost_total": 0.0,
+          "start": 0,
+          "end": 10
+        },
+        {
+          "task_name": "Grading & Building Permits",
+          "duration": 10,
+          "normal_duration": 10,
+          "min_duration": 7,
+          "crash_days": 0,
+          "crash_cost_per_day": 70.0,
+          "crash_cost_total": 0.0,
+          "start": 10,
+          "end": 20
+        },
+        {
+          "task_name": "Site Work",
+          "duration": 6,
+          "normal_duration": 7,
+          "min_duration": 5,
+          "crash_days": 1,
+          "crash_cost_per_day": 30.0,
+          "crash_cost_total": 30.0,
+          "start": 20,
+          "end": 26
+        },
+        {
+          "task_name": "Foundation",
+          "duration": 22,
+          "normal_duration": 22,
+          "min_duration": 18,
+          "crash_days": 0,
+          "crash_cost_per_day": 80.0,
+          "crash_cost_total": 0.0,
+          "start": 26,
+          "end": 48
+        },
+        {
+          "task_name": "Rough Carpentry",
+          "duration": 30,
+          "normal_duration": 30,
+          "min_duration": 25,
+          "crash_days": 0,
+          "crash_cost_per_day": 90.0,
+          "crash_cost_total": 0.0,
+          "start": 48,
+          "end": 78
+        },
+        {
+          "task_name": "Concrete Slabs",
+          "duration": 8,
+          "normal_duration": 8,
+          "min_duration": 6,
+          "crash_days": 0,
+          "crash_cost_per_day": 40.0,
+          "crash_cost_total": 0.0,
+          "start": 78,
+          "end": 86
+        },
+        {
+          "task_name": "H.V.A.C.",
+          "duration": 17,
+          "normal_duration": 17,
+          "min_duration": 12,
+          "crash_days": 0,
+          "crash_cost_per_day": 55.0,
+          "crash_cost_total": 0.0,
+          "start": 108,
+          "end": 125
+        },
+        {
+          "task_name": "Plumbing Rough-in",
+          "duration": 30,
+          "normal_duration": 30,
+          "min_duration": 25,
+          "crash_days": 0,
+          "crash_cost_per_day": 65.0,
+          "crash_cost_total": 0.0,
+          "start": 125,
+          "end": 155
+        },
+        {
+          "task_name": "Electric Rough-in",
+          "duration": 19,
+          "normal_duration": 19,
+          "min_duration": 14,
+          "crash_days": 0,
+          "crash_cost_per_day": 55.0,
+          "crash_cost_total": 0.0,
+          "start": 78,
+          "end": 97
+        },
+        {
+          "task_name": "Roofing",
+          "duration": 30,
+          "normal_duration": 30,
+          "min_duration": 25,
+          "crash_days": 0,
+          "crash_cost_per_day": 200.0,
+          "crash_cost_total": 0.0,
+          "start": 108,
+          "end": 138
+        },
+        {
+          "task_name": "Exterior Finishes",
+          "duration": 30,
+          "normal_duration": 30,
+          "min_duration": 20,
+          "crash_days": 0,
+          "crash_cost_per_day": 180.0,
+          "crash_cost_total": 0.0,
+          "start": 78,
+          "end": 108
+        },
+        {
+          "task_name": "Insulation",
+          "duration": 4,
+          "normal_duration": 5,
+          "min_duration": 4,
+          "crash_days": 1,
+          "crash_cost_per_day": 30.0,
+          "crash_cost_total": 30.0,
+          "start": 138,
+          "end": 142
+        },
+        {
+          "task_name": "Drywall",
+          "duration": 20,
+          "normal_duration": 20,
+          "min_duration": 15,
+          "crash_days": 0,
+          "crash_cost_per_day": 80.0,
+          "crash_cost_total": 0.0,
+          "start": 142,
+          "end": 162
+        },
+        {
+          "task_name": "Floor Finishes",
+          "duration": 30,
+          "normal_duration": 30,
+          "min_duration": 25,
+          "crash_days": 0,
+          "crash_cost_per_day": 130.0,
+          "crash_cost_total": 0.0,
+          "start": 20,
+          "end": 50
+        },
+        {
+          "task_name": "Paint",
+          "duration": 30,
+          "normal_duration": 30,
+          "min_duration": 25,
+          "crash_days": 0,
+          "crash_cost_per_day": 110.0,
+          "crash_cost_total": 0.0,
+          "start": 162,
+          "end": 192
+        },
+        {
+          "task_name": "Interior Trim",
+          "duration": 20,
+          "normal_duration": 20,
+          "min_duration": 15,
+          "crash_days": 0,
+          "crash_cost_per_day": 50.0,
+          "crash_cost_total": 0.0,
+          "start": 0,
+          "end": 20
+        },
+        {
+          "task_name": "Plumbing Trim",
+          "duration": 5,
+          "normal_duration": 5,
+          "min_duration": 3,
+          "crash_days": 0,
+          "crash_cost_per_day": 40.0,
+          "crash_cost_total": 0.0,
+          "start": 192,
+          "end": 197
+        },
+        {
+          "task_name": "Electrical Final Trim",
+          "duration": 23,
+          "normal_duration": 23,
+          "min_duration": 18,
+          "crash_days": 0,
+          "crash_cost_per_day": 250.0,
+          "crash_cost_total": 0.0,
+          "start": 197,
+          "end": 220
+        },
+        {
+          "task_name": "Hardware",
+          "duration": 12,
+          "normal_duration": 12,
+          "min_duration": 8,
+          "crash_days": 0,
+          "crash_cost_per_day": 40.0,
+          "crash_cost_total": 0.0,
+          "start": 192,
+          "end": 204
+        },
+        {
+          "task_name": "Final Building Inspection",
+          "duration": 1,
+          "normal_duration": 1,
+          "min_duration": 1,
+          "crash_days": 0,
+          "crash_cost_per_day": 20.0,
+          "crash_cost_total": 0.0,
+          "start": 220,
+          "end": 221
+        },
+        {
+          "task_name": "Use & Occupancy Certificate",
+          "duration": 1,
+          "normal_duration": 1,
+          "min_duration": 1,
+          "crash_days": 0,
+          "crash_cost_per_day": 10.0,
+          "crash_cost_total": 0.0,
+          "start": 221,
+          "end": 222
+        },
+        {
+          "task_name": "First Walk-thru",
+          "duration": 1,
+          "normal_duration": 1,
+          "min_duration": 1,
+          "crash_days": 0,
+          "crash_cost_per_day": 10.0,
+          "crash_cost_total": 0.0,
+          "start": 222,
+          "end": 223
+        },
+        {
+          "task_name": "Final Punch-out",
+          "duration": 6,
+          "normal_duration": 9,
+          "min_duration": 6,
+          "crash_days": 3,
+          "crash_cost_per_day": 30.0,
+          "crash_cost_total": 90.0,
+          "start": 223,
+          "end": 229
+        },
+        {
+          "task_name": "Cleaning",
+          "duration": 14,
+          "normal_duration": 14,
+          "min_duration": 10,
+          "crash_days": 0,
+          "crash_cost_per_day": 40.0,
+          "crash_cost_total": 0.0,
+          "start": 229,
+          "end": 243
+        },
+        {
+          "task_name": "Final Walk-through",
+          "duration": 1,
+          "normal_duration": 1,
+          "min_duration": 1,
+          "crash_days": 0,
+          "crash_cost_per_day": 0.0,
+          "crash_cost_total": 0.0,
+          "start": 243,
+          "end": 244
+        }
+      ],
+      "solver": "SPOC (SOAC)"
+    }
+  ],
+  "comparison": {
+    "ilp_cost": 150.0,
+    "spoc_best_cost": 150.0,
+    "gap": 0.0,
+    "duration_identical": false,
+    "num_spoc_solutions": 3,
+    "tasks": [
+      {
+        "task_name": "Bids & Contracts",
+        "ilp_duration": 10,
+        "spoc_duration": 10,
+        "match": true
+      },
+      {
+        "task_name": "Grading & Building Permits",
+        "ilp_duration": 10,
+        "spoc_duration": 10,
+        "match": true
+      },
+      {
+        "task_name": "Site Work",
+        "ilp_duration": 5,
+        "spoc_duration": 5,
+        "match": true
+      },
+      {
+        "task_name": "Foundation",
+        "ilp_duration": 22,
+        "spoc_duration": 22,
+        "match": true
+      },
+      {
+        "task_name": "Rough Carpentry",
+        "ilp_duration": 30,
+        "spoc_duration": 30,
+        "match": true
+      },
+      {
+        "task_name": "Concrete Slabs",
+        "ilp_duration": 8,
+        "spoc_duration": 8,
+        "match": true
+      },
+      {
+        "task_name": "H.V.A.C.",
+        "ilp_duration": 17,
+        "spoc_duration": 17,
+        "match": true
+      },
+      {
+        "task_name": "Plumbing Rough-in",
+        "ilp_duration": 30,
+        "spoc_duration": 30,
+        "match": true
+      },
+      {
+        "task_name": "Electric Rough-in",
+        "ilp_duration": 19,
+        "spoc_duration": 19,
+        "match": true
+      },
+      {
+        "task_name": "Roofing",
+        "ilp_duration": 30,
+        "spoc_duration": 30,
+        "match": true
+      },
+      {
+        "task_name": "Exterior Finishes",
+        "ilp_duration": 30,
+        "spoc_duration": 30,
+        "match": true
+      },
+      {
+        "task_name": "Insulation",
+        "ilp_duration": 5,
+        "spoc_duration": 4,
+        "match": false
+      },
+      {
+        "task_name": "Drywall",
+        "ilp_duration": 20,
+        "spoc_duration": 20,
+        "match": true
+      },
+      {
+        "task_name": "Floor Finishes",
+        "ilp_duration": 30,
+        "spoc_duration": 30,
+        "match": true
+      },
+      {
+        "task_name": "Paint",
+        "ilp_duration": 30,
+        "spoc_duration": 30,
+        "match": true
+      },
+      {
+        "task_name": "Interior Trim",
+        "ilp_duration": 20,
+        "spoc_duration": 20,
+        "match": true
+      },
+      {
+        "task_name": "Plumbing Trim",
+        "ilp_duration": 5,
+        "spoc_duration": 5,
+        "match": true
+      },
+      {
+        "task_name": "Electrical Final Trim",
+        "ilp_duration": 23,
+        "spoc_duration": 23,
+        "match": true
+      },
+      {
+        "task_name": "Hardware",
+        "ilp_duration": 12,
+        "spoc_duration": 12,
+        "match": true
+      },
+      {
+        "task_name": "Final Building Inspection",
+        "ilp_duration": 1,
+        "spoc_duration": 1,
+        "match": true
+      },
+      {
+        "task_name": "Use & Occupancy Certificate",
+        "ilp_duration": 1,
+        "spoc_duration": 1,
+        "match": true
+      },
+      {
+        "task_name": "First Walk-thru",
+        "ilp_duration": 1,
+        "spoc_duration": 1,
+        "match": true
+      },
+      {
+        "task_name": "Final Punch-out",
+        "ilp_duration": 6,
+        "spoc_duration": 7,
+        "match": false
+      },
+      {
+        "task_name": "Cleaning",
+        "ilp_duration": 14,
+        "spoc_duration": 14,
+        "match": true
+      },
+      {
+        "task_name": "Final Walk-through",
+        "ilp_duration": 1,
+        "spoc_duration": 1,
+        "match": true
+      }
+    ]
+  }
+}

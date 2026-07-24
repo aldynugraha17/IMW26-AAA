@@ -26,6 +26,6 @@
     "delta": 1e-05,
     "epsilon": 1e-09
   },
-  "configs_tried": 9,
-  "elapsed_seconds": 916.79
+  "configs_tried": 1,
+  "elapsed_seconds": 108.18
 }
